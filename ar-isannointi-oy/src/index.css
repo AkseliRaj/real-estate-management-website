@@ -7,12 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-top: 0;
 }
@@ -45,43 +40,4 @@ p {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.6;
-}
-
-.icon-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  
-  background-color: #F57021;
-  color: white;
-  padding: 0.5375rem 1.25rem;
-  border: none;
-  border-radius: 0.7rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.15rem;
-  cursor: pointer;
-  transition: transform 0.15s ease-in-out;
-}
-
-.btn-icon {
-  width: 1.1em;
-  height: 1.1em;
-  display: block;
-
-  clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.3s ease;
-}
-
-.icon-wrapper {
-  width: 0;
-  overflow: hidden;
-  transition: width 0.3s ease;
-}
-
-.icon-button:hover .icon-wrapper {
-  width: 1.1em;
-}
-
-.icon-button:hover .btn-icon {
-  clip-path: inset(0 0 0 0);
 }
