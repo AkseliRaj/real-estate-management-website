@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import '../css/NavBar.css'
 
-import Logo from '../assets/webp/Logo.webp'
-import RealEstateIcon from '../assets/svg/RealEstateNavIcon.svg'
-import RentalBrokerageIcon from '../assets/svg/RentalBrokerageNavIcon.svg'
-import PropertyManagementIcon from '../assets/svg/PropertyManagementNavIcon.svg'
-import RealEstateDropdownImage from '../assets/webp/RealEstateDropdownImage.webp'
-import RentalBrokerageDropdownImage from '../assets/webp/RentalBrokerageDropdownImage.jpg'
-import PropertyManagementDropdownImage from '../assets/webp/PropertyManagementDropdownImage.webp'
+import Logo from '../assets/webp/Logo.webp';
+import DropDownIcon from '../assets/svg/DropdownArrowDown.svg';
+import MenuCloseToggleIcon from '../assets/svg/MenuCloseToggleIcon.svg';
+import MenuOpenToggleIcon from '../assets/svg/MenuOpenToggleIcon.svg';
+import RealEstateIcon from '../assets/svg/RealEstateNavIcon.svg';
+import RentalBrokerageIcon from '../assets/svg/RentalBrokerageNavIcon.svg';
+import PropertyManagementIcon from '../assets/svg/PropertyManagementNavIcon.svg';
+
+import RealEstateDropdownImage from '../assets/webp/RealEstateDropdownImage.webp';
+import RentalBrokerageDropdownImage from '../assets/webp/RentalBrokerageDropdownImage.jpg';
+import PropertyManagementDropdownImage from '../assets/webp/PropertyManagementDropdownImage.webp';
 
 const NavBar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState(null);
+
     const [isDesktop, setIsDesktop] = useState(
         typeof window !== 'undefined' ? window.innerWidth >= 992 : false
     );
@@ -35,29 +42,72 @@ const NavBar = () => {
         return () => mediaQuery.removeListener(handleViewportChange);
     }, []);
 
+    useEffect(() => {
+        if (isDesktop) {
+            setOpenDropdown(null);
+        }
+    }, [isDesktop]);
+
+    const handleMenuToggle = () => {
+        setIsMenuOpen((prev) => {
+            const next = !prev;
+            if (!next) {
+                setOpenDropdown(null);
+            }
+            return next;
+        });
+    };
+
+    const handleDropdownToggle = (dropdownKey) => (event) => {
+        if (isDesktop) {
+            return;
+        }
+
+        event.preventDefault();
+        setOpenDropdown((prev) => (prev === dropdownKey ? null : dropdownKey));
+    };
+
+    const isDropdownOpen = (dropdownKey) => !isDesktop && openDropdown === dropdownKey;
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid px-3">
                 <a className="navbar-brand" href="#">
-                    <img src={Logo} alt="AR-Logo" height="60"/>
+                    <img src={Logo} alt="AR-Logo" height="60" />
                 </a>
 
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+                <div className="d-flex align-items-center ms-auto">
+                    {!isDesktop && <a href="#" className="nav-link me-3">In English</a>}
+                    <button
+                        className="navbar-toggler nav-menu-toggle"
+                        type="button"
+                        onClick={handleMenuToggle}
+                        aria-expanded={isMenuOpen}
+                        aria-label="Toggle navigation menu"
+                    >
+                        <img
+                            src={isMenuOpen ? MenuCloseToggleIcon : MenuOpenToggleIcon}
+                            alt="Menu toggle"
+                            width="30"
+                            height="30"
+                        />
+                    </button>
+                </div>
 
-                <div className="collapse navbar-collapse" id="navbarContent">
+                <div className={`navbar-collapse collapse ${isMenuOpen ? 'show' : ''}`} id="navbarContent">
                     <ul className="navbar-nav mx-auto gap-5">
-                        <li className="nav-item dropdown">
+                        <li className={`nav-item dropdown${isDropdownOpen('propertyManagement') ? ' show' : ''}`}>
                             <a
-                                className={`nav-link${isDesktop ? '' : ' dropdown-toggle'}`}
+                                className={`nav-link nav-dropdown-toggle${isDesktop ? '' : ' dropdown-toggle'}${isDropdownOpen('propertyManagement') ? ' show' : ''}`}
                                 href="#"
                                 role={isDesktop ? undefined : 'button'}
-                                data-bs-toggle={isDesktop ? undefined : 'dropdown'}
+                                aria-expanded={isDropdownOpen('propertyManagement')}
+                                onClick={handleDropdownToggle('propertyManagement')}
                             >
-                                Isännöinti
+                                <span>Isännöinti</span>
+                                <img src={DropDownIcon} alt="" className="nav-dropdown-arrow" aria-hidden="true" />
                             </a>
-                            <ul className="dropdown-menu">
+                            <ul className={`dropdown-menu${isDropdownOpen('propertyManagement') ? ' show' : ''}`}>
                                 <li>
                                     <div className="row g-0 align-items-center justify-content-center">
                                         <ul className="list-unstyled mb-0 py-3 col-4">
@@ -76,16 +126,18 @@ const NavBar = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li className="nav-item dropdown">
+                        <li className={`nav-item dropdown${isDropdownOpen('realEstate') ? ' show' : ''}`}>
                             <a
-                                className={`nav-link${isDesktop ? '' : ' dropdown-toggle'}`}
+                                className={`nav-link nav-dropdown-toggle${isDesktop ? '' : ' dropdown-toggle'}${isDropdownOpen('realEstate') ? ' show' : ''}`}
                                 href="#"
                                 role={isDesktop ? undefined : 'button'}
-                                data-bs-toggle={isDesktop ? undefined : 'dropdown'}
+                                aria-expanded={isDropdownOpen('realEstate')}
+                                onClick={handleDropdownToggle('realEstate')}
                             >
-                                Kiinteistönvälitys
+                                <span>Kiinteistönvälitys</span>
+                                <img src={DropDownIcon} alt="" className="nav-dropdown-arrow" aria-hidden="true" />
                             </a>
-                            <ul className="dropdown-menu">
+                            <ul className={`dropdown-menu${isDropdownOpen('realEstate') ? ' show' : ''}`}>
                                 <li>
                                     <div className="row g-0 align-items-center justify-content-center">
                                         <ul className="list-unstyled mb-0 py-3 col-4">
@@ -104,16 +156,18 @@ const NavBar = () => {
                             </ul>
                         </li>
 
-                        <li className="nav-item dropdown">
+                        <li className={`nav-item dropdown${isDropdownOpen('rental') ? ' show' : ''}`}>
                             <a
-                                className={`nav-link${isDesktop ? '' : ' dropdown-toggle'}`}
+                                className={`nav-link nav-dropdown-toggle${isDesktop ? '' : ' dropdown-toggle'}${isDropdownOpen('rental') ? ' show' : ''}`}
                                 href="#"
                                 role={isDesktop ? undefined : 'button'}
-                                data-bs-toggle={isDesktop ? undefined : 'dropdown'}
+                                aria-expanded={isDropdownOpen('rental')}
+                                onClick={handleDropdownToggle('rental')}
                             >
-                                Vuokraus
+                                <span>Vuokraus</span>
+                                <img src={DropDownIcon} alt="" className="nav-dropdown-arrow" aria-hidden="true" />
                             </a>
-                            <ul className="dropdown-menu">
+                            <ul className={`dropdown-menu${isDropdownOpen('rental') ? ' show' : ''}`}>
                                 <li>
                                     <div className="row g-0 align-items-center justify-content-center">
                                         <ul className="list-unstyled mb-0 py-3 col-4">
@@ -130,11 +184,20 @@ const NavBar = () => {
                                 </li>
                             </ul>
                         </li>
+                        {!isDesktop && (
+                            <li className="nav-item">
+                                <a className="dropdown-item" id='Header' href="#">Yhteystiedot</a>
+                            </li>
+                        )}
                     </ul>
 
                     <div className="d-flex align-items-center">
-                        <a href="#" className="nav-link me-3">In English</a>
-                        <a href="#" className="btn btn-primary">Yhteystiedot</a>
+                        {isDesktop && (
+                            <>
+                                <a href="#" className="nav-link me-3">In English</a>
+                                <a href="#" className="btn btn-primary">Yhteystiedot</a>
+                            </>
+                        )}
                     </div>
 
                 </div>
