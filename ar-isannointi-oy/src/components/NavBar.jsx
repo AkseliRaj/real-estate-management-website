@@ -1,53 +1,70 @@
 import React from 'react';
+import '../css/NavBar.css'
+
 import Logo from '../assets/webp/Logo.webp'
+import RealEstateIcon from '../assets/svg/RealEstateNavIcon.svg'
+import RentalBrokerageIcon from '../assets/svg/RealEstateNavIcon.svg'
+import PropertyManagementIcon from '../assets/svg/PropertyManagementNavIcon.svg'
 
 const NavBar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src={Logo} alt="AR-Logo" height="55"/>
+        <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container-fluid px-3">
+                <a className="navbar-brand" href="#">
+                    <img src={Logo} alt="AR-Logo" height="60"/>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav mx-auto gap-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Menu 1
+                <div className="collapse navbar-collapse" id="navbarContent">
+                    <ul className="navbar-nav mx-auto gap-5">
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Isännöinti
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul className="dropdown-menu">
+                                <li><img src={PropertyManagementIcon} alt="PropertyManagementIcon" className="NavBarIcon" /></li>
+                                <li><a className="dropdown-item" id='Header' href="#">Isännöinti</a></li>
+                                <li><a className="dropdown-item" href="#">Ohjeita taloyhtiön asukkaille</a></li>
+                                <li><a className="dropdown-item" href="#">Vastuunjakotaulukko</a></li>
+                                <li><a className="dropdown-item" href="#">Lomakkeet</a></li>
+                                <li><a className="dropdown-item" href="#">Pyydä tarjous isännöinnistä</a></li>
+                                <li><a className="dropdown-item" href="https://huoneistotieto.fi/fi-FI/account/app/login">Asiakasssivut</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Menu 2
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Kiinteistönvälitys
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Something</a></li>
-                                <li><a class="dropdown-item" href="#">Something else</a></li>
+                            <ul className="dropdown-menu">
+                                <li><img src={RentalBrokerageIcon} alt="PropertyManagementIcon" className="NavBarIcon" /></li>
+                                <li><a className="dropdown-item" id='Header' href="#">Kiinteistönvälitys</a></li>
+                                <li><a className="dropdown-item" href="#">Myyntikohteemme</a></li>
+                                <li><a className="dropdown-item" href="#">Pyydä arvio kohteestasi</a></li>
+                                <li><a className="dropdown-item" href="#">Julkiset kaupanvahvistukset</a></li>
+                                <li><a className="dropdown-item" href="#">Tarjouskaupat</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Menu 3
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Vuokraus
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Option</a></li>
-                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                            <ul className="dropdown-menu">
+                                <li><img src={RealEstateIcon} alt="PropertyManagementIcon" className="NavBarIcon" /></li>
+                                <li><a className="dropdown-item" id='Header' href="#">Vuokraus</a></li>
+                                <li><a className="dropdown-item" href="#">Vuokrakohteemme</a></li>
+                                <li><a className="dropdown-item" href="#">Vuokrahakemus</a></li>
+                                <li><a className="dropdown-item" href="#">Vuokraa asuntosi</a></li>
                             </ul>
                         </li>
                     </ul>
 
-                    <div class="d-flex align-items-center">
-                        <a href="#" class="nav-link me-3">Login</a>
-                        <a href="#" class="btn btn-primary">Sign Up</a>
+                    <div className="d-flex align-items-center">
+                        <a href="#" className="nav-link me-3">In English</a>
+                        <a href="#" className="btn btn-primary">Yhteystiedot</a>
                     </div>
 
                 </div>
