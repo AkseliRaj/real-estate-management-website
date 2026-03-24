@@ -20,9 +20,6 @@ function PropertyManagementLanding() {
                 onClick={handleQuoteRequest}
               />
             </div>
-            <div className='col-6'>
-              <p>Vuodesta 2009 lähtien olemme palvelleet niin pieniä kuin suuria kiinteistöjä vahvalla ammattitaidolla ja paikallistuntemuksella. Tavoitteenamme on varmistaa kiinteistöjen arvon säilyminen sekä turvallinen ja viihtyisä asuminen.</p>
-            </div>
           </div>
 
         </div>
