@@ -1,7 +1,7 @@
 import React from 'react';
-
 import Logo from '../../assets/webp/Logo.webp';
 import DropDownIcon from '../../assets/svg/DropdownArrowDown.svg';
+import ArrowButton from '../ArrowButtonOrange';
 
 import { NAV_SECTIONS } from './navData';
 
@@ -52,7 +52,11 @@ const DesktopNavBar = () => {
 
                     <div className="d-flex align-items-center">
                         <a href="#" className="nav-link me-3">In English</a>
-                        <a href="#" className="btn btn-primary">Yhteystiedot</a>
+                        <ArrowButton
+                            label="Yhteystiedot"
+                            variant="orange"
+                            showArrow={false}
+                        />
                     </div>
                 </div>
             </div>
