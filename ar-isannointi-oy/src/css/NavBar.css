@@ -1,8 +1,12 @@
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: #fff;
+    border-bottom: 1px solid #BEBEBE;
 }
 
-.navbar .dropdown {
+.dropdown {
     position: static;
 }
 
@@ -100,7 +104,6 @@
         position: relative;
         z-index: 1032;
         background-color: #fff;
-        
     }
 
     .navbar .mobile-nav-collapse {
@@ -137,17 +140,20 @@
         opacity: 0;
         overflow: hidden;
         border: 0;
-        transition: max-height 0.3s ease, opacity 0.25s ease, border-bottom-width 0.2s ease;
+        transition: max-height 0.3s ease, opacity 0.25s ease;
     }
 
     .navbar .dropdown-menu.mobile-dropdown-menu.show {
         max-height: 24rem;
         opacity: 1;
-        border-bottom-width: 1px;
     }
 
     .navbar .dropdown-menu.mobile-dropdown-menu {
         padding: 0rem;
+    }
+
+    #Header {
+        padding-bottom: 0rem;
     }
 }
 
@@ -178,6 +184,17 @@
     .navbar .dropdown:hover > .nav-link.nav-dropdown-toggle .nav-dropdown-arrow,
     .navbar .dropdown:focus-within > .nav-link.nav-dropdown-toggle .nav-dropdown-arrow {
         transform: rotate(180deg);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .dropdown-menu {
+        /* Remove Bootstrap Defaults */
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #BEBEBE;
+        border-top: 1px solid #BEBEBE;
     }
 }
 
