@@ -6,9 +6,9 @@
     color: white;
     padding: 0.6rem 1rem;
     border: none;
-    border-radius: 0.7rem;
+    border-radius: 0.9rem;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: transform 0.15s ease-in-out;
 }

@@ -26,3 +26,45 @@
   width: 100%;
   height: 100%;
 }
+
+.Introduction-Section,
+.Logo-Marquee-Section {
+  padding-top: 10rem;
+}
+
+.Introduction-Image {
+  max-width: 60%;
+  height: auto;
+}
+
+.Form-Card {
+  padding: 1.8rem 2.5rem;
+  border: 1px solid #BEBEBE;
+  border-radius: 0.9rem;
+  transition: 0.1s ease-in-out;
+}
+
+.Form-Card-Heading {
+  margin: 0;
+}
+
+.Form-Icon {
+  max-width: 20%;
+  height: auto;
+}
+
+.Form-Card:hover {
+  border: 1.5px solid #F57021;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.Form-Card-Grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--form-card-min, 14rem)), 1fr)
+  );
+  gap: 1.25rem;
+  width: 100%;
+}
