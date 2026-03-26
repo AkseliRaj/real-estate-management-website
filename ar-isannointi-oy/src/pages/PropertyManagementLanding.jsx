@@ -20,7 +20,7 @@ function PropertyManagementLanding() {
   };
 
   return (
-    <div className='container-fluid px-0'>
+    <div className='container-fluid px-0 main-layout'>
 
       <HeroWrapper
         headerText="Ammattitaitoista isännöintiä Kankaanpäässä"
@@ -28,13 +28,13 @@ function PropertyManagementLanding() {
         onButtonClick={handleQuoteRequest}
       />
 
-      <div className='Introduction-Section row d-flex justify-content-center'>
-        <div className='col-10'>
-          <div className='row align-items-center'>
-            <div className='col-12 col-lg-7 col-xl-6'>
-              <h3 className='pb-3'>Luotettavaa ja asiakaslähtöistä isännöintiä</h3>
+      <div className='Introduction-Section row gx-0 d-flex justify-content-center'>
+        <div className='col-11 col-sm-10 col-xl-9 col-xxl-8'>
+          <div className='row align-items-center justify-content-center'>
+            <div className='col-12 col-lg-6'>
+              <h3 className='pb-1 pb-sm-2 pb-lg-3'>Luotettavaa ja asiakaslähtöistä isännöintiä</h3>
               <p>Tarjoamme kokonaisvaltaista isännöintipalvelua, joka kattaa kiinteistön hallinnon, talouden ja teknisen ylläpidon. Toimintamme perustuu suunnitelmallisuuteen, avoimuuteen ja sujuvaan asiakaspalveluun.</p>
-              <p className='pb-3'>Vuodesta 2009 lähtien olemme palvelleet niin pieniä kuin suuria kiinteistöjä vahvalla ammattitaidolla ja paikallistuntemuksella. Tavoitteenamme on varmistaa kiinteistöjen arvon säilyminen sekä turvallinen ja viihtyisä asuminen.</p>
+              <p className='pb-1 pb-sm-2 pb-lg-3'>Vuodesta 2009 lähtien olemme palvelleet niin pieniä kuin suuria kiinteistöjä vahvalla ammattitaidolla ja paikallistuntemuksella. Tavoitteenamme on varmistaa kiinteistöjen arvon säilyminen sekä turvallinen ja viihtyisä asuminen.</p>
               <ArrowButton
                 label="Kysy tarjous isännöinnistä"
                 onClick={handleQuoteRequest}
@@ -48,10 +48,10 @@ function PropertyManagementLanding() {
         </div>
       </div>
 
-      <div className='Logo-Marquee-Section row d-flex justify-content-center'>
+      <div className='Logo-Marquee-Section row gx-0 d-flex justify-content-center'>
         <div className='col-12'>
           <div className='row d-flex justify-content-center'>
-            <div className='col-12 col-md-10 text-center pb-5'>
+            <div className='col-12 col-md-10 col-xl-8 text-center pb-5'>
               <h3 className='pb-3'>Apunamme ovat paikalliset yhteistyökumppanit</h3>
               <p>Vakiintuneesta verkostostamme löytyy ammattitaitoinen apu kaikkiin kiinteistöhuollon, rakentamisen ja korjausrakentamisen tehtäviin. Yhteistyökumppanimme allekirjoittavat saman laatulupauksen kuin me, jotta suuretkin remontit hoituvat laadukkaasti maaliin.</p>
             </div>
@@ -62,7 +62,7 @@ function PropertyManagementLanding() {
         </div>
       </div>
 
-      <div className='Logo-Marquee-Section row d-flex justify-content-center'>
+      <div className='Logo-Marquee-Section row gx-0 d-flex justify-content-center'>
         <div className='col-10'>
           <div className='row d-flex justify-content-start'>
             <div className='col-9 pb-5'>

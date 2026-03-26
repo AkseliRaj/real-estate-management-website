@@ -1,58 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
-
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none;
 }
 
 body, a {
-    font-family: 'Montserrat', sans-serif;
-    color: #333333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin-top: 0;
-}
-
-h1 { 
-    font-size: clamp(2rem, 5vw, 2.986rem); 
-}
-
-h2 { 
-    font-size: clamp(1.8rem, 4.5vw, 2.488rem);
- }
-
- h3 {
-    font-size: clamp(1.6rem, 4vw, 2.074rem); 
-}
-
-h4 { 
-    font-size: clamp(1.4rem, 3.5vw, 1.728rem);
-}
-
-h5 { 
-    font-size: clamp(1.2rem, 3vw, 1.44rem); 
-}
-
-h6 { 
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-}
-
-p {
-    font-weight: 500;
-    font-size: clamp(0.95rem, 1vw, 1.1rem);
-    line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
-    color: #333333;
+  color: #333333;
 }
 
 a:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+:root {
+  /* Fluid type scale */
+  --step--1: clamp(0.8rem, 0.8vw, 0.9rem);
+  --step-0: clamp(0.95rem, 1vw, 1.1rem);     /* body */
+  --step-1: clamp(1.1rem, 1.2vw, 1.25rem);
+  --step-2: clamp(1.3rem, 1.8vw, 1.563rem);
+  --step-3: clamp(1.6rem, 2.5vw, 1.953rem);
+  --step-4: clamp(2rem, 3.5vw, 2.441rem);
+  --step-5: clamp(2.5rem, 4.5vw, 3.052rem);
+  --step-6: clamp(3rem, 6vw, 4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--step-6); }
+h2 { font-size: var(--step-5); }
+h3 { font-size: var(--step-4); }
+h4 { font-size: var(--step-3); }
+h5 { font-size: var(--step-2); }
+h6 { font-size: var(--step-1); }
+
+p {
+  font-weight: 500;
+  font-size: var(--step-0);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
 }

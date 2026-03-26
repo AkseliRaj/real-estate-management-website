@@ -1,0 +1,36 @@
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Remove absolute positioning */
+.hero-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* center the whole content block */
+  padding: clamp(.5rem, 2vw, 10rem);
+}
+
+.hero-content-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; /* keep items left-aligned */
+}
+
+.hero-bg > div {
+  width: 100%;
+  height: 100%;
+}
+
