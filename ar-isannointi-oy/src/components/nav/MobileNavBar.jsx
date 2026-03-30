@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Logo from '../../assets/webp/Logo.webp';
 import DropDownIcon from '../../assets/svg/DropdownArrowDown.svg';
@@ -10,6 +11,8 @@ import { NAV_SECTIONS } from './navData';
 const MobileNavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
+    const { t, i18n } = useTranslation()
+    const isEnglish = i18n.language?.startsWith('en')
 
     const handleMenuToggle = () => {
         setIsMenuOpen((prev) => {
@@ -41,6 +44,16 @@ const MobileNavBar = () => {
         };
     }, [isMenuOpen]);
 
+    const handleLanguageToggle = (e) => {
+        e.preventDefault()
+        const nextLng = isEnglish ? 'fi' : 'en'
+        i18n.changeLanguage(nextLng)
+
+        // Close menu so the language change is immediately visible
+        setIsMenuOpen(false)
+        setOpenDropdown(null)
+    }
+
     return (
         <nav className={`navbar navbar-expand-lg navbar-light${isMenuOpen ? ' mobile-menu-open' : ''}`}>
             <div className="container-fluid px-2 px-sm-4 mobile-nav-top">
@@ -49,7 +62,14 @@ const MobileNavBar = () => {
                 </a>
 
                 <div className="d-flex align-items-center ms-auto">
-                    <a href="#" className="nav-link me-3">In English</a>
+                    <a
+                        href="#"
+                        className="nav-link me-3"
+                        onClick={handleLanguageToggle}
+                        aria-label={isEnglish ? t('language.switchToFinnish') : t('language.switchToEnglish')}
+                    >
+                        {isEnglish ? t('language.switchToFinnish') : t('language.switchToEnglish')}
+                    </a>
                     <button
                         className="navbar-toggler nav-menu-toggle"
                         type="button"
@@ -79,7 +99,7 @@ const MobileNavBar = () => {
                                     aria-expanded={isDropdownOpen(section.key)}
                                     onClick={handleDropdownToggle(section.key)}
                                 >
-                                    <span>{section.title}</span>
+                                    <span>{t(section.titleKey)}</span>
                                     <img src={DropDownIcon} alt="" className="nav-dropdown-arrow" aria-hidden="true" />
                                 </a>
                                 <ul className={`dropdown-menu mobile-dropdown-menu${isDropdownOpen(section.key) ? ' show' : ''}`}>
@@ -91,18 +111,18 @@ const MobileNavBar = () => {
                                                         className="dropdown-item"
                                                         href={section.href || '#'}
                                                     >
-                                                        {section.title}
+                                                        {t(section.titleKey)}
                                                     </a>
                                                 </li>
                                                 {section.links.map((link) => (
-                                                    <li key={link.label}>
+                                                    <li key={link.labelKey}>
                                                         <a
                                                             className="dropdown-item"
                                                             href={link.href}
                                                             target={link.target}
                                                             rel={link.rel}
                                                         >
-                                                            {link.label}
+                                                            {t(link.labelKey)}
                                                         </a>
                                                     </li>
                                                 ))}
@@ -113,7 +133,7 @@ const MobileNavBar = () => {
                             </li>
                         ))}
                         <li className="nav-item">
-                            <a className="dropdown-item" id="Header" href="#">Yhteystiedot</a>
+                            <a className="dropdown-item" id="Header" href="#">{t('nav.contactDetails')}</a>
                         </li>
                     </ul>
                 </div>

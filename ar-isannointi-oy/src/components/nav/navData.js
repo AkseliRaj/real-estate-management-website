@@ -9,16 +9,16 @@ import PropertyManagementDropdownImage from '../../assets/webp/PropertyManagemen
 export const NAV_SECTIONS = [
     {
         key: 'propertyManagement',
-        title: 'Isännöinti',
+        titleKey: 'nav.propertyManagement.title',
         icon: PropertyManagementIcon,
         image: PropertyManagementDropdownImage,
         links: [
-            { label: 'Ohjeita taloyhtiön asukkaille', href: '#' },
-            { label: 'Vastuunjakotaulukko', href: '#' },
-            { label: 'Lomakkeet', href: '#' },
-            { label: 'Pyydä tarjous isännöinnistä', href: '#' },
+            { labelKey: 'nav.propertyManagement.links.instructionsForResidents', href: '#' },
+            { labelKey: 'nav.propertyManagement.links.responsibilitySplitTable', href: '#' },
+            { labelKey: 'nav.propertyManagement.links.forms', href: '#' },
+            { labelKey: 'nav.propertyManagement.links.requestQuote', href: '#' },
             {
-                label: 'Asiakasssivut',
+                labelKey: 'nav.propertyManagement.links.clientPages',
                 href: 'https://huoneistotieto.fi/fi-FI/account/app/login',
                 target: '_blank',
                 rel: 'noreferrer'
@@ -27,25 +27,25 @@ export const NAV_SECTIONS = [
     },
     {
         key: 'realEstate',
-        title: 'Kiinteistönvälitys',
+        titleKey: 'nav.realEstate.title',
         icon: RealEstateIcon,
         image: RealEstateDropdownImage,
         links: [
-            { label: 'Myyntikohteemme', href: '#' },
-            { label: 'Pyydä arvio kohteestasi', href: '#' },
-            { label: 'Julkiset kaupanvahvistukset', href: '#' },
-            { label: 'Tarjouskaupat', href: '#' }
+            { labelKey: 'nav.realEstate.links.ourPropertiesForSale', href: '#' },
+            { labelKey: 'nav.realEstate.links.requestEstimate', href: '#' },
+            { labelKey: 'nav.realEstate.links.publicDeeds', href: '#' },
+            { labelKey: 'nav.realEstate.links.offerDeals', href: '#' }
         ]
     },
     {
         key: 'rental',
-        title: 'Vuokraus',
+        titleKey: 'nav.rental.title',
         icon: RentalBrokerageIcon,
         image: RentalBrokerageDropdownImage,
         links: [
-            { label: 'Vuokrakohteemme', href: '#' },
-            { label: 'Vuokrahakemus', href: '#' },
-            { label: 'Vuokraa asuntosi', href: '#' }
+            { labelKey: 'nav.rental.links.rentalProperties', href: '#' },
+            { labelKey: 'nav.rental.links.rentalApplication', href: '#' },
+            { labelKey: 'nav.rental.links.rentYourHome', href: '#' }
         ]
     }
 ];

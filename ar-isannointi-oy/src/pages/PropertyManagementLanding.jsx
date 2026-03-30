@@ -6,13 +6,16 @@ import HouseImage from '../assets/svg/HouseMagnifierImage.svg';
 import HeroWrapper from '../components/HeroWrapper.jsx';
 import LogoCarousel from '../components/MarqueeCarousel.jsx';
 import FormCardGrid from '../components/FormCardGrid.jsx';
+import { useTranslation } from 'react-i18next';
 
 function PropertyManagementLanding() {
 
+  const { t } = useTranslation()
+
   const formCardItems = [
-    { heading: 'Kulutuslukema' },
-    { heading: 'Muutos- ja korjaustyöilmoitus'},
-    { heading: 'Vikailmoitus'}
+    { heading: t('propertyLanding.forms.cards.consumptionReading') },
+    { heading: t('propertyLanding.forms.cards.alterationAndRepairNotice') },
+    { heading: t('propertyLanding.forms.cards.faultReport') }
   ];
 
   const handleQuoteRequest = () => {
@@ -23,8 +26,8 @@ function PropertyManagementLanding() {
     <div className='container-fluid px-0 main-layout'>
 
       <HeroWrapper
-        headerText="Ammattitaitoista isännöintiä Kankaanpäässä"
-        buttonText="Lomakkeet"
+        headerText={t('propertyLanding.hero.header')}
+        buttonText={t('propertyLanding.hero.button')}
         onButtonClick={handleQuoteRequest}
       />
 
@@ -32,17 +35,17 @@ function PropertyManagementLanding() {
         <div className='col-11 col-sm-10 col-xl-9 col-xxl-8'>
           <div className='row align-items-center justify-content-center'>
             <div className='col-12 col-lg-6'>
-              <h3 className='pb-1 pb-sm-2 pb-lg-3'>Luotettavaa ja asiakaslähtöistä isännöintiä</h3>
-              <p>Tarjoamme kokonaisvaltaista isännöintipalvelua, joka kattaa kiinteistön hallinnon, talouden ja teknisen ylläpidon. Toimintamme perustuu suunnitelmallisuuteen, avoimuuteen ja sujuvaan asiakaspalveluun.</p>
-              <p className='pb-1 pb-sm-2 pb-lg-3'>Vuodesta 2009 lähtien olemme palvelleet niin pieniä kuin suuria kiinteistöjä vahvalla ammattitaidolla ja paikallistuntemuksella. Tavoitteenamme on varmistaa kiinteistöjen arvon säilyminen sekä turvallinen ja viihtyisä asuminen.</p>
+              <h3 className='pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.title')}</h3>
+              <p>{t('propertyLanding.introduction.paragraph1')}</p>
+              <p className='pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.paragraph2')}</p>
               <ArrowButton
-                label="Kysy tarjous isännöinnistä"
+                label={t('propertyLanding.introduction.cta')}
                 onClick={handleQuoteRequest}
                 variant="orange"
               />
             </div>
             <div className='col-lg-5 col-xl-6 d-none d-lg-flex justify-content-center'>
-              <img src={HouseImage} alt="House-Image" className="Introduction-Image" />
+              <img src={HouseImage} alt={t('propertyLanding.images.introductionAlt')} className="Introduction-Image" />
             </div>
           </div>
         </div>
@@ -52,8 +55,8 @@ function PropertyManagementLanding() {
         <div className='col-12'>
           <div className='row d-flex justify-content-center'>
             <div className='col-12 col-md-10 col-xl-8 text-center pb-5'>
-              <h3 className='pb-3'>Apunamme ovat paikalliset yhteistyökumppanit</h3>
-              <p>Vakiintuneesta verkostostamme löytyy ammattitaitoinen apu kaikkiin kiinteistöhuollon, rakentamisen ja korjausrakentamisen tehtäviin. Yhteistyökumppanimme allekirjoittavat saman laatulupauksen kuin me, jotta suuretkin remontit hoituvat laadukkaasti maaliin.</p>
+              <h3 className='pb-3'>{t('propertyLanding.partners.title')}</h3>
+              <p>{t('propertyLanding.partners.paragraph1')}</p>
             </div>
           </div>
           <div className='col-12 d-flex justify-content-center'>
@@ -66,9 +69,9 @@ function PropertyManagementLanding() {
         <div className='col-10'>
           <div className='row d-flex justify-content-start'>
             <div className='col-9 pb-5'>
-              <h3 className='pb-3'>Sujuvaa asiointia sähköisillä lomakkeilla</h3>
-              <p>Löydät kaikki tärkeimmät lomakkeemme yhdestä paikasta. Olitpa tekemässä muuttoilmoitusta, tilaamassa isännöitsijätodistusta tai ilmoittamassa viasta, sähköinen asiointimme palvelee sinua ympäri vuorokauden.</p>
-              <p>Sähköisten lomakkeiden avulla ilmoituksesi siirtyy suoraan asiantuntijallemme käsiteltäväksi ilman turhia välikäsiä. Voit löytää kaikki lomakkeet isännöintiin liittyen täältä.</p>
+              <h3 className='pb-3'>{t('propertyLanding.forms.title')}</h3>
+              <p>{t('propertyLanding.forms.paragraph1')}</p>
+              <p>{t('propertyLanding.forms.paragraph2')}</p>
             </div>
           </div>
           <div className='col-12 d-flex justify-content-start'>

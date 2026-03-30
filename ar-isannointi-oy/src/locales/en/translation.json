@@ -1,0 +1,66 @@
+{
+  "language": {
+    "switchToEnglish": "In English",
+    "switchToFinnish": "In Finnish"
+  },
+  "nav": {
+    "contactDetails": "Contact",
+    "propertyManagement": {
+      "title": "Property management",
+      "links": {
+        "instructionsForResidents": "Instructions for residents",
+        "responsibilitySplitTable": "Responsibility split table",
+        "forms": "Forms",
+        "requestQuote": "Request a quote for property management",
+        "clientPages": "Client pages"
+      }
+    },
+    "realEstate": {
+      "title": "Real estate",
+      "links": {
+        "ourPropertiesForSale": "Our properties for sale",
+        "requestEstimate": "Request an estimate for your property",
+        "publicDeeds": "Public deed confirmations",
+        "offerDeals": "Offer transactions"
+      }
+    },
+    "rental": {
+      "title": "Rentals",
+      "links": {
+        "rentalProperties": "Our rental properties",
+        "rentalApplication": "Rental application",
+        "rentYourHome": "Rent out your home"
+      }
+    }
+  },
+  "propertyLanding": {
+    "hero": {
+      "header": "Professional property management in Kankaanpää",
+      "button": "Forms"
+    },
+    "introduction": {
+      "title": "Reliable, customer-focused property management",
+      "paragraph1": "We provide comprehensive property management services covering administration, finances, and technical maintenance. Our work is built on planning, transparency, and smooth customer service.",
+      "paragraph2": "Since 2009, we have served both small and large properties with strong expertise and local knowledge. Our goal is to preserve property value and ensure safe, comfortable living.",
+      "cta": "Request a quote for property management"
+    },
+    "partners": {
+      "title": "We work with local partners",
+      "paragraph1": "Our established network includes professional help for all property maintenance, construction, and renovation work. Our partners commit to the same quality promise as we do, so even large renovations are completed to a high standard."
+    },
+    "forms": {
+      "title": "Easy service with online forms",
+      "paragraph1": "You can find all our most important forms in one place. Whether you're submitting a move notice, ordering a property manager’s certificate, or reporting an issue, our online service is available around the clock.",
+      "paragraph2": "With online forms, your request goes directly to our specialist for processing without unnecessary middlemen. You can find all property-management-related forms here.",
+      "cards": {
+        "consumptionReading": "Meter reading",
+        "alterationAndRepairNotice": "Alteration and repair work notice",
+        "faultReport": "Fault report"
+      }
+    },
+    "images": {
+      "introductionAlt": "House image"
+    }
+  }
+}
+

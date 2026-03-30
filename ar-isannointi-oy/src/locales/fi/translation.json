@@ -1,0 +1,66 @@
+{
+  "language": {
+    "switchToEnglish": "In English",
+    "switchToFinnish": "Suomeksi"
+  },
+  "nav": {
+    "contactDetails": "Yhteystiedot",
+    "propertyManagement": {
+      "title": "Isännöinti",
+      "links": {
+        "instructionsForResidents": "Ohjeita taloyhtiön asukkaille",
+        "responsibilitySplitTable": "Vastuunjakotaulukko",
+        "forms": "Lomakkeet",
+        "requestQuote": "Pyydä tarjous isännöinnistä",
+        "clientPages": "Asiakassivut"
+      }
+    },
+    "realEstate": {
+      "title": "Kiinteistönvälitys",
+      "links": {
+        "ourPropertiesForSale": "Myyntikohteemme",
+        "requestEstimate": "Pyydä arvio kohteestasi",
+        "publicDeeds": "Julkiset kaupanvahvistukset",
+        "offerDeals": "Tarjouskaupat"
+      }
+    },
+    "rental": {
+      "title": "Vuokraus",
+      "links": {
+        "rentalProperties": "Vuokrakohteemme",
+        "rentalApplication": "Vuokrahakemus",
+        "rentYourHome": "Vuokraa asuntosi"
+      }
+    }
+  },
+  "propertyLanding": {
+    "hero": {
+      "header": "Ammattitaitoista isännöintiä Kankaanpäässä",
+      "button": "Lomakkeet"
+    },
+    "introduction": {
+      "title": "Luotettavaa ja asiakaslähtöistä isännöintiä",
+      "paragraph1": "Tarjoamme kokonaisvaltaista isännöintipalvelua, joka kattaa kiinteistön hallinnon, talouden ja teknisen ylläpidon. Toimintamme perustuu suunnitelmallisuuteen, avoimuuteen ja sujuvaan asiakaspalveluun.",
+      "paragraph2": "Vuodesta 2009 lähtien olemme palvelleet niin pieniä kuin suuria kiinteistöjä vahvalla ammattitaidolla ja paikallistuntemuksella. Tavoitteenamme on varmistaa kiinteistöjen arvon säilyminen sekä turvallinen ja viihtyisä asuminen.",
+      "cta": "Kysy tarjous isännöinnistä"
+    },
+    "partners": {
+      "title": "Apunamme ovat paikalliset yhteistyökumppanit",
+      "paragraph1": "Vakiintuneesta verkostostamme löytyy ammattitaitoinen apu kaikkiin kiinteistöhuollon, rakentamisen ja korjausrakentamisen tehtäviin. Yhteistyökumppanimme allekirjoittavat saman laatulupauksen kuin me, jotta suuretkin remontit hoituvat laadukkaasti maaliin."
+    },
+    "forms": {
+      "title": "Sujuvaa asiointia sähköisillä lomakkeilla",
+      "paragraph1": "Löydät kaikki tärkeimmät lomakkeemme yhdestä paikasta. Olitpa tekemässä muuttoilmoitusta, tilaamassa isännöitsijätodistusta tai ilmoittamassa viasta, sähköinen asiointimme palvelee sinua ympäri vuorokauden.",
+      "paragraph2": "Sähköisten lomakkeiden avulla ilmoituksesi siirtyy suoraan asiantuntijallemme käsiteltäväksi ilman turhia välikäsiä. Voit löytää kaikki lomakkeet isännöintiin liittyen täältä.",
+      "cards": {
+        "consumptionReading": "Kulutuslukema",
+        "alterationAndRepairNotice": "Muutos- ja korjaustyöilmoitus",
+        "faultReport": "Vikailmoitus"
+      }
+    },
+    "images": {
+      "introductionAlt": "House image"
+    }
+  }
+}
+
