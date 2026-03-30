@@ -60,6 +60,11 @@
     },
     "images": {
       "introductionAlt": "House image"
+    },
+    "CTA-Responsibility-Section": {
+      "title": "Kuka vastaa ja kuka korjaa?",
+      "paragraph1": "Milloin korjausvastuu on taloyhtiöllä ja milloin osakkaalla? Selkeä vastuunjakotaulukkomme auttaa sinua ymmärtämään kunnossapitovastuun rajat niin sisätiloissa kuin rakenteissakin.",
+      "cta": "Katso vastuunjakotaulukko"
     }
   }
 }

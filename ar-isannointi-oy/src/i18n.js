@@ -27,5 +27,15 @@ await i18n
     }
   })
 
+/** Keeps <html lang> in sync with the active locale (accessibility / document language). */
+function syncHtmlLang(lng) {
+  if (typeof document === 'undefined') return
+  const code = (lng ?? i18n.resolvedLanguage ?? i18n.language ?? 'fi').split('-')[0]
+  document.documentElement.lang = code === 'en' ? 'en' : 'fi'
+}
+
+syncHtmlLang()
+i18n.on('languageChanged', syncHtmlLang)
+
 export default i18n
 

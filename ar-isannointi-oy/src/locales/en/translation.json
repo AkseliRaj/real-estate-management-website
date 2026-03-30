@@ -60,6 +60,11 @@
     },
     "images": {
       "introductionAlt": "House image"
+    },
+    "CTA-Responsibility-Section": {
+      "title": "Who's responsible and who is fixing it?",
+      "paragraph1": "When is the responsibility for repairs the housing company and when the shareholder? Our clear responsibility distribution table will help you understand the boundaries of maintenance responsibility, both indoors and in structures.",
+      "cta": "Responsibility split table"
     }
   }
 }

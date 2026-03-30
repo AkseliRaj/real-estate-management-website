@@ -9,6 +9,12 @@
   height: auto;
 }
 
+.Responsibility-Image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem 0 0 1rem;
+}
+
 .Form-Card {
   padding: 1.8rem 2.5rem;
   border: 1px solid #BEBEBE;
