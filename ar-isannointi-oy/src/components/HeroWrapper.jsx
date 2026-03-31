@@ -35,7 +35,8 @@ function HeroWrapper({
       </div>
       <div className="col-12 hero-content text-white">
         <div className="col-12 col-sm-10 hero-content-inner">
-          <h1 className='hero-content-header pb-2 pb-md-4'>{headerText}</h1>
+          <h1 className='hero-content-header d-none d-md-block pb-2 pb-md-4'>{headerText}</h1>
+          <h4 className='hero-content-header d-block d-md-none pb-2 pb-md-4'>{headerText}</h4>
           <ArrowButton
             label={buttonText}
             onClick={onButtonClick}

@@ -37,7 +37,8 @@ function PropertyManagementLanding() {
         <div className='col-11 col-xl-10'>
           <div className='row gx-0 align-items-center justify-content-center'>
             <div className='col-12 col-lg-6'>
-              <h3 className='pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.title')}</h3>
+              <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.title')}</h3>
+              <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.title')}</h4>
               <p>{t('propertyLanding.introduction.paragraph1')}</p>
               <p className='pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.paragraph2')}</p>
               <ArrowButton
@@ -56,8 +57,9 @@ function PropertyManagementLanding() {
       <div className='Logo-Marquee-Section row gx-0 d-flex justify-content-center'>
         <div className='col-12'>
           <div className='row gx-0 d-flex justify-content-center'>
-            <div className='col-12 col-md-10 col-xl-8 text-center pb-5'>
-              <h3 className='pb-3'>{t('propertyLanding.partners.title')}</h3>
+            <div className='col-11 col-md-10 col-xl-8 text-start text-md-center pb-5'>
+              <h3 className='pb-3 d-none d-md-block'>{t('propertyLanding.partners.title')}</h3>
+              <h4 className='pb-3 d-block d-md-none'>{t('propertyLanding.partners.title')}</h4>
               <p>{t('propertyLanding.partners.paragraph1')}</p>
             </div>
           </div>
