@@ -53,7 +53,7 @@
 }
 
 .Article-Item + .Article-Item {
-  margin-top: clamp(2rem, 4vw, 4rem);
+  margin-top: clamp(4rem, 5vw, 6rem);
 }
 
 @media (max-width: 992px) {

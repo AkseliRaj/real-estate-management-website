@@ -1,4 +1,5 @@
 import '../css/PropertyManagementLanding.css';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import ArrowButton from '../components/ArrowButtonOrange.jsx';
@@ -11,10 +12,52 @@ import HeroWrapper from '../components/HeroWrapper.jsx';
 import LogoCarousel from '../components/MarqueeCarousel.jsx';
 import FormCardGrid from '../components/FormCardGrid.jsx';
 
+const RSS_FEED_URL = '/api/isannointiliitto-rss';
+const RSS_ITEMS_LIMIT = 3;
+
+function htmlToPlainText(html = '') {
+  const parser = new DOMParser();
+  const htmlDoc = parser.parseFromString(html, 'text/html');
+  const text = htmlDoc.body?.textContent ?? '';
+  const cleaned = text.replace(/\s+/g, ' ').trim();
+  return cleaned.split(/The post /i)[0].trim();
+}
+
+function getElementText(parent, selector) {
+  return parent.querySelector(selector)?.textContent?.trim() ?? '';
+}
+
+function parseRssItems(xmlText, limit = RSS_ITEMS_LIMIT) {
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+  const hasParseError = xmlDoc.querySelector('parsererror');
+  if (hasParseError) return [];
+
+  return Array.from(xmlDoc.querySelectorAll('item'))
+    .slice(0, limit)
+    .map((item, index) => {
+      const heading = getElementText(item, 'title');
+      const ctaHref = getElementText(item, 'link');
+      const descriptionHtml = getElementText(item, 'description');
+      const pubDate = getElementText(item, 'pubDate');
+      const bodyText = htmlToPlainText(descriptionHtml);
+
+      return {
+        id: getElementText(item, 'guid') || ctaHref || `rss-news-${index + 1}`,
+        heading,
+        mobileHeading: heading,
+        body: pubDate ? `${bodyText} (${new Date(pubDate).toLocaleDateString('fi-FI')})` : bodyText,
+        ctaHref,
+      };
+    })
+    .filter((item) => item.heading && item.ctaHref);
+}
+
 
 function PropertyManagementLanding() {
 
   const { t } = useTranslation()
+  const [rssNewsItems, setRssNewsItems] = useState([]);
 
   const formCardItems = [
     { heading: t('propertyLanding.forms.cards.consumptionReading') },
@@ -23,7 +66,36 @@ function PropertyManagementLanding() {
   ];
 
   const faqItems = t('propertyLanding.FAQ-Section.items', { returnObjects: true, defaultValue: [] });
-  const newsItems = t('propertyLanding.IL-News-Section.items', { returnObjects: true, defaultValue: [] });
+  const fallbackNewsItems = t('propertyLanding.IL-News-Section.items', { returnObjects: true, defaultValue: [] });
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchRssNews = async () => {
+      try {
+        const response = await fetch(RSS_FEED_URL);
+        if (!response.ok) throw new Error('RSS request failed');
+
+        const xmlText = await response.text();
+        const parsedItems = parseRssItems(xmlText);
+        if (isMounted && parsedItems.length > 0) {
+          setRssNewsItems(parsedItems);
+        }
+      } catch {
+        if (isMounted) {
+          setRssNewsItems([]);
+        }
+      }
+    };
+
+    fetchRssNews();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const newsItems = rssNewsItems.length > 0 ? rssNewsItems : fallbackNewsItems;
 
   const handleQuoteRequest = () => {
     console.log("Tarjouspyyntö lähetetty!");
@@ -144,23 +216,22 @@ function PropertyManagementLanding() {
               <h3 className='pb-3 d-none d-md-block'>{t('propertyLanding.IL-News-Section.title')}</h3>
               <h4 className='pb-2 d-block d-md-none'>{t('propertyLanding.IL-News-Section.title')}</h4>
             </div>
-            <div className='col-12 d-flex justify-content-center'>
-              <div className='col-11 col-xxl-9'>
-                <ArticleGrid
-                  items={newsItems}
-                  defaultImage={ResponsibilityImage}
-                  defaultImageAlt={t('propertyLanding.images.introductionAlt')}
-                  ctaLabel={t('propertyLanding.IL-News-Section.CTA')}
-                  onCtaClick={handleQuoteRequest}
-                />
-              </div>
+            <div className='col-11 col-md-10 col-xl-8 d-flex justify-content-center'>
+              <ArticleGrid
+                items={newsItems}
+                defaultImage={ResponsibilityImage}
+                defaultImageAlt={t('propertyLanding.images.introductionAlt')}
+                ctaLabel={t('propertyLanding.IL-News-Section.CTA')}
+                onCtaClick={handleQuoteRequest}
+              />
             </div>
           </div>
-
         </div>
-      </div>
 
+    
     </div>
+
+    </div >
   )
 }
 

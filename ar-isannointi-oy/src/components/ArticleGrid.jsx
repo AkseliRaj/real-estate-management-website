@@ -18,9 +18,8 @@ export default function ArticleGrid({
           heading={item.heading}
           mobileHeading={item.mobileHeading}
           body={item.body}
-          image={item.image ?? defaultImage}
-          imageAlt={item.imageAlt ?? defaultImageAlt}
           ctaLabel={item.ctaLabel ?? ctaLabel}
+          ctaHref={item.ctaHref}
           onCtaClick={item.onCtaClick ?? onCtaClick}
         />
       ))}
