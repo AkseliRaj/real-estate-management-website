@@ -1,7 +1,7 @@
 .main-layout {
   display: flex;
   flex-direction: column;
-  gap: clamp(4.7rem, 15vw, 15rem);
+  gap: clamp(5.5rem, 15vw, 15rem);
 }
 
 .Introduction-Image {

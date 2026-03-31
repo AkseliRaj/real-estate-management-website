@@ -65,6 +65,28 @@
       "title": "Who's responsible and who is fixing it?",
       "paragraph1": "When is the responsibility for repairs the housing company and when the shareholder? Our clear responsibility distribution table will help you understand the boundaries of maintenance responsibility, both indoors and in structures.",
       "cta": "Responsibility split table"
+    },
+    "FAQ-Section": {
+      "title": "Frequently asked questions",
+      "paragraph1": "We have gathered helpful guidance and practical tips for living in a housing company.",
+      "cta": "Instructions for residents",
+      "items": [
+        {
+          "id": "item-1",
+          "heading": "How do I submit a fault report?",
+          "body": "You can submit a fault report with the online form at any time. The report is sent directly to the right specialist for processing."
+        },
+        {
+          "id": "item-2",
+          "heading": "Where can I find the housing company forms?",
+          "body": "You can find all key property-management forms in one place on our website, and they are available 24/7."
+        },
+        {
+          "id": "item-3",
+          "heading": "When do I need an alteration and repair notice?",
+          "body": "If you plan apartment changes that may affect structures or systems maintained by the housing company, submit the notice before starting the work."
+        }
+      ]
     }
   }
 }

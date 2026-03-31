@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Logo from '../../assets/webp/Logo.webp';
@@ -11,8 +11,10 @@ import { NAV_SECTIONS } from './navData';
 const MobileNavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
+    const [isNavHidden, setIsNavHidden] = useState(false);
     const { t, i18n } = useTranslation()
     const isEnglish = i18n.language?.startsWith('en')
+    const lastScrollYRef = useRef(0);
 
     const handleMenuToggle = () => {
         setIsMenuOpen((prev) => {
@@ -44,6 +46,31 @@ const MobileNavBar = () => {
         };
     }, [isMenuOpen]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const isDesktop = window.innerWidth >= 992;
+            const isNearTop = currentScrollY <= 24;
+
+            if (isDesktop || isMenuOpen || isNearTop) {
+                setIsNavHidden(false);
+                lastScrollYRef.current = currentScrollY;
+                return;
+            }
+
+            const isScrollingDown = currentScrollY > lastScrollYRef.current;
+            setIsNavHidden(isScrollingDown);
+            lastScrollYRef.current = currentScrollY;
+        };
+
+        lastScrollYRef.current = window.scrollY;
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isMenuOpen]);
+
     const handleLanguageToggle = (e) => {
         e.preventDefault()
         const nextLng = isEnglish ? 'fi' : 'en'
@@ -55,7 +82,7 @@ const MobileNavBar = () => {
     }
 
     return (
-        <nav className={`navbar navbar-expand-lg navbar-light${isMenuOpen ? ' mobile-menu-open' : ''}`}>
+        <nav className={`navbar navbar-expand-lg navbar-light${isMenuOpen ? ' mobile-menu-open' : ''}${isNavHidden ? ' mobile-nav-hidden' : ''}`}>
             <div className="container-fluid px-2 px-sm-4 mobile-nav-top">
                 <a className="navbar-brand" href="#">
                     <img src={Logo} alt="AR-Logo" height="60" />

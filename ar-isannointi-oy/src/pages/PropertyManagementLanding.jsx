@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import ArrowButton from '../components/ArrowButtonOrange.jsx';
 import HouseImage from '../assets/svg/HouseMagnifierImage.svg';
 import ResponsibilityImage from '../assets/webp/ResponsibilitySectionImage.webp';
+import AccordionMenuGrid from '../components/AccordionMenuGrid.jsx';
 
 import HeroWrapper from '../components/HeroWrapper.jsx';
 import LogoCarousel from '../components/MarqueeCarousel.jsx';
@@ -19,6 +20,8 @@ function PropertyManagementLanding() {
     { heading: t('propertyLanding.forms.cards.faultReport') },
     { heading: t('propertyLanding.forms.cards.alterationAndRepairNotice') }
   ];
+
+  const faqItems = t('propertyLanding.FAQ-Section.items', { returnObjects: true, defaultValue: [] });
 
   const handleQuoteRequest = () => {
     console.log("Tarjouspyyntö lähetetty!");
@@ -70,7 +73,7 @@ function PropertyManagementLanding() {
       </div>
 
       <div className='Logo-Marquee-Section row gx-0 d-flex justify-content-center'>
-        <div className='col-11'>
+        <div className='col-11 col-xxl-9'>
           <div className='row gx-0 d-flex justify-content-start pb-3 pb-sm-4 pb-md-5'>
             <div className='col-11 col-xl-8'>
               <h3 className='pb-3 d-none d-md-block'>{t('propertyLanding.forms.title')}</h3>
@@ -90,15 +93,15 @@ function PropertyManagementLanding() {
       </div>
 
       <div className='Text-Picture-Section row gx-0 d-flex justify-content-center'>
-        <div className='col-11'>
+        <div className='col-11 col-xxl-9'>
           <div className='d-block d-md-none col-12 col-sm-11 pb-5'>
             <img src={ResponsibilityImage} alt={t('propertyLanding.images.introductionAlt')} className="Responsibility-Image" />
           </div>
           <div className='row gx-0 justify-content-between align-items-center'>
             <div className='col-12 col-sm-11 col-md-6 col-lg-5 col-xl-6 col-xxl-5'>
               <h3 className='pb-3 d-none d-md-block'>{t('propertyLanding.CTA-Responsibility-Section.title')}</h3>
-              <h4 className='pb-3 d-block d-md-none'>{t('propertyLanding.CTA-Responsibility-Section.title')}</h4>
-              <p className='pb-3'>{t('propertyLanding.CTA-Responsibility-Section.paragraph1')}</p>
+              <h4 className='pb-1 d-block d-md-none'>{t('propertyLanding.CTA-Responsibility-Section.title')}</h4>
+              <p className='pb-1 pb-md-3'>{t('propertyLanding.CTA-Responsibility-Section.paragraph1')}</p>
               <ArrowButton
                 label={t('propertyLanding.CTA-Responsibility-Section.cta')}
                 onClick={handleQuoteRequest}
@@ -107,6 +110,26 @@ function PropertyManagementLanding() {
             </div>
             <div className='d-none d-md-flex justify-content-end col-5'>
               <img src={ResponsibilityImage} alt={t('propertyLanding.images.introductionAlt')} className="Responsibility-Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='FAQ-Section row gx-0 d-flex justify-content-center'>
+        <div className='col-11 col-xxl-9'>
+          <div className='row gx-0 d-flex justify-content-between gap-5 pb-3 pb-sm-4 pb-md-5'>
+            <div className='col-12 col-sm-11 col-md-5 col-lg-4 col-xl-5 col-xxl-5'>
+              <h3 className='pb-3 d-none d-md-block'>{t('propertyLanding.FAQ-Section.title')}</h3>
+              <h4 className='pb-1 d-block d-md-none'>{t('propertyLanding.FAQ-Section.title')}</h4>
+              <p className='pb-1 pb-md-3'>{t('propertyLanding.FAQ-Section.paragraph1')}</p>
+              <ArrowButton
+                label={t('propertyLanding.FAQ-Section.cta')}
+                onClick={handleQuoteRequest}
+                variant="orange"
+              />
+            </div>
+            <div className='col-12 col-md-5'>
+              <AccordionMenuGrid items={faqItems} />
             </div>
           </div>
         </div>

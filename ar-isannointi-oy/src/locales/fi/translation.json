@@ -65,6 +65,28 @@
       "title": "Kuka vastaa ja kuka korjaa?",
       "paragraph1": "Milloin korjausvastuu on taloyhtiöllä ja milloin osakkaalla? Selkeä vastuunjakotaulukkomme auttaa sinua ymmärtämään kunnossapitovastuun rajat niin sisätiloissa kuin rakenteissakin.",
       "cta": "Katso vastuunjakotaulukko"
+    },
+    "FAQ-Section": {
+      "title": "Usein kysytyt kysymykset",
+      "paragraph1": "Olemme keränneet avuksenne  joukon ohjeita ja vinkkejä taloyhtiössä asumisesta. ",
+      "cta": "Ohjeet taloyhtiölle",
+      "items": [
+        {
+          "id": "item-1",
+          "heading": "Miten teen vikailmoituksen?",
+          "body": "Voit lähettää vikailmoituksen sähköisellä lomakkeella milloin tahansa. Ilmoitus ohjautuu suoraan oikealle asiantuntijalle käsiteltäväksi."
+        },
+        {
+          "id": "item-2",
+          "heading": "Mistä löydän taloyhtiön lomakkeet?",
+          "body": "Löydät kaikki isännöinnin tärkeimmät lomakkeet verkkosivuilta samasta paikasta. Lomakkeet ovat käytettävissä ympäri vuorokauden."
+        },
+        {
+          "id": "item-3",
+          "heading": "Milloin tarvitsen muutos- ja korjaustyöilmoituksen?",
+          "body": "Kun suunnittelet huoneistoon muutoksia, jotka voivat vaikuttaa rakenteisiin tai taloyhtiön vastuulla oleviin järjestelmiin, tee ilmoitus ennen työn aloittamista."
+        }
+      ]
     }
   }
 }
