@@ -87,7 +87,18 @@
           "body": "Kun suunnittelet huoneistoon muutoksia, jotka voivat vaikuttaa rakenteisiin tai taloyhtiön vastuulla oleviin järjestelmiin, tee ilmoitus ennen työn aloittamista."
         }
       ]
+    },
+    "IL-News-Section": {
+      "title": "Ajankohtaisimmat uutiset Isännöintiliitosta",
+      "CTA": "Katso koko uutinen",
+      "items": [
+        {
+          "id": "news-1",
+          "heading": "Ajankohtaista taloyhtiöiden energiaremonteista",
+          "mobileHeading": "Ajankohtaista energiaremonteista",
+          "body": "Isännöintiliiton uusimmassa artikkelissa käydään läpi, miten taloyhtiö voi suunnitella energiaremontin vaiheittain ja välttää yleisimmät kompastuskivet."
+        }
+      ]
     }
   }
 }
-

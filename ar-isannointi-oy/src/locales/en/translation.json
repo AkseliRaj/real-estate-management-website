@@ -87,7 +87,18 @@
           "body": "If you plan apartment changes that may affect structures or systems maintained by the housing company, submit the notice before starting the work."
         }
       ]
+    },
+    "IL-News-Section": {
+      "title": "Latest news from Isännöintiliitto",
+      "CTA": "Read whole article",
+      "items": [
+        {
+          "id": "news-1",
+          "heading": "Current updates on housing company energy renovations",
+          "mobileHeading": "Updates on energy renovations",
+          "body": "The latest article from Isännöintiliitto explains how a housing company can plan an energy renovation step by step and avoid the most common pitfalls."
+        }
+      ]
     }
   }
 }
-

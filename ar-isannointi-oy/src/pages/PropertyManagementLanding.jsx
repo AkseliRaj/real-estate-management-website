@@ -5,6 +5,7 @@ import ArrowButton from '../components/ArrowButtonOrange.jsx';
 import HouseImage from '../assets/svg/HouseMagnifierImage.svg';
 import ResponsibilityImage from '../assets/webp/ResponsibilitySectionImage.webp';
 import AccordionMenuGrid from '../components/AccordionMenuGrid.jsx';
+import ArticleGrid from '../components/ArticleGrid.jsx';
 
 import HeroWrapper from '../components/HeroWrapper.jsx';
 import LogoCarousel from '../components/MarqueeCarousel.jsx';
@@ -22,6 +23,7 @@ function PropertyManagementLanding() {
   ];
 
   const faqItems = t('propertyLanding.FAQ-Section.items', { returnObjects: true, defaultValue: [] });
+  const newsItems = t('propertyLanding.IL-News-Section.items', { returnObjects: true, defaultValue: [] });
 
   const handleQuoteRequest = () => {
     console.log("Tarjouspyyntö lähetetty!");
@@ -132,6 +134,29 @@ function PropertyManagementLanding() {
               <AccordionMenuGrid items={faqItems} />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className='News-Section row gx-0 d-flex justify-content-center'>
+        <div className='col-12'>
+          <div className='row gx-0 d-flex justify-content-center'>
+            <div className='col-11 col-md-10 col-xl-8 text-start text-md-center pb-3 pb-sm-4 pb-md-5'>
+              <h3 className='pb-3 d-none d-md-block'>{t('propertyLanding.IL-News-Section.title')}</h3>
+              <h4 className='pb-2 d-block d-md-none'>{t('propertyLanding.IL-News-Section.title')}</h4>
+            </div>
+            <div className='col-12 d-flex justify-content-center'>
+              <div className='col-11 col-xxl-9'>
+                <ArticleGrid
+                  items={newsItems}
+                  defaultImage={ResponsibilityImage}
+                  defaultImageAlt={t('propertyLanding.images.introductionAlt')}
+                  ctaLabel={t('propertyLanding.IL-News-Section.CTA')}
+                  onCtaClick={handleQuoteRequest}
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

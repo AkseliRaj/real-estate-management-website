@@ -48,6 +48,14 @@
   width: 85%;
 }
 
+.Article-Grid {
+  width: 100%;
+}
+
+.Article-Item + .Article-Item {
+  margin-top: clamp(2rem, 4vw, 4rem);
+}
+
 @media (max-width: 992px) {
   .Property-Form-Card-Grid {
     width: 100%;
