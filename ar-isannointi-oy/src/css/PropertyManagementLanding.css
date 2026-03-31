@@ -12,7 +12,8 @@
 .Responsibility-Image {
   max-width: 100%;
   height: auto;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1rem;
+  border: 1px solid #BEBEBE;
 }
 
 .Form-Card {
@@ -44,5 +45,46 @@
     minmax(min(100%, var(--form-card-min, 14rem)), 1fr)
   );
   gap: 1.25rem;
-  width: 100%;
+  width: 85%;
+}
+
+@media (max-width: 992px) {
+  .Property-Form-Card-Grid {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .Form-Card {
+    padding: 1.25rem 1rem;
+    border-radius: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Property-Form-Card-Grid {
+    gap: 0.75rem;
+  }
+
+  .Form-Card {
+    padding: 1rem 0.85rem;
+  }
+
+  .Form-Card-Heading {
+    margin: 0;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 398px) {
+  .Form-Icon {
+    max-width: 15%;
+  }
+
+  .Form-Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }

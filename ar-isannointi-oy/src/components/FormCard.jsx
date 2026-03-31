@@ -14,7 +14,8 @@ export default function FormCard({
         alt={iconAlt ?? heading}
         className="Form-Icon"
       />
-      <h4 className="Form-Card-Heading pt-4">{heading}</h4>
+      <h5 className="Form-Card-Heading d-none d-md-block pt-4">{heading}</h5>
+      <h6 className="Form-Card-Heading d-block d-md-none pt-4">{heading}</h6>
     </div>
   );
 }

@@ -8,13 +8,15 @@ import SeutuverkkoLogo from '../assets/webp/PohjoisSatakunnanSeutuverkkoLogo.web
 
 export default function MarqueeCarousel() {
     const images = [KankaanpäänKiinteistohuoltoLogo, KnuutilaLogo, KuusistonLasiLogo, LVIPeltomakiLogo, SeutuverkkoLogo];
+    const loopCopies = 4;
+    const loopImages = Array.from({ length: loopCopies }, () => images).flat();
 
     return (
         <div className="marquee-container">
             <div className="marquee-content">
-                {/* Render the images twice for a seamless loop */}
-                {[...images, ...images].map((img, index) => (
-                    <img key={index} src={img} alt="Logo" style={{ height: '50px' }} />
+                {/* Render multiple copies so larger screens stay filled */}
+                {loopImages.map((img, index) => (
+                    <img key={index} src={img} alt="Logo" />
                 ))}
             </div>
         </div>

@@ -53,8 +53,8 @@
       "paragraph1": "Löydät kaikki tärkeimmät lomakkeemme yhdestä paikasta. Olitpa tekemässä muuttoilmoitusta, tilaamassa isännöitsijätodistusta tai ilmoittamassa viasta, sähköinen asiointimme palvelee sinua ympäri vuorokauden.",
       "paragraph2": "Sähköisten lomakkeiden avulla ilmoituksesi siirtyy suoraan asiantuntijallemme käsiteltäväksi ilman turhia välikäsiä. Voit löytää kaikki lomakkeet isännöintiin liittyen täältä.",
       "cards": {
-        "consumptionReading": "Kulutuslukema",
-        "alterationAndRepairNotice": "Muutos- ja korjaustyöilmoitus",
+        "consumptionReading": "Kulutus\u00ADlukemat",
+        "alterationAndRepairNotice": "Muutos- ja korjaus\u00ADtyöilmoitus",
         "faultReport": "Vikailmoitus"
       }
     },
