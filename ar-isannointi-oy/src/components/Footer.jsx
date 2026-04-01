@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="Site-Footer">
             <div className="container-fluid">
 
-                <div className="row pt-5 mb-5 px-5">
+                <div className="row pt-5 mb-2 mb-md-3 px-2 px-sm-5">
                     <div className="col">
                         <a className="navbar-brand" href="#">
                             <img src={Logo} alt="AR-Logo" height="65" />
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="row justify-content-between p-5">
+                <div className="row justify-content-between pt-5 mb-5 mb-sm-5 px-2 px-sm-5">
                     {FOOTER_SECTIONS.map((section) => (
                         <div key={section.titleKey} className="col-12 col-md-6 col-lg-3 mb-5">
                             <h5 className='pb-1 pb-md-3'>{t(section.titleKey)}</h5>

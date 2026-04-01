@@ -1,0 +1,33 @@
+.FormPageBanner {
+    background: #F57021;
+}
+
+.form-banner-header {
+    color: white;
+}
+
+.Pen-Paper-Icon-Mask {
+    padding: 5rem;
+    overflow: hidden;
+    width: 100%;
+    height: 19rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Pen-Paper-Icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: auto;
+    height: 20rem;
+    max-width: none;
+}
+
+@media (max-width: 992px) {
+    .form-banner-header {
+        padding-top: clamp(3rem, 1vw, 6rem);
+        padding-bottom: clamp(3rem, 1vw, 6rem);
+    }
+}

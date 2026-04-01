@@ -1,10 +1,12 @@
 import React from 'react';
+import FormPageBanner from '../components/FormPageBanner';
 
 const NewPage = () => {
     return (
-        <div className="container py-5">
-            <h1>Tänne tulee pyydä tarjous isännöinnistä</h1>
-            <p>This is a new page.</p>
+        <div className="container-fluid px-0">
+            <div>
+                <FormPageBanner />
+            </div>
         </div>
     );
 };
