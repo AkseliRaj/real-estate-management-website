@@ -1,47 +1,7 @@
 import '../css/Footer.css'
 import { useTranslation } from 'react-i18next';
 import Logo from '../assets/webp/BigLogoNegative.webp';
-
-const FOOTER_SECTIONS = [
-    {
-        titleKey: 'footer.contact.title',
-        links: [
-            { labelKey: 'footer.contact.links.address', href: '#' },
-            { labelKey: 'footer.contact.links.phone', href: '#' },
-            { labelKey: 'footer.contact.links.email', href: '#' },
-            { labelKey: 'footer.contact.links.privacyPolicy', href: '#' }
-        ]
-    },
-    {
-        titleKey: 'footer.propertyManagement.title',
-        links: [
-            { labelKey: 'footer.propertyManagement.links.propertyManagement', href: '#' },
-            { labelKey: 'footer.propertyManagement.links.instructionsForResidents', href: '#' },
-            { labelKey: 'footer.propertyManagement.links.responsibilitySplitTable', href: '#' },
-            { labelKey: 'footer.propertyManagement.links.forms', href: '#' },
-            { labelKey: 'footer.propertyManagement.links.requestQuote', href: '#' }
-        ]
-    },
-    {
-        titleKey: 'footer.realEstate.title',
-        links: [
-            { labelKey: 'footer.realEstate.links.realEstate', href: '#' },
-            { labelKey: 'footer.realEstate.links.ourPropertiesForSale', href: '#' },
-            { labelKey: 'footer.realEstate.links.requestEstimate', href: '#' },
-            { labelKey: 'footer.realEstate.links.publicDeeds', href: '#' },
-            { labelKey: 'footer.realEstate.links.offerDeals', href: '#' }
-        ]
-    },
-    {
-        titleKey: 'footer.rental.title',
-        links: [
-            { labelKey: 'footer.rental.links.rental', href: '#' },
-            { labelKey: 'footer.rental.links.rentalProperties', href: '#' },
-            { labelKey: 'footer.rental.links.rentalApplication', href: '#' },
-            { labelKey: 'footer.rental.links.rentYourHome', href: '#' }
-        ]
-    }
-];
+import { FOOTER_SECTIONS } from '../data/siteLinks';
 
 const Footer = () => {
     const { t } = useTranslation()
@@ -76,7 +36,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='text-center pb-5'>
+            <div className='text-center pb-3'>
                 made by <a href="https://akselirajahalme.fi/" target="_blank">Akseli Rajahalme</a>
             </div>
         </footer>

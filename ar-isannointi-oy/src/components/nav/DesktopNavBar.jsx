@@ -36,7 +36,7 @@ const DesktopNavBar = () => {
                                         <div className="row g-0 align-items-center justify-content-center">
                                             <ul className="list-unstyled mb-0 py-3 col-4">
                                                 <li><img src={section.icon} alt="DropdownMenuIcon" className="NavBarIcon pb-5" /></li>
-                                                <li><a className="dropdown-item" id="Header" href="#">{t(section.titleKey)}</a></li>
+                                                <li><a className="dropdown-item" id="Header" href={section.href || '#'}>{t(section.titleKey)}</a></li>
                                                 {section.links.map((link) => (
                                                     <li key={link.labelKey}>
                                                         <a

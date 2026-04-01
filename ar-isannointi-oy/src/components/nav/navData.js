@@ -5,47 +5,24 @@ import PropertyManagementIcon from '../../assets/svg/PropertyManagementNavIcon.s
 import RealEstateDropdownImage from '../../assets/webp/RealEstateDropdownImage.webp';
 import RentalBrokerageDropdownImage from '../../assets/webp/RentalBrokerageDropdownImage.jpg';
 import PropertyManagementDropdownImage from '../../assets/webp/PropertyManagementDropdownImage.webp';
+import { NAV_SECTIONS_BASE } from '../../data/siteLinks';
 
-export const NAV_SECTIONS = [
-    {
-        key: 'propertyManagement',
-        titleKey: 'nav.propertyManagement.title',
+const NAV_ASSETS_BY_KEY = {
+    propertyManagement: {
         icon: PropertyManagementIcon,
-        image: PropertyManagementDropdownImage,
-        links: [
-            { labelKey: 'nav.propertyManagement.links.instructionsForResidents', href: '#' },
-            { labelKey: 'nav.propertyManagement.links.responsibilitySplitTable', href: '#' },
-            { labelKey: 'nav.propertyManagement.links.forms', href: '#' },
-            { labelKey: 'nav.propertyManagement.links.requestQuote', href: '#' },
-            {
-                labelKey: 'nav.propertyManagement.links.clientPages',
-                href: 'https://huoneistotieto.fi/fi-FI/account/app/login',
-                target: '_blank',
-                rel: 'noreferrer'
-            }
-        ]
+        image: PropertyManagementDropdownImage
     },
-    {
-        key: 'realEstate',
-        titleKey: 'nav.realEstate.title',
+    realEstate: {
         icon: RealEstateIcon,
-        image: RealEstateDropdownImage,
-        links: [
-            { labelKey: 'nav.realEstate.links.ourPropertiesForSale', href: '#' },
-            { labelKey: 'nav.realEstate.links.requestEstimate', href: '#' },
-            { labelKey: 'nav.realEstate.links.publicDeeds', href: '#' },
-            { labelKey: 'nav.realEstate.links.offerDeals', href: '#' }
-        ]
+        image: RealEstateDropdownImage
     },
-    {
-        key: 'rental',
-        titleKey: 'nav.rental.title',
+    rental: {
         icon: RentalBrokerageIcon,
-        image: RentalBrokerageDropdownImage,
-        links: [
-            { labelKey: 'nav.rental.links.rentalProperties', href: '#' },
-            { labelKey: 'nav.rental.links.rentalApplication', href: '#' },
-            { labelKey: 'nav.rental.links.rentYourHome', href: '#' }
-        ]
+        image: RentalBrokerageDropdownImage
     }
-];
+};
+
+export const NAV_SECTIONS = NAV_SECTIONS_BASE.map((section) => ({
+    ...section,
+    ...NAV_ASSETS_BY_KEY[section.key]
+}));
