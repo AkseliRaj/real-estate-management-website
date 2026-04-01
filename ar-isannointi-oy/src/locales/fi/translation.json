@@ -33,6 +33,46 @@
       }
     }
   },
+  "footer": {
+    "contact": {
+      "title": "Ota yhteyttä",
+      "links": {
+        "address": "Torikatu 11, PL 40, 38700 Kankaanpää",
+        "phone": "044 503 7793",
+        "email": "toimisto@arisannointi.fi",
+        "privacyPolicy": "Tietosuojaseloste"
+      }
+    },
+    "propertyManagement": {
+      "title": "Isännöinti",
+      "links": {
+        "propertyManagement": "Isännöinti",
+        "instructionsForResidents": "Ohjeita taloyhtiön asukkaille",
+        "responsibilitySplitTable": "Vastuunjakotaulukko",
+        "forms": "Lomakkeet",
+        "requestQuote": "Pyydä tarjous isännöinnistä"
+      }
+    },
+    "realEstate": {
+      "title": "Kiinteistönvälitys",
+      "links": {
+        "realEstate": "Kiinteistönvälitys",
+        "ourPropertiesForSale": "Myyntikohteemme",
+        "requestEstimate": "Pyydä arvio kohteestasi",
+        "publicDeeds": "Julkiset kaupanvahvistukset",
+        "offerDeals": "Tarjouskaupat"
+      }
+    },
+    "rental": {
+      "title": "Vuokraus",
+      "links": {
+        "rental": "Vuokraus",
+        "rentalProperties": "Vuokrakohteemme",
+        "rentalApplication": "Vuokrahakemus",
+        "rentYourHome": "Vuokraa asuntosi"
+      }
+    }
+  },
   "propertyLanding": {
     "hero": {
       "header": "Ammattitaitoista isännöintiä Kankaanpäässä",

@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import PropertyManagementLanding from './pages/PropertyManagementLanding';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+
+import PropertyManagementLanding from './pages/PropertyManagementLanding';
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PropertyManagementLanding />} />
       </Routes>
+      <Footer />
     </>
   )
 }

@@ -33,6 +33,46 @@
       }
     }
   },
+  "footer": {
+    "contact": {
+      "title": "Contact us",
+      "links": {
+        "address": "Torikatu 11, PL 40, 38700 Kankaanpaa",
+        "phone": "044 503 7793",
+        "email": "toimisto@arisannointi.fi",
+        "privacyPolicy": "Privacy policy"
+      }
+    },
+    "propertyManagement": {
+      "title": "Property management",
+      "links": {
+        "propertyManagement": "Property management",
+        "instructionsForResidents": "Instructions for residents",
+        "responsibilitySplitTable": "Responsibility split table",
+        "forms": "Forms",
+        "requestQuote": "Request a quote for property management"
+      }
+    },
+    "realEstate": {
+      "title": "Real estate",
+      "links": {
+        "realEstate": "Real estate",
+        "ourPropertiesForSale": "Our properties for sale",
+        "requestEstimate": "Request an estimate for your property",
+        "publicDeeds": "Public deed confirmations",
+        "offerDeals": "Offer transactions"
+      }
+    },
+    "rental": {
+      "title": "Rentals",
+      "links": {
+        "rental": "Rentals",
+        "rentalProperties": "Our rental properties",
+        "rentalApplication": "Rental application",
+        "rentYourHome": "Rent out your home"
+      }
+    }
+  },
   "propertyLanding": {
     "hero": {
       "header": "Professional property management in Kankaanpää",
