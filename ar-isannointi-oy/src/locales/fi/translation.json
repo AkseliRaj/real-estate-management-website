@@ -140,5 +140,11 @@
         }
       ]
     }
+  },
+  "PropertyManagementQuote": {
+    "banner": {
+      "heading": "Pyydä tarjous isännöinnistä",
+      "imageAlt": "Kynä ja paperi -ikoni"
+    }
   }
 }

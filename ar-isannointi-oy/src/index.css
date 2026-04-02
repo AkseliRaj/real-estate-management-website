@@ -12,7 +12,7 @@ body, a {
   overflow-x: hidden;
 }
 
-a {
+a, label {
   color: #333333;
 }
 
@@ -48,7 +48,7 @@ h4 { font-size: var(--step-3); }
 h5 { font-size: var(--step-2); }
 h6 { font-size: var(--step-1); }
 
-p {
+p, .form-label, .form-control {
   font-weight: 500;
   font-size: var(--step-0);
   line-height: 1.6;
@@ -61,4 +61,24 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-bottom: 1em;
   overflow-wrap: break-word;
+}
+
+.form-label {
+  margin-bottom: .5rem;
+  padding: 0;
+}
+
+.form-control {
+  border-radius: .8rem;
+  border: 1px solid #bebebe;
+  color: #333333;
+}
+
+.form-control:focus {
+  border: 1px solid #F57021;
+  box-shadow: none;
+}
+
+.Required-Asterisk {
+  color: #F57021;
 }

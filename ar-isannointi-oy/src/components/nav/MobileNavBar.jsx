@@ -132,7 +132,7 @@ const MobileNavBar = () => {
                                 <ul className={`dropdown-menu mobile-dropdown-menu${isDropdownOpen(section.key) ? ' show' : ''}`}>
                                     <li>
                                         <div className="row g-0 align-items-center justify-content-start">
-                                            <ul className="list-unstyled mb-0 py-3 col-4">
+                                            <ul className="list-unstyled mb-0 py-3 col-12">
                                                 <li>
                                                     <a
                                                         className="dropdown-item"

@@ -140,5 +140,11 @@
         }
       ]
     }
+  },
+  "PropertyManagementQuote": {
+    "banner": {
+      "heading": "Request a quote for property management",
+      "imageAlt": "Pen and paper icon"
+    }
   }
 }
