@@ -145,6 +145,30 @@
     "banner": {
       "heading": "Request a quote for property management",
       "imageAlt": "Pen and paper icon"
+    },
+    "intro": {
+      "heading": "Contact about property management",
+      "paragraph1": "Tell us briefly about your housing company's needs using the form provided. We will carefully review your situation and get back to you as soon as possible with a quote and next steps.",
+      "paragraph2": "If needed, we can also arrange a more detailed discussion where we go through the property management solution that best fits you. You don't have to include everything about the housing company, and the information you submit through the form can be supplemented later!"
+    },
+    "contactSection": {
+      "heading": "Your contact details for the quote request",
+      "nameLabel": "Name:",
+      "phoneLabel": "Phone:",
+      "emailLabel": "Email:"
+    },
+    "propertySection": {
+      "heading": "Housing company details",
+      "nameLabel": "Housing company name:",
+      "addressLabel": "Address:",
+      "buildYearLabel": "Year built:",
+      "apartmentCountLabel": "Number of apartments:",
+      "squareFootageLabel": "Residential area (m2):",
+      "additionalInfoLabel": "Other important details about the housing company:"
+    },
+    "form": {
+      "submitButton": "Submit form",
+      "submittedMessage": "Form submitted! We will contact you as soon as possible."
     }
   }
 }

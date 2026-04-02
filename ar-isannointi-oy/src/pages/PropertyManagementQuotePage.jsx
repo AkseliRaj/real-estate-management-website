@@ -2,8 +2,11 @@ import React from 'react';
 import '../css/PropertyManagementQuotePage.css';
 import FormPageBanner from '../components/FormPageBanner';
 import ArrowButton from '../components/ArrowButtonOrange';
+import { useTranslation } from 'react-i18next';
 
 const PropertyManagementQuotePage = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="container-fluid px-0">
             <FormPageBanner />
@@ -14,22 +17,18 @@ const PropertyManagementQuotePage = () => {
                     <div className='row justify-content-start py-5'>
                         <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-5'>
                             <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>
-                                Yhteydenotto isännöinnistä
+                                {t('PropertyManagementQuote.intro.heading')}
                             </h3>
                             <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>
-                                Yhteydenotto isännöinnistä
+                                {t('PropertyManagementQuote.intro.heading')}
                             </h4>
 
                             <p>
-                                Kerro meille lyhyesti taloyhtiösi tarpeista oheisen lomakkeen kautta.
-                                Kartoitamme tilanteenne huolellisesti ja palaamme teihin mahdollisimman pian
-                                tarjouksen sekä jatkotoimenpiteiden merkeissä.
+                                {t('PropertyManagementQuote.intro.paragraph1')}
                             </p>
 
                             <p className='pb-1 pb-sm-2 pb-lg-3'>
-                                Tarvittaessa voimme myös sopia tarkemman keskustelun, jossa käymme läpi
-                                teille parhaiten sopivan isännöintiratkaisun. Sinun ei tarvitse kirjata
-                                kaikkea taloyhtiöstä, lomakkeen kautta tulleita tietoja voidaan täydentää myöhemmin!
+                                {t('PropertyManagementQuote.intro.paragraph2')}
                             </p>
                         </div>
                     </div>
@@ -43,10 +42,10 @@ const PropertyManagementQuotePage = () => {
 
                     <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-3'>
                         <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>
-                            Tarjouspyyntöä tekevän yhteystiedot
+                            {t('PropertyManagementQuote.contactSection.heading')}
                         </h3>
                         <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>
-                            Tarjouspyyntöä tekevän yhteystiedot
+                            {t('PropertyManagementQuote.contactSection.heading')}
                         </h4>
                     </div>
 
@@ -55,7 +54,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className="col-12 mb-3">
                                 <label htmlFor="contactName" className="form-label">
-                                    Nimi: <span className='Required-Asterisk'>*</span>
+                                    {t('PropertyManagementQuote.contactSection.nameLabel')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -66,7 +65,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="contactPhone" className="form-label">
-                                    Puhelin: <span className='Required-Asterisk'>*</span>
+                                    {t('PropertyManagementQuote.contactSection.phoneLabel')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="tel"
@@ -77,7 +76,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12'>
                                 <label htmlFor="contactEmail" className="form-label">
-                                    Sähköposti: <span className='Required-Asterisk'>*</span>
+                                    {t('PropertyManagementQuote.contactSection.emailLabel')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="email"
@@ -98,10 +97,10 @@ const PropertyManagementQuotePage = () => {
 
                     <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-3'>
                         <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>
-                            Taloyhtiön tiedot
+                            {t('PropertyManagementQuote.propertySection.heading')}
                         </h3>
                         <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>
-                            Taloyhtiön tiedot
+                            {t('PropertyManagementQuote.propertySection.heading')}
                         </h4>
                     </div>
 
@@ -110,7 +109,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className="col-12 mb-3">
                                 <label htmlFor="propertyName" className="form-label">
-                                    Taloyhtiön nimi: <span className='Required-Asterisk'>*</span>
+                                    {t('PropertyManagementQuote.propertySection.nameLabel')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -121,7 +120,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="propertyAddress" className="form-label">
-                                    Osoite: <span className='Required-Asterisk'>*</span>
+                                    {t('PropertyManagementQuote.propertySection.addressLabel')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -132,7 +131,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="buildYear" className="form-label">
-                                    Rakennusvuosi:
+                                    {t('PropertyManagementQuote.propertySection.buildYearLabel')}
                                 </label>
                                 <input
                                     type="text"
@@ -143,7 +142,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="apartmentCount" className="form-label">
-                                    Huoneistoluku:
+                                    {t('PropertyManagementQuote.propertySection.apartmentCountLabel')}
                                 </label>
                                 <input
                                     type="number"
@@ -154,7 +153,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="squareFootage" className="form-label">
-                                    Asuinpinta-ala neliöt:
+                                    {t('PropertyManagementQuote.propertySection.squareFootageLabel')}
                                 </label>
                                 <input
                                     type="text"
@@ -165,7 +164,7 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="additionalInfo" className="form-label">
-                                    Muita merkittäviä asioita taloyhtiöstä:
+                                    {t('PropertyManagementQuote.propertySection.additionalInfoLabel')}
                                 </label>
                                 <textarea
                                     className="form-control"
@@ -176,14 +175,14 @@ const PropertyManagementQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <ArrowButton
-                                    label="Lähetä lomake"
+                                    label={t('PropertyManagementQuote.form.submitButton')}
                                     variant="orange"
                                     showArrow={true}
                                 />
                             </div>
 
                             <div className='col-12 mb-3'>
-                                <p>Lomake on lähetetty! Olemme sinuun yhteyksissä pikimmiten.</p>
+                                <p>{t('PropertyManagementQuote.form.submittedMessage')}</p>
                             </div>
 
                         </div>

@@ -145,6 +145,30 @@
     "banner": {
       "heading": "Pyydä tarjous isännöinnistä",
       "imageAlt": "Kynä ja paperi -ikoni"
+    },
+    "intro": {
+      "heading": "Yhteydenotto isännöinnistä",
+      "paragraph1": "Kerro meille lyhyesti taloyhtiösi tarpeista oheisen lomakkeen kautta. Kartoitamme tilanteenne huolellisesti ja palaamme teihin mahdollisimman pian tarjouksen sekä jatkotoimenpiteiden merkeissä.",
+      "paragraph2": "Tarvittaessa voimme myös sopia tarkemman keskustelun, jossa käymme läpi teille parhaiten sopivan isännöintiratkaisun. Sinun ei tarvitse kirjata kaikkea taloyhtiöstä, lomakkeen kautta tulleita tietoja voidaan täydentää myöhemmin!"
+    },
+    "contactSection": {
+      "heading": "Tarjouspyyntöä tekevän yhteystiedot",
+      "nameLabel": "Nimi:",
+      "phoneLabel": "Puhelin:",
+      "emailLabel": "Sähköposti:"
+    },
+    "propertySection": {
+      "heading": "Taloyhtiön tiedot",
+      "nameLabel": "Taloyhtiön nimi:",
+      "addressLabel": "Osoite:",
+      "buildYearLabel": "Rakennusvuosi:",
+      "apartmentCountLabel": "Huoneistoluku:",
+      "squareFootageLabel": "Asuinpinta-ala neliöt:",
+      "additionalInfoLabel": "Muita merkittäviä asioita taloyhtiöstä:"
+    },
+    "form": {
+      "submitButton": "Lähetä lomake",
+      "submittedMessage": "Lomake on lähetetty! Olemme sinuun yhteyksissä pikimmiten."
     }
   }
 }
