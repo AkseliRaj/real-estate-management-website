@@ -170,5 +170,12 @@
       "submitButton": "Lähetä lomake",
       "submittedMessage": "Lomake on lähetetty! Olemme sinuun yhteyksissä pikimmiten."
     }
+  },
+  "PropertyManagementInstructions": {
+    "Introduction-Section": {
+      "title": "Ohjeita taloyhtiön asukkaille",
+      "paragraph1": "Kokoelma ohjeita ja vinkkejä sujumiseen asumiseen taloyhtiöissä.",
+      "paragraph2": "Huom. taloyhtiöissä saattaa olla yhtiöjärjestyksessä tai järjestys-säännöissä poikkeuksia."
+    }
   }
 }

@@ -169,6 +169,13 @@
     "form": {
       "submitButton": "Submit form",
       "submittedMessage": "Form submitted! We will contact you as soon as possible."
+    },
+    "PropertyManagementInstructions": {
+      "Introduction-Section": {
+        "title": "Instructions for residents",
+        "paragraph1": "A collection of instructions and tips for living smoothly in housing associations.",
+        "paragraph2": "Note: housing associations may have exceptions in their articles of association or bylaws."
+      }
     }
   }
 }

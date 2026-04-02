@@ -4,7 +4,7 @@ const SITE_LINKS = {
     email: '#',
     privacyPolicy: '#',
     propertyManagement: '/',
-    instructionsForResidents: '#',
+    instructionsForResidents: '/ohjeet-taloyhtion-asukkaille',
     responsibilitySplitTable: '#',
     forms: '#',
     requestQuote: '/tarjous-isannoinnista',

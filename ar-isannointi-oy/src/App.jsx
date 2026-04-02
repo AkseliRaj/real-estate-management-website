@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 { /*PAGES*/ }
 import PropertyManagementLanding from './pages/PropertyManagementLanding';
 import PropertyManagementQuotePage from './pages/PropertyManagementQuotePage';
+import PropertyManagementInstructions from './pages/PropertyManagementInstructions';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PropertyManagementLanding />} />
         <Route path="/tarjous-isannoinnista" element={<PropertyManagementQuotePage />} />
+        <Route path="/ohjeet-taloyhtion-asukkaille" element={<PropertyManagementInstructions />} />
       </Routes>
       <Footer />
     </>
