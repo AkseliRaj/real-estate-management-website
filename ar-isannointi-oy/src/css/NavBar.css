@@ -191,6 +191,18 @@
     .navbar .dropdown:focus-within > .nav-link.nav-dropdown-toggle .nav-dropdown-arrow {
         transform: rotate(180deg);
     }
+
+    /* After SPA navigation, :hover can stay true; React toggles this class to force-close. */
+    /* Do not set pointer-events: none here — it makes the pointer fall through the <li> and flips suppression off via mouseLeave. */
+    .navbar.desktop-mega-suppressed .nav-item.dropdown .dropdown-menu {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: opacity 0.15s ease, visibility 0s linear 0.15s !important;
+    }
+
+    .navbar.desktop-mega-suppressed .nav-item.dropdown .nav-link.nav-dropdown-toggle .nav-dropdown-arrow {
+        transform: none !important;
+    }
 }
 
 @media (min-width: 992px) {

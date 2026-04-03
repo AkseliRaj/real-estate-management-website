@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Logo from '../../assets/webp/Logo.webp';
@@ -7,6 +8,7 @@ import MenuCloseToggleIcon from '../../assets/svg/MenuCloseToggleIcon.svg';
 import MenuOpenToggleIcon from '../../assets/svg/MenuOpenToggleIcon.svg';
 
 import { NAV_SECTIONS } from './navData';
+import RoutedNavLink from './RoutedNavLink';
 
 const MobileNavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,22 +73,24 @@ const MobileNavBar = () => {
         };
     }, [isMenuOpen]);
 
+    const closeMenu = () => {
+        setIsMenuOpen(false)
+        setOpenDropdown(null)
+    }
+
     const handleLanguageToggle = (e) => {
         e.preventDefault()
         const nextLng = isEnglish ? 'fi' : 'en'
         i18n.changeLanguage(nextLng)
-
-        // Close menu so the language change is immediately visible
-        setIsMenuOpen(false)
-        setOpenDropdown(null)
+        closeMenu()
     }
 
     return (
         <nav className={`navbar navbar-expand-lg navbar-light${isMenuOpen ? ' mobile-menu-open' : ''}${isNavHidden ? ' mobile-nav-hidden' : ''}`}>
             <div className="container-fluid px-2 px-sm-4 mobile-nav-top">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/" onClick={closeMenu}>
                     <img src={Logo} alt="AR-Logo" height="60" />
-                </a>
+                </Link>
 
                 <div className="d-flex align-items-center ms-auto">
                     <a
@@ -134,23 +138,21 @@ const MobileNavBar = () => {
                                         <div className="row g-0 align-items-center justify-content-start">
                                             <ul className="list-unstyled mb-0 py-3 col-12">
                                                 <li>
-                                                    <a
-                                                        className="dropdown-item"
-                                                        href={section.href || '#'}
-                                                    >
+                                                    <RoutedNavLink className="dropdown-item" href={section.href || '#'} onClick={closeMenu}>
                                                         {t(section.titleKey)}
-                                                    </a>
+                                                    </RoutedNavLink>
                                                 </li>
                                                 {section.links.map((link) => (
                                                     <li key={link.labelKey}>
-                                                        <a
+                                                        <RoutedNavLink
                                                             className="dropdown-item"
                                                             href={link.href}
                                                             target={link.target}
                                                             rel={link.rel}
+                                                            onClick={closeMenu}
                                                         >
                                                             {t(link.labelKey)}
-                                                        </a>
+                                                        </RoutedNavLink>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -160,7 +162,9 @@ const MobileNavBar = () => {
                             </li>
                         ))}
                         <li className="nav-item">
-                            <a className="dropdown-item" id="Header" href="#">{t('nav.contactDetails')}</a>
+                            <RoutedNavLink className="dropdown-item" id="Header" href="#" onClick={closeMenu}>
+                                {t('nav.contactDetails')}
+                            </RoutedNavLink>
                         </li>
                     </ul>
                 </div>
