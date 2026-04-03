@@ -176,6 +176,10 @@
       "title": "Ohjeita taloyhtiön asukkaille",
       "paragraph1": "Kokoelma ohjeita ja vinkkejä sujumiseen asumiseen taloyhtiöissä.",
       "paragraph2": "Huom. taloyhtiöissä saattaa olla yhtiöjärjestyksessä tai järjestys-säännöissä poikkeuksia."
+    },
+    "Filtering-Section": {
+      "Instruction-Name": "Ohjeen nimi",
+      "Search-Button": "Etsi ohje"
     }
   }
 }

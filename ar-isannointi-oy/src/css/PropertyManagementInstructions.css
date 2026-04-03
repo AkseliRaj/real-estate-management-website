@@ -1,3 +1,47 @@
 .Instruction-Introduction-Section {
     border-bottom: 1px solid #BEBEBE;
 }
+
+.Outline-Button,
+.Color-Button {
+    padding: clamp(0.3rem, .9vw, 0.5rem) clamp(0.75rem, 1.2vw, 1.2rem);
+    border-radius: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.85rem, 1vw, 1.1rem);
+    cursor: pointer;
+    transition:
+        transform 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+}
+
+.Outline-Button {
+    border: 1px solid #BEBEBE;
+    background-color: white;
+    color: #333333;
+}
+
+.Outline-Button:hover,
+.Outline-Button.active {
+    background-color: #F57021;
+    color: white;
+    border-color: white;
+}
+
+.Color-Button {
+    border: 1px solid white;
+    background-color: #F57021;
+    color: white;
+}
+
+.Color-Button:hover {
+    border: 1px solid #BEBEBE;
+    background-color: white;
+    color: #333333;
+}
+
+.Outline-Button:active,
+.Color-Button:active {
+    transform: scale(0.98);
+}
