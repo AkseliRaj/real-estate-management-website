@@ -1,0 +1,16 @@
+.Checkmark-Icon {
+  max-width: 1.3rem;
+  height: auto;
+}
+
+/* Wrapper clips rounded corners; border-collapse on .table ignores border-radius alone */
+.Responsibility-Table-Wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #BEBEBE;
+}
+
+.Responsibility-Table {
+  margin-bottom: 0;
+  
+}

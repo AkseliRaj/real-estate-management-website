@@ -181,5 +181,16 @@
       "Instruction-Name": "Instruction name",
       "Search-Button": "Search"
     }
+  },
+  "ResponsibilityTable": {
+    "Introduction-Section": {
+      "title": "Responsibility table",
+      "paragraph1": "For shareholders and housing companies"
+    },
+    "Prefix-Section": {
+      "title": "Clarity for maintenance",
+      "paragraph1": "Who is responsible for repairing the faucet or maintaining the balcony? A clear division of responsibilities is the basis for smooth living and management of the housing association. Below you will find a detailed division of responsibilities table that helps you understand which maintenance tasks belong to the housing association and which are the responsibility of the shareholder.",
+      "paragraph2": "This guide is based on current legislation and general industry practices, and its aim is to prevent ambiguities in repair and maintenance situations. Read the table and you will know what to do in the event of a fault or when planning a renovation."
+    }
   }
 }

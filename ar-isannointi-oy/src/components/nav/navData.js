@@ -3,7 +3,7 @@ import RentalBrokerageIcon from '../../assets/svg/RentalBrokerageNavIcon.svg';
 import PropertyManagementIcon from '../../assets/svg/PropertyManagementNavIcon.svg';
 
 import RealEstateDropdownImage from '../../assets/webp/RealEstateDropdownImage.webp';
-import RentalBrokerageDropdownImage from '../../assets/webp/RentalBrokerageDropdownImage.jpg';
+import RentalBrokerageDropdownImage from '../../assets/webp/RentalBrokerageDropdownImage.webp';
 import PropertyManagementDropdownImage from '../../assets/webp/PropertyManagementDropdownImage.webp';
 import { NAV_SECTIONS_BASE } from '../../data/siteLinks';
 

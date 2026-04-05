@@ -5,7 +5,7 @@ const SITE_LINKS = {
     privacyPolicy: '#',
     propertyManagement: '/',
     instructionsForResidents: '/ohjeet-taloyhtion-asukkaille',
-    responsibilitySplitTable: '#',
+    responsibilitySplitTable: '/vastuunjakotaulukko',
     forms: '#',
     requestQuote: '/tarjous-isannoinnista',
     clientPages: 'https://huoneistotieto.fi/fi-FI/account/app/login',

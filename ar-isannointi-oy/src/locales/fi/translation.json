@@ -181,5 +181,16 @@
       "Instruction-Name": "Ohjeen nimi",
       "Search-Button": "Etsi ohje"
     }
+  },
+  "ResponsibilityTable": {
+    "Introduction-Section": {
+      "title": "Vastuunjakotaulukko",
+      "paragraph1": "Osakkaille ja taloyhtiöille."
+    },
+    "Prefix-Section" : {
+      "title": "Selvyyttä kunnossapitoon",
+      "paragraph1": "Kuka vastaa hanan korjauksesta tai parvekkeen kunnossapidosta? Selkeä vastuunjako on sujuvan asumisen ja taloyhtiön hoidon perusta. Alta löydät yksityiskohtaisen vastuunjakotaulukon, joka auttaa hahmottamaan, mitkä kunnossapitotyöt kuuluvat taloyhtiölle ja mitkä ovat osakkeenomistajan vastuulla.",
+      "paragraph2": "Tämä ohjeistus perustuu voimassa olevaan lainsäädäntöön ja alan yleisiin käytäntöihin, ja sen tavoitteena on ehkäistä epäselvyyksiä korjaus- ja huoltotilanteissa. Tutustu taulukkoon ja tiedät, miten toimia vikatilanteen sattuessa tai remonttia suunnitellessa."
+    }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/PropertyManagementQuotePage.css';
 import FormPageBanner from '../components/FormPageBanner';
+import FormIntroductionSection from '../components/FormIntroductionSection';
 import ArrowButton from '../components/ArrowButtonOrange';
 import { useTranslation } from 'react-i18next';
 
@@ -11,29 +12,13 @@ const PropertyManagementQuotePage = () => {
         <div className="container-fluid px-0">
             <FormPageBanner />
 
-            {/* Intro Section */}
-            <div className='container-fluid Quote-Form-Introduction-Section px-0'>
-                <div className='container'>
-                    <div className='row justify-content-start py-5'>
-                        <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-5'>
-                            <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>
-                                {t('PropertyManagementQuote.intro.heading')}
-                            </h3>
-                            <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>
-                                {t('PropertyManagementQuote.intro.heading')}
-                            </h4>
-
-                            <p>
-                                {t('PropertyManagementQuote.intro.paragraph1')}
-                            </p>
-
-                            <p className='pb-1 pb-sm-2 pb-lg-3'>
-                                {t('PropertyManagementQuote.intro.paragraph2')}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <FormIntroductionSection
+                title={t('PropertyManagementQuote.intro.heading')}
+                paragraphs={[
+                    t('PropertyManagementQuote.intro.paragraph1'),
+                    t('PropertyManagementQuote.intro.paragraph2'),
+                ]}
+            />
 
 
             {/* Form sender information */}
