@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import ResidentInstructionsImage from '../assets/webp/ResidentInstructionsImage.webp'
 import AccordionMenuGrid from '../components/AccordionMenuGrid';
+import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
 import propertyManagementInstructionItemsFi from '../data/propertyManagementInstructionItems.fi';
 import propertyManagementInstructionItemsEn from '../data/propertyManagementInstructionItems.en';
 
@@ -72,34 +73,15 @@ function PropertyManagementInstructions() {
     return (
         <div className="container-fluid px-0">
 
-            <div className='container-fluid Instruction-Introduction-Section'>
-                <div className='row gx-0 d-flex justify-content-center py-5'>
-                    <div className='col-11 col-xxl-9'>
-                        <div className='d-block d-md-none col-12 col-sm-11 pb-5'>
-                            <img src={ResidentInstructionsImage} alt={t('propertyLanding.images.introductionAlt')} className="Responsibility-Image" />
-                        </div>
-                        <div className='row gx-0 justify-content-between align-items-center'>
-                            <div className='col-12 col-sm-11 col-md-6 col-lg-5 col-xl-6 col-xxl-5'>
-                                <h3 className='pb-3 d-none d-md-block'>
-                                    {t('PropertyManagementInstructions.Introduction-Section.title')}
-                                </h3>
-                                <h4 className='pb-1 d-block d-md-none'>
-                                    {t('PropertyManagementInstructions.Introduction-Section.title')}
-                                </h4>
-                                <p>
-                                    {t('PropertyManagementInstructions.Introduction-Section.paragraph1')}
-                                </p>
-                                <p className='pb-1 pb-md-3'>
-                                    {t('PropertyManagementInstructions.Introduction-Section.paragraph2')}
-                                </p>
-                            </div>
-                            <div className='d-none d-md-flex justify-content-end col-5'>
-                                <img src={ResidentInstructionsImage} alt={t('propertyLanding.images.introductionAlt')} className="Responsibility-Image" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <IntroductionSectionWithImage
+                title={t('PropertyManagementInstructions.Introduction-Section.title')}
+                paragraphs={[
+                    t('PropertyManagementInstructions.Introduction-Section.paragraph1'),
+                    t('PropertyManagementInstructions.Introduction-Section.paragraph2'),
+                ]}
+                imageSrc={ResidentInstructionsImage}
+                imageAlt={t('propertyLanding.images.introductionAlt')}
+            />
 
             <div className="container-fluid Filtering-Section">
                 <div className="row justify-content-center">

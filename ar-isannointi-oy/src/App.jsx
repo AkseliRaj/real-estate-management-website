@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 { /*COMPONENTS*/ }
 import NavBar from './components/NavBar';
@@ -10,14 +10,18 @@ import PropertyManagementQuotePage from './pages/PropertyManagementQuotePage';
 import PropertyManagementInstructions from './pages/PropertyManagementInstructions';
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<PropertyManagementLanding />} />
-        <Route path="/tarjous-isannoinnista" element={<PropertyManagementQuotePage />} />
-        <Route path="/ohjeet-taloyhtion-asukkaille" element={<PropertyManagementInstructions />} />
-      </Routes>
+      <main key={pathname} className="page-transition">
+        <Routes>
+          <Route path="/" element={<PropertyManagementLanding />} />
+          <Route path="/tarjous-isannoinnista" element={<PropertyManagementQuotePage />} />
+          <Route path="/ohjeet-taloyhtion-asukkaille" element={<PropertyManagementInstructions />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   )

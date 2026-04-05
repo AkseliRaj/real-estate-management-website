@@ -2,6 +2,19 @@
     border-bottom: 1px solid #BEBEBE;
 }
 
+.Responsibility-Image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    border: 1px solid #BEBEBE;
+}
+
+/* 1rem corners to match .Responsibility-Image; Bootstrap .placeholder uses a smaller default radius */
+.introduction-image-ratio .introduction-image-placeholder-skeleton {
+    border-radius: 1rem;
+    z-index: 1;
+}
+
 .Outline-Button,
 .Color-Button {
     padding: clamp(0.3rem, .9vw, 0.5rem) clamp(0.75rem, 1.2vw, 1.2rem);
