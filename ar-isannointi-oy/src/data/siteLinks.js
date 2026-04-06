@@ -6,7 +6,7 @@ const SITE_LINKS = {
     propertyManagement: '/',
     instructionsForResidents: '/ohjeet-taloyhtion-asukkaille',
     responsibilitySplitTable: '/vastuunjakotaulukko',
-    forms: '#',
+    forms: '/lomakkeet',
     requestQuote: '/tarjous-isannoinnista',
     clientPages: 'https://huoneistotieto.fi/fi-FI/account/app/login',
     realEstate: '#',

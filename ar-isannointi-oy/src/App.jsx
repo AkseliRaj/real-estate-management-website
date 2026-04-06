@@ -9,6 +9,7 @@ import PropertyManagementLanding from './pages/PropertyManagementLanding';
 import PropertyManagementQuotePage from './pages/PropertyManagementQuotePage';
 import PropertyManagementInstructions from './pages/PropertyManagementInstructions';
 import ResponsibilityTablePage from './pages/ResponsibilityTablePage.jsx';
+import PropertyManagementFormsPage from './pages/PropertyManagementFormsPage.jsx';
 
 function App() {
   const { pathname } = useLocation();
@@ -22,6 +23,7 @@ function App() {
           <Route path="/tarjous-isannoinnista" element={<PropertyManagementQuotePage />} />
           <Route path="/ohjeet-taloyhtion-asukkaille" element={<PropertyManagementInstructions />} />
           <Route path="/vastuunjakotaulukko" element={<ResponsibilityTablePage />} />
+          <Route path="/lomakkeet" element={<PropertyManagementFormsPage />} />
         </Routes>
       </main>
       <Footer />
