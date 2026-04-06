@@ -17,3 +17,12 @@
 .Responsibility-Table {
   margin-bottom: 0;
 }
+
+.Responsibility-Table-Section + .Responsibility-Table-Section {
+  margin-top: 2rem;
+}
+
+.Responsibility-Table-Section-Title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
