@@ -1,13 +1,46 @@
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import CheckmarkIcon from '../assets/svg/CheckmarkIcon.svg';
 import responsibilityTablesFi from '../data/ResponsibilityTableFi';
 import responsibilityTablesEn from '../data/ResponsibilityTableEn';
 
-function ResponsibilityTable() {
+function ResponsibilityTable({ tableCategoryId = 'all', rowSearchTerm = '' }) {
     const { i18n } = useTranslation();
     const isEnglish = i18n.resolvedLanguage?.startsWith('en');
-    const { tables } = isEnglish ? responsibilityTablesEn : responsibilityTablesFi;
+    const activeLanguage = i18n.resolvedLanguage ?? undefined;
+    const { tables: allTables } = isEnglish ? responsibilityTablesEn : responsibilityTablesFi;
+
+    const tables = useMemo(() => {
+        let list = tableCategoryId === 'all'
+            ? allTables
+            : allTables.filter((table) => table.id === tableCategoryId);
+        if (!rowSearchTerm) {
+            return list;
+        }
+        return list
+            .map((table) => ({
+                ...table,
+                rows: table.rows.filter((row) =>
+                    row.name.toLocaleLowerCase(activeLanguage).includes(rowSearchTerm),
+                ),
+            }))
+            .filter((table) => table.rows.length > 0);
+    }, [allTables, tableCategoryId, rowSearchTerm, activeLanguage]);
+
+    if (tables.length === 0) {
+        return (
+            <div className="container-fluid">
+                <div className="row d-flex justify-content-center">
+                    <div className="col-12 col-lg-8 py-4 py-md-5">
+                        <p className="text-muted mb-0">
+                            {isEnglish ? 'No rows match your search.' : 'Hakuehdoilla ei löytynyt rivejä.'}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className='container-fluid'>
