@@ -13,7 +13,7 @@ export default function FormIntroductionSection({
 
     const inner = (
         <div className={rowClassName}>
-            <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-5'>
+            <div className='col-12 col-lg-8 col-xxl-8 py-0 py-md-5'>
                 <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>{title}</h3>
                 <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>{title}</h4>
                 {paragraphs.map((text, index) => (
@@ -33,7 +33,9 @@ export default function FormIntroductionSection({
     );
 
     return (
-        <div className='container-fluid Quote-Form-Introduction-Section px-0'>
+        <div
+            className={`container-fluid Quote-Form-Introduction-Section ${innerContainer ? 'px-0' : 'px-3'}`}
+        >
             {innerContainer ? <div className='container'>{inner}</div> : inner}
         </div>
     );

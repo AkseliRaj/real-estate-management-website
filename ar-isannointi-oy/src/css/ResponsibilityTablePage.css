@@ -10,7 +10,10 @@
   border: 1px solid #BEBEBE;
 }
 
+.Table-Name h6 {
+  margin-bottom: 0;
+}
+
 .Responsibility-Table {
   margin-bottom: 0;
-  
 }
