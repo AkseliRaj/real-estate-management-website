@@ -13,7 +13,7 @@ const SITE_LINKS = {
     ourPropertiesForSale: '#',
     requestEstimate: '#',
     publicDeeds: '#',
-    offerDeals: '#',
+    offerDeals: '/tarjouskaupat',
     rental: '#',
     rentalProperties: '#',
     rentalApplication: '#',

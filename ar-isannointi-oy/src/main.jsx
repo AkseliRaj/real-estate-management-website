@@ -1,6 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import faviconUrl from './assets/AR-Logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+const faviconLink = document.querySelector('link[rel="icon"]')
+if (faviconLink) {
+  faviconLink.type = 'image/png'
+  faviconLink.href = faviconUrl
+}
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './index.css'
 import App from './App.jsx'

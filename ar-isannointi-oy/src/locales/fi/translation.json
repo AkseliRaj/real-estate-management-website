@@ -210,5 +210,22 @@
       },
       "paragraph2": "Valitse alta tarvitsemasi lomake ja täytä pyydetyt tiedot. Lähetettyäsi lomakkeen, se ohjautuu suoraan isännöintitoimistomme käsiteltäväksi."
     }
+  },
+  "Bidding-Quote-Page": {
+    "Introduction-Section": {
+      "title": "Tarjouskaupat",
+      "paragraph1": "Moderni ja läpinäkyvä tapa käydä asuntokauppaa.",
+      "CTA-button": "Ota yhteyttä tarjouskaupoista",
+      "paragraph2": "Tarjouskauppa on yleistynyt tapa myydä ja ostaa asuntoja, sillä se perustuu avoimuuteen ja markkinoiden todelliseen kysyntään. Toisin kuin perinteisessä kauppatavassa, jossa hinta on kiinteä pyyntihinta, Tarjouskaupassa hinta muodostuu markkinoilla julkisesti tehtyjen tarjousten perusteella."
+    },
+    "Prefix-Section": {
+      "title1": "Mitä ovat tarjouskaupat?",
+      "paragraph2": "Tarjouskauppa-mallissa asunnolle määritetään lähtöhinta, josta tarjoukset alkavat. Tarjoukset tehdään tästä hinnasta ylöspäin. Suurin ero perinteiseen kauppaan on läpinäkyvyys: kaikki tehdyt tarjoukset ovat julkisesti nähtävillä asunnon myyntisivulla.",
+      "paragraph3": "Tämä poistaa ostajilta sokeana tarjoamisen pelon, sillä tiedät aina, mitä muut ovat valmiita maksamaan. Myyjälle malli taas varmistaa, että asunnosta saadaan paras mahdollinen markkinahinta."
+    },
+    "Bidding-Explained": {
+      "title": "Näin Tarjouskauppa etenee",
+      "paragraph1": "Tarjouskauppa on prosessi, joka etenee selkeiden vaiheiden kautta. Välittäjämme on mukana tukemassa sekä myyjää että ostajaa jokaisessa vaiheessa."
+    }
   }
 }

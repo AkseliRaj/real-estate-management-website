@@ -10,6 +10,7 @@ import PropertyManagementQuotePage from './pages/PropertyManagementQuotePage';
 import PropertyManagementInstructions from './pages/PropertyManagementInstructions';
 import ResponsibilityTablePage from './pages/ResponsibilityTablePage.jsx';
 import PropertyManagementFormsPage from './pages/PropertyManagementFormsPage.jsx';
+import BiddingQuotePage from './pages/BiddingQuotePage.jsx';
 
 function App() {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ function App() {
           <Route path="/ohjeet-taloyhtion-asukkaille" element={<PropertyManagementInstructions />} />
           <Route path="/vastuunjakotaulukko" element={<ResponsibilityTablePage />} />
           <Route path="/lomakkeet" element={<PropertyManagementFormsPage />} />
+          <Route path="/tarjouskaupat" element={<BiddingQuotePage />} />
         </Routes>
       </main>
       <Footer />

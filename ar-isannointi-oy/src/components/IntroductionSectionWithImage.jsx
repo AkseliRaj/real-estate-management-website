@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import ArrowButton from './ArrowButtonOrange.jsx';
 import '../css/PropertyManagementInstructions.css';
 
 function IntroductionImageWithPlaceholder({ imageSrc, imageAlt, loaded, onLoad }) {
@@ -26,6 +27,8 @@ export default function IntroductionSectionWithImage({
     paragraphs = [],
     imageSrc,
     imageAlt,
+    buttonText,
+    onButtonClick,
 }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const handleImageLoad = useCallback(() => setImageLoaded(true), []);
@@ -56,6 +59,14 @@ export default function IntroductionSectionWithImage({
                                     {text}
                                 </p>
                             ))}
+                            {buttonText ? (
+                                <div className="pt-2">
+                                    <ArrowButton
+                                        label={buttonText}
+                                        onClick={onButtonClick}
+                                    />
+                                </div>
+                            ) : null}
                         </div>
                         <div className="d-none d-md-flex justify-content-end col-5">
                             <IntroductionImageWithPlaceholder
