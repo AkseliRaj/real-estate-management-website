@@ -197,6 +197,18 @@
     "Introduction-Section": {
       "title": "Lomakkeet",
       "paragraph1": "Isännöinnin eri tarpeisiin"
+    },
+    "Prefix-Section": {
+      "title": "Sähköiset lomakkeet yhdestä paikasta",
+      "paragraph1": "Tervetuloa AR Isännöinnin sähköiseen asiointipalveluun. Olemme koonneet tälle sivulle kaikki keskeiset lomakkeet, joiden avulla voit hoitaa taloyhtiöön liittyvät ilmoitukset ja tilaukset vaivattomasti verkossa juuri silloin, kun se sinulle parhaiten sopii.",
+      "bullet-point-list": {
+        "paragraph1": "Voit täyttää ja lähettää kauttamme muun muassa seuraavat lomakkeet:",
+        "bullet-point-paragraph1": "Muuttoilmoitus ja talonkirjaote: Ilmoita muutosta tai tilaa virallinen ote taloyhtiön tiedoista.",
+        "bullet-point-paragraph2": "Vikailmoitus ja kulutuslukemat: Tee ilmoitus taloyhtiössä havaitsemastasi viasta tai ilmoita huoneistosi mittarilukemat.",
+        "bullet-point-paragraph3": "Remontit ja muutostyöt: Hae lupaa muutostöihin tai täytä vedeneristystyölomake ennen remontin aloitusta.",
+        "bullet-point-paragraph4": "Isännöitsijätodistus ja tarjouspyynnöt: Tilaa tarvittavat asiakirjat asuntokauppaa varten tai pyydä tarjous isännöintipalveluistamme."
+      },
+      "paragraph2": "Valitse alta tarvitsemasi lomake ja täytä pyydetyt tiedot. Lähetettyäsi lomakkeen, se ohjautuu suoraan isännöintitoimistomme käsiteltäväksi."
     }
   }
 }

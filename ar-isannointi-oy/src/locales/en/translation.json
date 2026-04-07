@@ -195,8 +195,20 @@
   },
   "Forms-Page": {
     "Introduction-Section": {
-      "title": "Forms",
-      "paragraph1": "For propertymanagements different needs"
+      "title": "Lomakkeet",
+      "paragraph1": "Isännöinnin eri tarpeisiin"
+    },
+    "Prefix-Section": {
+      "title": "Electronic forms in one place",
+      "paragraph1": "Welcome to AR Isännöinni's electronic service. We have compiled all the key forms on this page, which will help you easily handle housing company-related notifications and orders online, exactly when it suits you best.",
+      "bullet-point-list": {
+        "paragraph1": "You can fill out and send the following forms through us, among others:",
+        "bullet-point-paragraph1": "Notification of move and house registry extract: Report a move or order an official extract from the housing company's information.",
+        "bullet-point-paragraph2": "Fault report and consumption readings: Report a fault you have noticed to the housing company or report the meter readings for your apartment.",
+        "bullet-point-paragraph3": "Renovations and alterations: Apply for a permit for alterations or fill out a waterproofing work form before starting the renovation.",
+        "bullet-point-paragraph4": "Property management certificate and requests for quotations: Order the necessary documents for a home purchase or request a quotation for our property management services."
+      },
+      "paragraph2": "Select the form you need below and fill in the requested information. After submitting the form, it will be forwarded directly to our property management office for processing."
     }
   }
 }
