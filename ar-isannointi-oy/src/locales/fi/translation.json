@@ -235,6 +235,39 @@
       },
       "paragraph3": "Huomioitavaa: Tarjouskaupassa tarjouksen on oltava voimassa vähintään 48 tuntia. Tämä takaa kaikille osapuolille harkinta-ajan ja estää hätiköidyt päätökset.",
       "paragraph4": "Välittäjä esittelee kaikki tarjoukset myyjälle. Myyjä voi hyväksyä tarjouksen aikaisintaan, kun se on ollut voimassa 44 tuntia. Myyjällä on täysi valta valita, minkä tarjouksen hän hyväksyy – hinta ei ole ainoa ratkaiseva tekijä, vaan myös ehdot ja aikataulut painavat vaakakupissa. Myyjällä on myös oikeus hylätä kaikki tarjoukset, jos tavoitehintaa ei saavuteta."
+    },
+    "Bidding-Explanation-Cards": {
+      "title": "Miksi valita tarjouskauppa?",
+      "card1": {
+        "title": "Myyjälle",
+        "list-item1": {
+          "bold-word": "Suuri näkyvyys: ",
+          "paragraph": "Matala lähtöhinta houkuttelee enemmän katsojia esittelyihin."
+        },
+        "list-item2": {
+          "bold-word": "Paras hinta: ",
+          "paragraph": "Kilpailutilanne nostaa hinnan usein markkinoiden huipulle."
+        },
+        "list-item3": {
+          "bold-word": "Hallinnan tunne: ",
+          "paragraph": "Myyjä päättää aina itse kaupan ehdoista ja hyväksymisestä."
+        }
+      },
+      "card2": {
+        "title": "Ostajille",
+        "list-item1": {
+          "bold-word": "Läpinäkyvyys: ",
+          "paragraph": "Tiedät tarkalleen, mitä muut ovat tarjonneet."
+        },
+        "list-item2": {
+          "bold-word": "Reilu peli: ",
+          "paragraph": "Kaikilla on tasapuolinen mahdollisuus reagoida uusiin tarjouksiin."
+        },
+        "list-item3": {
+          "bold-word": "Harkinta-aika: ",
+          "paragraph": "48-tunnin sääntö estää huutakauppakuumeen sekä paineen"
+        }
+      }
     }
   }
 }

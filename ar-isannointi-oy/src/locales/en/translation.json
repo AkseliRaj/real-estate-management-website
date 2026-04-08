@@ -235,6 +235,39 @@
       },
       "paragraph3": "Please note: In a bidding process, an offer must be valid for at least 48 hours. This ensures a period of consideration for all parties and prevents rushed decisions.",
       "paragraph4": "The agent presents all offers to the seller. The seller can accept an offer no sooner than when it has been valid for 44 hours. The seller has full authority to choose which offer to accept—price is not the only deciding factor, as terms and schedules also carry weight. The seller also reserves the right to reject all offers if the target price is not met."
+    },
+    "Bidding-Explanation-Cards": {
+      "title": "Why choose bidding process?",
+      "card1": {
+        "title": "For seller:",
+        "list-item1": {
+          "bold-word": "Huge visibility: ",
+          "paragraph": "A low starting price attracts more viewers to the presentations."
+        },
+        "list-item2": {
+          "bold-word": "Best price: ",
+          "paragraph": "The competitive situation often drives the price to the top of the market."
+        },
+        "list-item3": {
+          "bold-word": "A sense of control: ",
+          "paragraph": "The seller always decides on the terms and conditions of the transaction."
+        }
+      },
+      "card2": {
+        "title": "For buyers",
+        "list-item1": {
+          "bold-word": "Transparency: ",
+          "paragraph": "You know exactly what others have offered."
+        },
+        "list-item2": {
+          "bold-word": "Fair play: ",
+          "paragraph": "Everyone has an equal opportunity to respond to new offers."
+        },
+        "list-item3": {
+          "bold-word": "Consideration period: ",
+          "paragraph": "The 48-hour rule prevents auction fever and pressure"
+        }
+      }
     }
   }
 }
