@@ -215,17 +215,26 @@
     "Introduction-Section": {
       "title": "Tarjouskaupat",
       "paragraph1": "Moderni ja läpinäkyvä tapa käydä asuntokauppaa.",
-      "CTA-button": "Ota yhteyttä tarjouskaupoista",
-      "paragraph2": "Tarjouskauppa on yleistynyt tapa myydä ja ostaa asuntoja, sillä se perustuu avoimuuteen ja markkinoiden todelliseen kysyntään. Toisin kuin perinteisessä kauppatavassa, jossa hinta on kiinteä pyyntihinta, Tarjouskaupassa hinta muodostuu markkinoilla julkisesti tehtyjen tarjousten perusteella."
+      "CTA-button": "Ota yhteyttä tarjouskaupoista"
     },
     "Prefix-Section": {
       "title1": "Mitä ovat tarjouskaupat?",
+      "paragraph1": "Tarjouskauppa on yleistynyt tapa myydä ja ostaa asuntoja, sillä se perustuu avoimuuteen ja markkinoiden todelliseen kysyntään. Toisin kuin perinteisessä kauppatavassa, jossa hinta on kiinteä pyyntihinta, Tarjouskaupassa hinta muodostuu markkinoilla julkisesti tehtyjen tarjousten perusteella.",
       "paragraph2": "Tarjouskauppa-mallissa asunnolle määritetään lähtöhinta, josta tarjoukset alkavat. Tarjoukset tehdään tästä hinnasta ylöspäin. Suurin ero perinteiseen kauppaan on läpinäkyvyys: kaikki tehdyt tarjoukset ovat julkisesti nähtävillä asunnon myyntisivulla.",
       "paragraph3": "Tämä poistaa ostajilta sokeana tarjoamisen pelon, sillä tiedät aina, mitä muut ovat valmiita maksamaan. Myyjälle malli taas varmistaa, että asunnosta saadaan paras mahdollinen markkinahinta."
     },
     "Bidding-Explained": {
       "title": "Näin Tarjouskauppa etenee",
-      "paragraph1": "Tarjouskauppa on prosessi, joka etenee selkeiden vaiheiden kautta. Välittäjämme on mukana tukemassa sekä myyjää että ostajaa jokaisessa vaiheessa."
+      "paragraph1": "Tarjouskauppa on prosessi, joka etenee selkeiden vaiheiden kautta. Välittäjämme on mukana tukemassa sekä myyjää että ostajaa jokaisessa vaiheessa.",
+      "paragraph2": "Kiinnostuneet ostajat voivat ilmoittautua kohteen seuraajiksi. Tämä on vaivaton tapa pysyä ajan tasalla: saat automaattisesti sähköpostiisi tiedon aina, kun uusi tarjous jätetään. Seuraajien määrä näkyy julkisesti, mikä kertoo suoraan kohteen vetovoimasta.",
+      "bullet-point-list": {
+        "paragraph1": "Kun olet löytänyt unelmiesi kodin, teet kirjallisen tarjouksen välittäjän kautta. Tarjouksessa määritellään:",
+        "bullet-point-paragraph1": "Tarjottu kauppahinta",
+        "bullet-point-paragraph2": "Maksuehdot ja vapautumisaika",
+        "bullet-point-paragraph3": "Mahdolliset ehdot (esim. lainansaanti tai oman asunnon myynti)"
+      },
+      "paragraph3": "Huomioitavaa: Tarjouskaupassa tarjouksen on oltava voimassa vähintään 48 tuntia. Tämä takaa kaikille osapuolille harkinta-ajan ja estää hätiköidyt päätökset.",
+      "paragraph4": "Välittäjä esittelee kaikki tarjoukset myyjälle. Myyjä voi hyväksyä tarjouksen aikaisintaan, kun se on ollut voimassa 44 tuntia. Myyjällä on täysi valta valita, minkä tarjouksen hän hyväksyy – hinta ei ole ainoa ratkaiseva tekijä, vaan myös ehdot ja aikataulut painavat vaakakupissa. Myyjällä on myös oikeus hylätä kaikki tarjoukset, jos tavoitehintaa ei saavuteta."
     }
   }
 }

@@ -215,13 +215,26 @@
     "Introduction-Section": {
       "title": "Offer transactions",
       "paragraph1": "A modern and transparent way to conduct real estate deals.",
-      "CTA-button": "Contact us",
-      "paragraph2": "Bidding is a popular way to buy and sell homes, as it is based on transparency and real market demand. Unlike traditional sales methods, where the price is a fixed asking price, in Bidding the price is determined based on publicly submitted bids in the market."
+      "CTA-button": "Contact us"
     },
     "Prefix-Section": {
       "title": "What are offer transactions",
+      "paragraph1": "Bidding is a popular way to buy and sell homes, as it is based on transparency and real market demand. Unlike traditional sales methods, where the price is a fixed asking price, in Bidding the price is determined based on publicly submitted bids in the market.",
       "paragraph2": "In the auction model, a starting price is set for the apartment, from which bids begin. Bids are made from this price upwards. The biggest difference to a traditional sale is transparency: all bids made are publicly visible on the apartment's sales page.",
       "paragraph3": "This removes the fear of blind bidding for buyers, as you always know what others are willing to pay. For sellers, the model ensures that they get the best possible market price for the property."
+    },
+    "Bidding-Explained": {
+      "title": "How the Bidding Process Works",
+      "paragraph1": "Bidding is a process that progresses through clear stages. Our agent is there to support both the seller and the buyer at every step of the way.",
+      "paragraph2": "Interested buyers can sign up as followers of the property. This is an easy way to stay up to date: you will automatically receive an email notification whenever a new bid is placed. The number of followers is displayed publicly, providing a direct indication of the property's appeal.",
+      "bullet-point-list": {
+        "paragraph1": "Once you have found your dream home, you make a written offer through the agent. The offer specifies:",
+        "bullet-point-paragraph1": "The offered purchase price",
+        "bullet-point-paragraph2": "Payment terms and the completion date",
+        "bullet-point-paragraph3": "Any conditions (e.g., securing a loan or the sale of your own home)"
+      },
+      "paragraph3": "Please note: In a bidding process, an offer must be valid for at least 48 hours. This ensures a period of consideration for all parties and prevents rushed decisions.",
+      "paragraph4": "The agent presents all offers to the seller. The seller can accept an offer no sooner than when it has been valid for 44 hours. The seller has full authority to choose which offer to accept—price is not the only deciding factor, as terms and schedules also carry weight. The seller also reserves the right to reject all offers if the target price is not met."
     }
   }
 }

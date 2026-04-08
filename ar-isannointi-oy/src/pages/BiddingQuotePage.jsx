@@ -2,9 +2,12 @@ import { useTranslation } from 'react-i18next';
 import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
 import FormIntroductionSection from '../components/FormIntroductionSection';
 import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
+import buildFormContentItems from '../utils/buildFormContentItems';
 
 const BiddingQuotePage = () => {
     const { t } = useTranslation();
+    const prefixSection = t('Bidding-Quote-Page.Prefix-Section', { returnObjects: true });
+    const biddingExplainedSection = t('Bidding-Quote-Page.Bidding-Explained', { returnObjects: true });
 
     return (
         <div className="container-fluid px-0">
@@ -18,14 +21,14 @@ const BiddingQuotePage = () => {
                 buttonText={t('Bidding-Quote-Page.Introduction-Section.CTA-button')}
             />
 
-            <div className='row gx-0 d-flex justify-content-center py-5'>
-                <div className='div col-11 col-xxl-9'>
-                    <p>{t('Bidding-Quote-Page.Introduction-Section.paragraph2')}</p>
-                </div>
-            </div>
+            <FormIntroductionSection
+                title={prefixSection.title1}
+                contentItems={buildFormContentItems(prefixSection)}
+            />
 
-            <FormIntroductionSection 
-                
+            <FormIntroductionSection
+                title={biddingExplainedSection.title}
+                contentItems={buildFormContentItems(biddingExplainedSection)}
             />
 
         </div>

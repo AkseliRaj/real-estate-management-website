@@ -7,6 +7,7 @@ import SearchCategoryFilterSection from '../components/SearchCategoryFilterSecti
 import FormCardsSection from '../components/FormCardsSection';
 import formDataEn from '../data/FormDataEn';
 import formDataFi from '../data/FormDataFi';
+import buildFormContentItems from '../utils/buildFormContentItems';
 
 
 const PropertyManagementFormsPage = () => {
@@ -19,29 +20,7 @@ const PropertyManagementFormsPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('all');
 
-    const contentItems = Object.entries(prefixSection)
-        .filter(([key]) => key !== 'title')
-        .map(([key, value]) => {
-            if (key.startsWith('paragraph') && typeof value === 'string') {
-                return {
-                    type: 'paragraph',
-                    text: value,
-                };
-            }
-
-            if (key === 'bullet-point-list' && typeof value === 'object' && value !== null) {
-                return {
-                    type: 'bulletList',
-                    intro: value.paragraph1,
-                    items: Object.entries(value)
-                        .filter(([bulletKey, bulletValue]) => bulletKey.startsWith('bullet-point-paragraph') && typeof bulletValue === 'string')
-                        .map(([, bulletValue]) => bulletValue),
-                };
-            }
-
-            return null;
-        })
-        .filter(Boolean);
+    const contentItems = buildFormContentItems(prefixSection);
 
     const categoryLabels = useMemo(
         () => (isFinnish ? {
