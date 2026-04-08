@@ -11,6 +11,7 @@ import PropertyManagementInstructions from './pages/PropertyManagementInstructio
 import ResponsibilityTablePage from './pages/ResponsibilityTablePage.jsx';
 import PropertyManagementFormsPage from './pages/PropertyManagementFormsPage.jsx';
 import BiddingQuotePage from './pages/BiddingQuotePage.jsx';
+import PublicDeedConfirmationsPage from './pages/PublicDeedConfirmationsPage.jsx';
 
 function App() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/vastuunjakotaulukko" element={<ResponsibilityTablePage />} />
           <Route path="/lomakkeet" element={<PropertyManagementFormsPage />} />
           <Route path="/tarjouskaupat" element={<BiddingQuotePage />} />
+          <Route path="/julkiset-kaupanvahvistukset" element={<PublicDeedConfirmationsPage />} />
         </Routes>
       </main>
       <Footer />

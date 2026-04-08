@@ -269,5 +269,33 @@
         }
       }
     }
+  },
+  "Public-Deed-Page": {
+    "Introduction-Section": {
+      "title": "Julkiset kaupanvahvistukset",
+      "paragraph1": "Juostavasti ja asiantuntevasti AR Isännöinniltä.",
+      "CTA-button": "Ota yhteyttä julkisista kaupanvahvistuksista"
+    },
+    "Prefix": {
+      "title": "Mikä on julkisen kaupanvahvistajan tehtävä?",
+      "paragraph1": "Julkinen kaupanvahvistaja on viranomaisen (Maanmittauslaitos) valtuuttama henkilö, jonka läsnäolo on kiinteistökaupassa lakisääteinen vaatimus (Maakaari).",
+      "bullet-point-list": {
+        "paragraph1": "Kaupanvahvistajan keskeisimmät tehtävät ovat:",
+        "bullet-point-paragraph1": "Henkilöllisyyden toteaminen: Varmistetaan, että myyjällä on oikeus luovuttaa kiinteistö ja ostaja on se, joka väittää olevansa.",
+        "bullet-point-paragraph2": "Oikeudellinen pätevyys: Todetaan, että kauppakirja on tehty muodollisesti oikein.",
+        "bullet-point-paragraph3": "Vahvistaminen: Kauppa tulee sitovaksi vasta, kun molemmat osapuolet allekirjoittavat sopimukset kaupanvahvistajan läsnäollessa.",
+        "bullet-point-paragraph4": "Ilmoitusvelvollisuus: Kaupanvahvistaja huolehtii tiedon välittämisestä viranomaisille (kuten Maanmittauslaitokselle), mikä käynnistää ostajan lainhuutoprosessin."
+      }
+    },
+    "Real-Estate-Specifications": {
+      "title": "Mikä lasketaan kiinteistöksi?",
+      "bullet-point-list": {
+        "paragraph1": "Kaupanvahvistajan keskeisimmät tehtävät ovat:Kiinteistö on Suomen lainsäädännössä itsenäinen maanomistuksen yksikkö. Se voi olla:",
+        "bullet-point-paragraph1": "Metsä- tai maatalousmaa",
+        "bullet-point-paragraph2": "Rakennuspaikka tai tontti",
+        "bullet-point-paragraph3": "Maa-alueella sijaitsevat rakennukset (kuten asuintalo tai kesämökki)"
+      },
+      "paragraph1": "On tärkeää ymmärtää, että juridisesti pelkkä talo ei ole kiinteistö, vaan kiinteistöön kuuluu aina se maa-alue (tai sen osa), jolla rakennus sijaitsee."
+    }
   }
 }

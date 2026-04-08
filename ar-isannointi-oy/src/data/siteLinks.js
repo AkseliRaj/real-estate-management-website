@@ -12,7 +12,7 @@ const SITE_LINKS = {
     realEstate: '#',
     ourPropertiesForSale: '#',
     requestEstimate: '#',
-    publicDeeds: '#',
+    publicDeeds: '/julkiset-kaupanvahvistukset',
     offerDeals: '/tarjouskaupat',
     rental: '#',
     rentalProperties: '#',

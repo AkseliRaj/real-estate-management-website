@@ -269,5 +269,33 @@
         }
       }
     }
+  },
+  "Public-Deed-Page": {
+    "Introduction-Section": {
+      "title": "Public trade confirmations",
+      "paragraph1": "From AR Isännöinti Oy",
+      "CTA-button": "Contact us about public trade confirmations"
+    },
+    "Prefix": {
+      "title": "What is the role of a public notary for real estate?",
+      "paragraph1": "A public notary (kaupanvahvistaja) is an individual authorized by the authority (National Land Survey of Finland) whose presence is a statutory requirement in real estate transactions (Code of Real Estate).",
+      "bullet-point-list": {
+        "paragraph1": "The core duties of a notary are:",
+        "bullet-point-paragraph1": "Verification of identity: Ensuring the seller has the right to transfer the property and the buyer is who they claim to be.",
+        "bullet-point-paragraph2": "Legal validity: Confirming that the deed of sale is formally correct and compliant.",
+        "bullet-point-paragraph3": "Attestation: The transaction becomes binding only once both parties sign the agreements in the presence of the notary.",
+        "bullet-point-paragraph4": "Reporting obligation: The notary ensures information is forwarded to the authorities (such as the National Land Survey), which initiates the buyer's title registration process."
+      }
+    },
+    "Real-Estate-Specifications": {
+      "title": "What is considered a property?",
+      "bullet-point-list": {
+        "paragraph1": "In Finnish legislation, a property (kiinteistö) is an independent unit of land ownership. It can be:",
+        "bullet-point-paragraph1": "Forestry or agricultural land",
+        "bullet-point-paragraph2": "A building site or a plot",
+        "bullet-point-paragraph3": "Buildings located on the land area (such as a residential house or a summer cottage)"
+      },
+      "paragraph1": "It is important to understand that legally, a house alone is not a property; a property always includes the land area (or part of it) on which the building is located."
+    }
   }
 }
