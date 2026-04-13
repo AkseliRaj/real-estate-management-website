@@ -5,7 +5,7 @@ const IconListCardsSection = ({ title, cards = [], iconSrc, listClassName = '' }
                 <h3 className='d-none d-md-block pb-3'>{title}</h3>
                 <h4 className='d-block d-md-none pb-3'>{title}</h4>
             </div>
-            <div className="col-12 col-xl-8 py-0 py-md-5">
+            <div className="col-12 col-xl-8 py-0 py-md-3">
                 <div className="row mx-0 align-items-stretch justify-content-center gap-4 gap-xl-5">
                     {cards.map((card, index) => (
                         <div key={card.id || index} className="Form-Card col-11 col-md-5">

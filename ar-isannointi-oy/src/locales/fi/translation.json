@@ -296,6 +296,39 @@
         "bullet-point-paragraph3": "Maa-alueella sijaitsevat rakennukset (kuten asuintalo tai kesämökki)"
       },
       "paragraph1": "On tärkeää ymmärtää, että juridisesti pelkkä talo ei ole kiinteistö, vaan kiinteistöön kuuluu aina se maa-alue (tai sen osa), jolla rakennus sijaitsee."
+    },
+    "When-to-aquire-cards": {
+      "title": "Milloin kaupanvahvistajaa tarvitaan?",
+      "Needed-Card": {
+        "title": "Tarvitaan aina",
+        "bullet-point-list": {
+          "bullet-point-paragraph1": "Omakotitalon tai tontin myynti",
+          "bullet-point-paragraph2": "Kiinteistön lahjoitus",
+          "bullet-point-paragraph3": "Kiinteistöjen vaihto",
+          "bullet-point-paragraph4": "Jakosopimukset ja purkamiset"
+        }
+      },
+      "Not-Needed-Card": {
+        "title": "Ei tarvita",
+        "bullet-point-list": {
+          "bullet-point-paragraph1": "Kerrostalo- tai rivitaloasunto (Asunto-osake)",
+          "bullet-point-paragraph2": "Vuokratontilla sijaitseva rakennus (irtain omaisuus)",
+          "bullet-point-paragraph3": "Sähköinen kiinteistönvaihdanta palvelu"
+        },
+        "note-paragraph": "Huom: Jos kauppa tehdään sähköisesti Maanmittauslaitoksen järjestelmässä, järjestelmä hoitaa vahvistamisen automaattisesti. Perinteisissä tapaamisissa ja paperisissa kauppakirjoissa kaupanvahvistaja on välttämätön. Yleisin nyrkkisääntö on, jos kaupan kohteena on maa-alue, tarvitset kaupanvahvistajan."
+      }
+    },
+    "Deed-Of-Transfer-CTA": {
+      "title": "Turvaa kaupankäyntisi – tilaa myös kauppakirjan laadinta",
+      "paragraph1": "Kaupanvahvistaja tarkistaa sopimuksen muotoseikat, mutta hän ei ota kantaa kaupan ehtoihin tai suojatonta osapuolta sääteleviin seikkoihin. Siksi suosittelemme aina, että kauppakirjan laatii ammattilainen.",
+      "bullet-point-list": {
+        "paragraph": "AR Isännöinti auttaa sinua:",
+        "bullet-point-paragraph1": "Laatimaan juridisesti kestävät kauppakirjat.",
+        "bullet-point-paragraph2": "Tarkistamaan rasitustodistukset ja kiinteistörekisteriotteet.",
+        "bullet-point-paragraph3": "Varmistamaan, että kaikki tarvittavat liitteet ovat kunnossa."
+      },
+      "paragraph2": "Ota yhteyttä ja varaa aika kaupanvahvistukseen tai pyydä tarjous kauppakirjan laatimisesta. Toimimme joustavasti ja asiantuntevasti.",
+      "CTA-Button": "Ota yhteyttä kaupanvahvistuksista"
     }
   }
 }

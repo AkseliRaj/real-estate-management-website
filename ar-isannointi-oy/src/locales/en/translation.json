@@ -296,6 +296,39 @@
         "bullet-point-paragraph3": "Buildings located on the land area (such as a residential house or a summer cottage)"
       },
       "paragraph1": "It is important to understand that legally, a house alone is not a property; a property always includes the land area (or part of it) on which the building is located."
+    },
+    "When-to-acquire-cards": {
+      "title": "When is a public notary needed?",
+      "Needed-Card": {
+        "title": "Always needed",
+        "bullet-point-list": {
+          "bullet-point-paragraph1": "Selling a detached house or a plot of land",
+          "bullet-point-paragraph2": "Donation of real estate",
+          "bullet-point-paragraph3": "Exchange of real estate properties",
+          "bullet-point-paragraph4": "Partition agreements and dissolutions"
+        }
+      },
+      "Not-Needed-Card": {
+        "title": "Not needed",
+        "bullet-point-list": {
+          "bullet-point-paragraph1": "Apartments in apartment buildings or terraced houses (Housing shares)",
+          "bullet-point-paragraph2": "Buildings located on leased plots (Movable property)",
+          "bullet-point-paragraph3": "Electronic property transaction services"
+        },
+        "note-paragraph": "Note: If the transaction is conducted electronically through the National Land Survey of Finland's system, the system handles the verification automatically. In traditional meetings and with paper deeds, a public notary is essential. The most common rule of thumb is: if the object of the sale is a land area, you need a public notary."
+      }
+    },
+    "Deed-Of-Transfer-CTA": {
+      "title": "Secure your transaction – order the drafting of the deed of sale as well",
+      "paragraph1": "The public notary checks the formalities of the agreement, but they do not take a position on the terms of the sale or matters regulating the protection of the parties. Therefore, we always recommend that the deed of sale is drafted by a professional.",
+      "bullet-point-list": {
+        "paragraph": "AR Isännöinti helps you:",
+        "bullet-point-paragraph1": "Draft legally sound deeds of sale.",
+        "bullet-point-paragraph2": "Check certificates of mortgages and encumbrances and property register extracts.",
+        "bullet-point-paragraph3": "Ensure that all necessary attachments are in order."
+      },
+      "paragraph2": "Contact us to book an appointment for a public notary service or request a quote for drafting a deed of sale. We operate flexibly and with expertise.",
+      "CTA-Button": "Contact us regarding public notary services"
     }
   }
 }

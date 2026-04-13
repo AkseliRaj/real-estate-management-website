@@ -48,7 +48,7 @@ h4 { font-size: var(--step-3); }
 h5 { font-size: var(--step-2); }
 h6 { font-size: var(--step-1); }
 
-p, .form-label, .form-control, .Renovation-Name, .Housing-Association-Responsibility, .Shareholder-Responsibility {
+p, li, .form-label, .form-control, .Renovation-Name, .Housing-Association-Responsibility, .Shareholder-Responsibility {
   font-weight: 500;
   font-size: var(--step-0);
   line-height: 1.6;
@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-bottom: 1em;
   overflow-wrap: break-word;
+}
+
+li {
+  padding-bottom: .5rem;
 }
 
 .form-label {
