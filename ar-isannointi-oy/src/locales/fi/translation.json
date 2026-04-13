@@ -297,7 +297,7 @@
       },
       "paragraph1": "On tärkeää ymmärtää, että juridisesti pelkkä talo ei ole kiinteistö, vaan kiinteistöön kuuluu aina se maa-alue (tai sen osa), jolla rakennus sijaitsee."
     },
-    "When-to-aquire-cards": {
+    "When-to-acquire-cards": {
       "title": "Milloin kaupanvahvistajaa tarvitaan?",
       "Needed-Card": {
         "title": "Tarvitaan aina",
@@ -329,6 +329,54 @@
       },
       "paragraph2": "Ota yhteyttä ja varaa aika kaupanvahvistukseen tai pyydä tarjous kauppakirjan laatimisesta. Toimimme joustavasti ja asiantuntevasti.",
       "CTA-Button": "Ota yhteyttä kaupanvahvistuksista"
+    }
+  },
+  "Real-Estate-Request-Quote": {
+    "banner": {
+      "heading": "Pyydä tarjous kohteestasi",
+      "imageAlt": "Kynä ja paperi -ikoni"
+    },
+    "Prefix-Section": {
+      "title": "Myyntitoimeksianto – Ammattitaitoa ja välittämistä",
+      "paragraph1": "Suunnitteletko asunnon tai kiinteistön myyntiä? Me AR Isännöinnillä hoidamme asuntokauppasi alusta loppuun saakka tinkimättömällä ammattitaidolla ja paikallistuntemuksella.",
+      "paragraph2": "Tarjoamme täysin maksuttoman arviokäynnin, jonka aikana tutustumme kohteeseesi ja annamme rehellisen arvion sen markkinahinnasta. Sovimme tapaamiset joustavasti arkipäiville sinun aikataulujesi mukaan."
+    },
+    "Services-Explained": {
+      "title": "Mitä välityspalkkio sisältää?",
+      "bullet-point-list-1": {
+        "paragraph1": "Välityspalkkiomme on kilpailukykyinen ja sisältää kaiken onnistuneeseen kauppaan tarvittavan:",
+        "list-item1": {
+          "bold-word": "Välityspalkkio: ",
+          "paragraph": "3,1 % kohteen velattomasta hinnasta (2,5 % + alv. 25 %)."
+        },
+        "list-item2": {
+          "bold-word": "Minimipalkkio: ",
+          "paragraph": "2 000 € (sis. alv)."
+        }
+      },
+      "bullet-point-list-2": {
+        "paragraph1": "Me huolehdimme kaikesta puolestasi, jotta voit keskittyä uuden kodin etsimiseen tai muuttoon:",
+        "list-item1": {
+          "bold-word": "Valmistelu: ",
+          "paragraph": "Asunnon hinta-arviointi ja kaikkien tarvittavien virallisten asiapapereiden hankinta."
+        },
+        "list-item2": {
+          "bold-word": "Markkinointi: ",
+          "paragraph": "Laadukas valokuvaus, houkuttelevan myyntiesitteen laadinta sekä laaja näkyvyys Etuovi.fi-palvelussa ja verkkosivuillamme"
+        },
+        "list-item3": {
+          "bold-word": "Muu näkyvyys: ",
+          "paragraph": "Lehtimainonta esittelyjen yhteydessä erillisen sopimuksen mukaan."
+        },
+        "list-item4": {
+          "bold-word": "Kaupankäynti: ",
+          "paragraph": "Tarjousasiakirjojen laadinta, ammattimaiset tarjousneuvottelut sekä kauppakirjojen valmistelu."
+        },
+        "list-item5": {
+          "bold-word": "Tuki: ",
+          "paragraph": "Henkilökohtainen neuvonta kaikissa asunnon myyntiin ja uuden kodin ostamiseen liittyvissä kysymyksissä."
+        }
+      }
     }
   }
 }

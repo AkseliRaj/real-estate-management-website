@@ -11,7 +11,10 @@ const PublicDeedConfirmationsPage = () => {
     const { t } = useTranslation();
     const prefixSection = t('Public-Deed-Page.Prefix', { returnObjects: true });
     const realEstateSpecificationsSection = t('Public-Deed-Page.Real-Estate-Specifications', { returnObjects: true });
-    const AquireWhenCardsSection = t('Public-Deed-Page.When-to-aquire-cards', { returnObjects: true });
+    const AquireWhenCardsSection = t('Public-Deed-Page.When-to-acquire-cards', {
+        returnObjects: true,
+        defaultValue: t('Public-Deed-Page.When-to-aquire-cards', { returnObjects: true }),
+    });
     const DeedOfTransferCTA = t('Public-Deed-Page.Deed-Of-Transfer-CTA', { returnObjects: true });
     const acquireWhenNote = AquireWhenCardsSection?.['Not-Needed-Card']?.['note-paragraph'] || '';
     const biddingExplanationCards = Object.entries(AquireWhenCardsSection || {})

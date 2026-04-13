@@ -330,5 +330,53 @@
       "paragraph2": "Contact us to book an appointment for a public notary service or request a quote for drafting a deed of sale. We operate flexibly and with expertise.",
       "CTA-Button": "Contact us regarding public notary services"
     }
+  },
+  "Real-Estate-Request-Quote": {
+    "banner": {
+      "heading": "Request a quote for your property",
+      "imageAlt": "Pen and paper icon"
+    },
+    "Prefix-Section": {
+      "title": "Sales Commission – Professionalism and Care",
+      "paragraph1": "Are you planning to sell an apartment or a property? At AR Isännöinti, we handle your real estate transaction from start to finish with uncompromising professionalism and local expertise.",
+      "paragraph2": "We offer a completely free appraisal visit, during which we familiarize ourselves with your property and provide an honest estimate of its market value. We schedule meetings flexibly on weekdays according to your schedule."
+    },
+    "Services-Explained": {
+      "title": "What does the brokerage fee include?",
+      "bullet-point-list-1": {
+        "paragraph1": "Our brokerage fee is competitive and includes everything needed for a successful sale:",
+        "list-item1": {
+          "bold-word": "Brokerage fee: ",
+          "paragraph": "3.1% of the debt-free price of the property (2.5% + VAT 25%)."
+        },
+        "list-item2": {
+          "bold-word": "Minimum fee: ",
+          "paragraph": "€2,000 (incl. VAT)."
+        }
+      },
+      "bullet-point-list-2": {
+        "paragraph1": "We take care of everything on your behalf, so you can focus on finding a new home or moving:",
+        "list-item1": {
+          "bold-word": "Preparation: ",
+          "paragraph": "Property valuation and the acquisition of all necessary official documents."
+        },
+        "list-item2": {
+          "bold-word": "Marketing: ",
+          "paragraph": "High-quality photography, creation of an attractive sales brochure, and broad visibility on Etuovi.fi and our website."
+        },
+        "list-item3": {
+          "bold-word": "Other visibility: ",
+          "paragraph": "Newspaper advertising in connection with viewings according to a separate agreement."
+        },
+        "list-item4": {
+          "bold-word": "Trading: ",
+          "paragraph": "Drafting of offer documents, professional offer negotiations, and preparation of deeds of sale."
+        },
+        "list-item5": {
+          "bold-word": "Support: ",
+          "paragraph": "Personal advice on all questions related to selling your home and buying a new one."
+        }
+      }
+    }
   }
 }

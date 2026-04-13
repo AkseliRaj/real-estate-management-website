@@ -11,7 +11,7 @@ const SITE_LINKS = {
     clientPages: 'https://huoneistotieto.fi/fi-FI/account/app/login',
     realEstate: '#',
     ourPropertiesForSale: '#',
-    requestEstimate: '#',
+    requestEstimate: '/arvio-kohteestasi',
     publicDeeds: '/julkiset-kaupanvahvistukset',
     offerDeals: '/tarjouskaupat',
     rental: '#',
