@@ -12,6 +12,7 @@ const RealEstateQuotePage = () => {
     const requestQuoteBanner = realEstateRequestQuoteSection.banner || {};
     const requestQuotePrefixSection = realEstateRequestQuoteSection['Prefix-Section'] || {};
     const requestQuoteServicesSection = realEstateRequestQuoteSection['Services-Explained'] || {};
+    const formIntroductionSection = realEstateRequestQuoteSection['Form-Introduction'] || {};
     const requestQuoteServicesContentItems = Object.entries(requestQuoteServicesSection)
         .filter(([key]) => key !== 'title')
         .map(([key, value]) => {
@@ -69,16 +70,21 @@ const RealEstateQuotePage = () => {
                 contentItems={requestQuoteServicesContentItems}
             />
 
+            <FormIntroductionSection
+                title={formIntroductionSection.title}
+                contentItems={buildFormContentItems(formIntroductionSection)}
+            />
+
             {/* Form sender information */}
             <div className='container'>
                 <div className='row justify-content-start py-5'>
 
                     <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-3'>
                         <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>
-                            {t('PropertyManagementQuote.contactSection.heading')}
+                            {t('Real-Estate-Request-Quote.Form-Fields.Contact-Information.title')}
                         </h3>
                         <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>
-                            {t('PropertyManagementQuote.contactSection.heading')}
+                            {t('Real-Estate-Request-Quote.Form-Fields.Contact-Information.title')}
                         </h4>
                     </div>
 
@@ -87,7 +93,7 @@ const RealEstateQuotePage = () => {
 
                             <div className="col-12 mb-3">
                                 <label htmlFor="contactName" className="form-label">
-                                    {t('PropertyManagementQuote.contactSection.nameLabel')} <span className='Required-Asterisk'>*</span>
+                                    {t('Real-Estate-Request-Quote.Form-Fields.Contact-Information.form-field-1')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -98,7 +104,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="contactPhone" className="form-label">
-                                    {t('PropertyManagementQuote.contactSection.phoneLabel')} <span className='Required-Asterisk'>*</span>
+                                    {t('Real-Estate-Request-Quote.Form-Fields.Contact-Information.form-field-2')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="tel"
@@ -109,7 +115,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12'>
                                 <label htmlFor="contactEmail" className="form-label">
-                                    {t('PropertyManagementQuote.contactSection.emailLabel')} <span className='Required-Asterisk'>*</span>
+                                    {t('Real-Estate-Request-Quote.Form-Fields.Contact-Information.form-field-3')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="email"
@@ -130,10 +136,10 @@ const RealEstateQuotePage = () => {
 
                     <div className='col-11 col-lg-8 col-xxl-8 py-0 py-md-3'>
                         <h3 className='d-none d-md-block pb-1 pb-sm-2 pb-lg-3'>
-                            {t('PropertyManagementQuote.propertySection.heading')}
+                            {t('Real-Estate-Request-Quote.Form-Fields.House-Information.title')}
                         </h3>
                         <h4 className='d-block d-md-none pb-1 pb-sm-2 pb-lg-3'>
-                            {t('PropertyManagementQuote.propertySection.heading')}
+                            {t('Real-Estate-Request-Quote.Form-Fields.House-Information.title')}
                         </h4>
                     </div>
 
@@ -142,7 +148,7 @@ const RealEstateQuotePage = () => {
 
                             <div className="col-12 mb-3">
                                 <label htmlFor="propertyName" className="form-label">
-                                    {t('PropertyManagementQuote.propertySection.nameLabel')} <span className='Required-Asterisk'>*</span>
+                                    {t('Real-Estate-Request-Quote.Form-Fields.House-Information.form-field-1')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -153,7 +159,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="propertyAddress" className="form-label">
-                                    {t('PropertyManagementQuote.propertySection.addressLabel')} <span className='Required-Asterisk'>*</span>
+                                    {t('Real-Estate-Request-Quote.Form-Fields.House-Information.form-field-1')} <span className='Required-Asterisk'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -164,7 +170,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="buildYear" className="form-label">
-                                    {t('PropertyManagementQuote.propertySection.buildYearLabel')}
+                                    {t('Real-Estate-Request-Quote.Form-Fields.House-Information.form-field-2')}
                                 </label>
                                 <input
                                     type="text"
@@ -175,7 +181,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="apartmentCount" className="form-label">
-                                    {t('PropertyManagementQuote.propertySection.apartmentCountLabel')}
+                                    {t('Real-Estate-Request-Quote.Form-Fields.House-Information.form-field-3')}
                                 </label>
                                 <input
                                     type="number"
@@ -186,7 +192,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="squareFootage" className="form-label">
-                                    {t('PropertyManagementQuote.propertySection.squareFootageLabel')}
+                                    {t('Real-Estate-Request-Quote.Form-Fields.House-Information.form-field-4')}
                                 </label>
                                 <input
                                     type="text"
@@ -197,7 +203,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <label htmlFor="additionalInfo" className="form-label">
-                                    {t('PropertyManagementQuote.propertySection.additionalInfoLabel')}
+                                    {t('Real-Estate-Request-Quote.Form-Fields.House-Information.form-field-5')}
                                 </label>
                                 <textarea
                                     className="form-control"
@@ -208,14 +214,14 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <ArrowButton
-                                    label={t('PropertyManagementQuote.form.submitButton')}
+                                    label={t('Real-Estate-Request-Quote.Form-Fields.Form-Send-Button.title')}
                                     variant="orange"
                                     showArrow={true}
                                 />
                             </div>
 
                             <div className='col-12 mb-3'>
-                                <p>{t('PropertyManagementQuote.form.submittedMessage')}</p>
+                                <p>tänne tekstiä sitte onnistuneesta lomakkeen lähetyksestä</p>
                             </div>
 
                         </div>
