@@ -14,7 +14,7 @@ const BUTTON_VARIANTS = {
     },
 };
 
-const ArrowButton = ({
+const ArrowButton = React.forwardRef(({
     label,
     children,
     altText = "icon",
@@ -31,7 +31,7 @@ const ArrowButton = ({
     style,
     disabled = false,
     ...props
-}) => {
+}, ref) => {
     const variantColors = BUTTON_VARIANTS[variant] || BUTTON_VARIANTS.orange;
     const resolvedBackgroundColor = buttonColor || variantColors.backgroundColor;
     const resolvedTextColor = textColor || variantColors.textColor;
@@ -41,6 +41,7 @@ const ArrowButton = ({
 
     return (
         <button
+            ref={ref}
             type={type}
             className={`icon-button ${className}`}
             onClick={onClick}
@@ -68,6 +69,6 @@ const ArrowButton = ({
             )}
         </button>
     );
-};
+});
 
 export default ArrowButton;

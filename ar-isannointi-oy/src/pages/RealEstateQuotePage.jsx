@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import '../css/PropertyManagementQuotePage.css';
 import FormPageBanner from '../components/FormPageBanner';
 import FormIntroductionSection from '../components/FormIntroductionSection';
 import ArrowButton from '../components/ArrowButtonOrange';
 import { useTranslation } from 'react-i18next';
 import buildFormContentItems from '../utils/buildFormContentItems';
+import confetti from 'canvas-confetti';
 
 const RealEstateQuotePage = () => {
     const { t } = useTranslation();
+    const submitButtonRef = useRef(null);
     const [formValues, setFormValues] = useState({
         contactName: '',
         contactPhone: '',
@@ -21,6 +23,26 @@ const RealEstateQuotePage = () => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitMessage, setSubmitMessage] = useState({ type: '', text: '' });
+
+    const fireSuccessConfetti = () => {
+        const buttonElement = submitButtonRef.current;
+        const defaultOrigin = { x: 0.5, y: 0.7 };
+        let confettiOrigin = defaultOrigin;
+
+        if (buttonElement) {
+            const buttonRect = buttonElement.getBoundingClientRect();
+            confettiOrigin = {
+                x: (buttonRect.left + (buttonRect.width / 2)) / window.innerWidth,
+                y: (buttonRect.top + (buttonRect.height / 2)) / window.innerHeight,
+            };
+        }
+
+        confetti({
+            particleCount: 90,
+            spread: 70,
+            origin: confettiOrigin,
+        });
+    };
 
     const realEstateRequestQuoteSection = t('Real-Estate-Request-Quote', { returnObjects: true });
     const requestQuoteBanner = realEstateRequestQuoteSection.banner || {};
@@ -108,6 +130,7 @@ const RealEstateQuotePage = () => {
             type: 'success',
             text: 'Lomake lähetetty onnistuneesti (testilähetys).',
         });
+        fireSuccessConfetti();
     };
 
     return (
@@ -289,6 +312,7 @@ const RealEstateQuotePage = () => {
 
                             <div className='col-12 mb-3'>
                                 <ArrowButton
+                                    ref={submitButtonRef}
                                     label={t('Real-Estate-Request-Quote.Form-Fields.Form-Send-Button.title')}
                                     variant="orange"
                                     isLoading={isSubmitting}
