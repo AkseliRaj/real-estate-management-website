@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/PropertyManagementQuotePage.css';
 import FormPageBanner from '../components/FormPageBanner';
 import FormIntroductionSection from '../components/FormIntroductionSection';
@@ -8,6 +8,20 @@ import buildFormContentItems from '../utils/buildFormContentItems';
 
 const RealEstateQuotePage = () => {
     const { t } = useTranslation();
+    const [formValues, setFormValues] = useState({
+        contactName: '',
+        contactPhone: '',
+        contactEmail: '',
+        propertyName: '',
+        propertyAddress: '',
+        buildYear: '',
+        apartmentCount: '',
+        squareFootage: '',
+        additionalInfo: '',
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitMessage, setSubmitMessage] = useState({ type: '', text: '' });
+
     const realEstateRequestQuoteSection = t('Real-Estate-Request-Quote', { returnObjects: true });
     const requestQuoteBanner = realEstateRequestQuoteSection.banner || {};
     const requestQuotePrefixSection = realEstateRequestQuoteSection['Prefix-Section'] || {};
@@ -52,6 +66,49 @@ const RealEstateQuotePage = () => {
             return null;
         })
         .filter(Boolean);
+
+    const handleInputChange = (event) => {
+        const { id, value } = event.target;
+        setFormValues((prevValues) => ({
+            ...prevValues,
+            [id]: value,
+        }));
+    };
+
+    const handleFakeSubmit = async () => {
+        const requiredFields = [
+            'contactName',
+            'contactPhone',
+            'contactEmail',
+            'propertyName',
+            'propertyAddress',
+        ];
+
+        const hasMissingRequiredField = requiredFields.some(
+            (field) => !String(formValues[field]).trim(),
+        );
+
+        if (hasMissingRequiredField) {
+            setSubmitMessage({
+                type: 'error',
+                text: 'Täytä kaikki pakolliset kentät ennen lähettämistä.',
+            });
+            return;
+        }
+
+        setSubmitMessage({ type: '', text: '' });
+        setIsSubmitting(true);
+
+        await new Promise((resolve) => {
+            setTimeout(resolve, 1400);
+        });
+
+        setIsSubmitting(false);
+        setSubmitMessage({
+            type: 'success',
+            text: 'Lomake lähetetty onnistuneesti (testilähetys).',
+        });
+    };
 
     return (
         <div className="container-fluid px-0">
@@ -99,6 +156,8 @@ const RealEstateQuotePage = () => {
                                     type="text"
                                     className="form-control"
                                     id="contactName"
+                                    value={formValues.contactName}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -110,6 +169,8 @@ const RealEstateQuotePage = () => {
                                     type="tel"
                                     className="form-control"
                                     id="contactPhone"
+                                    value={formValues.contactPhone}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -121,6 +182,8 @@ const RealEstateQuotePage = () => {
                                     type="email"
                                     className="form-control"
                                     id="contactEmail"
+                                    value={formValues.contactEmail}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -154,6 +217,8 @@ const RealEstateQuotePage = () => {
                                     type="text"
                                     className="form-control"
                                     id="propertyName"
+                                    value={formValues.propertyName}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -165,6 +230,8 @@ const RealEstateQuotePage = () => {
                                     type="text"
                                     className="form-control"
                                     id="propertyAddress"
+                                    value={formValues.propertyAddress}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -176,6 +243,8 @@ const RealEstateQuotePage = () => {
                                     type="text"
                                     className="form-control"
                                     id="buildYear"
+                                    value={formValues.buildYear}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -187,6 +256,8 @@ const RealEstateQuotePage = () => {
                                     type="number"
                                     className="form-control"
                                     id="apartmentCount"
+                                    value={formValues.apartmentCount}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -198,6 +269,8 @@ const RealEstateQuotePage = () => {
                                     type="text"
                                     className="form-control"
                                     id="squareFootage"
+                                    value={formValues.squareFootage}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -209,6 +282,8 @@ const RealEstateQuotePage = () => {
                                     className="form-control"
                                     id="additionalInfo"
                                     rows="4"
+                                    value={formValues.additionalInfo}
+                                    onChange={handleInputChange}
                                 />
                             </div>
 
@@ -216,12 +291,20 @@ const RealEstateQuotePage = () => {
                                 <ArrowButton
                                     label={t('Real-Estate-Request-Quote.Form-Fields.Form-Send-Button.title')}
                                     variant="orange"
+                                    isLoading={isSubmitting}
+                                    spinnerVariant="light"
                                     showArrow={true}
+                                    onClick={handleFakeSubmit}
                                 />
+
                             </div>
 
-                            <div className='col-12 mb-3'>
-                                <p>tänne tekstiä sitte onnistuneesta lomakkeen lähetyksestä</p>
+                            <div className='Form-Submitted-Message col-12 mb-3'>
+                                {!!submitMessage.text && (
+                                    <p className={submitMessage.type === 'error' ? 'text-danger mb-0' : 'text-success mb-0'}>
+                                        {submitMessage.text}
+                                    </p>
+                                )}
                             </div>
 
                         </div>
