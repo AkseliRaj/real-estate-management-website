@@ -27,6 +27,7 @@ const ArrowButton = React.forwardRef(({
     spinnerVariant = "light",
     spinnerSmall = true,
     showArrow = true,
+    iconSrc,
     className = "",
     style,
     disabled = false,
@@ -36,7 +37,7 @@ const ArrowButton = React.forwardRef(({
     const resolvedBackgroundColor = buttonColor || variantColors.backgroundColor;
     const resolvedTextColor = textColor || variantColors.textColor;
     const isDarkArrow = String(resolvedTextColor).trim().toLowerCase() === "#333333";
-    const resolvedArrowIcon = isDarkArrow ? RightArrowIconDark : RightArrowIcon;
+    const resolvedArrowIcon = iconSrc || (isDarkArrow ? RightArrowIconDark : RightArrowIcon);
     const buttonContent = children || label;
 
     return (
