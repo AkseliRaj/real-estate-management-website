@@ -377,6 +377,29 @@
           "paragraph": "Henkilökohtainen neuvonta kaikissa asunnon myyntiin ja uuden kodin ostamiseen liittyvissä kysymyksissä."
         }
       }
+    },
+    "Form-Introduction": {
+      "title": "Jätä yhteydenottopyyntö",
+      "paragraph": "Täytä alla oleva lomake, niin olemme sinuun yhteydessä mahdollisimman pian. Keskustellaan yhdessä, miten saamme asunnostasi parhaimman hinnan!"
+    },
+    "Form-Fields": {
+      "Contact-Information": {
+        "title": "Yhteystiedot",
+        "form-field-1": "Nimi: ",
+        "form-field-2": "Puhelin: ",
+        "form-field-3": "Sähköposti: "
+      },
+      "House-Information": {
+        "title": "Kohteen tiedot",
+        "form-field-1": "Osoite: ",
+        "form-field-2": "Pinta-ala: ",
+        "form-field-3": "Huoneluku: ",
+        "form-field-4": "Huoneistoselitelmä: ",
+        "form-field-5": "Lisätietoa kohteesta: "        
+      },
+      "Form-Send-Button": {
+        "title": "Lähetä lomake"
+      }
     }
   }
 }

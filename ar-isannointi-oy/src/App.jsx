@@ -13,6 +13,7 @@ import PropertyManagementFormsPage from './pages/PropertyManagementFormsPage.jsx
 import BiddingQuotePage from './pages/BiddingQuotePage.jsx';
 import PublicDeedConfirmationsPage from './pages/PublicDeedConfirmationsPage.jsx';
 import RealEstateQuotePage from './pages/RealEstateQuotePage.jsx';
+import RealEstatePropertiesPage from './pages/RealEstatePropertiesPage.jsx';
 
 function App() {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tarjouskaupat" element={<BiddingQuotePage />} />
           <Route path="/julkiset-kaupanvahvistukset" element={<PublicDeedConfirmationsPage />} />
           <Route path="/arvio-kohteestasi" element={<RealEstateQuotePage />} />
+          <Route path="/kiinteistonvalitys/kohteet" element={<RealEstatePropertiesPage />} />
         </Routes>
       </main>
       <Footer />

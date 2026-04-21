@@ -10,7 +10,7 @@ const SITE_LINKS = {
     requestQuote: '/tarjous-isannoinnista',
     clientPages: 'https://huoneistotieto.fi/fi-FI/account/app/login',
     realEstate: '#',
-    ourPropertiesForSale: '#',
+    ourPropertiesForSale: '/kiinteistonvalitys/kohteet',
     requestEstimate: '/arvio-kohteestasi',
     publicDeeds: '/julkiset-kaupanvahvistukset',
     offerDeals: '/tarjouskaupat',

@@ -377,6 +377,29 @@
           "paragraph": "Personal advice on all questions related to selling your home and buying a new one."
         }
       }
+    },
+    "Form-Introduction": {
+      "title": "Leave a contact request",
+      "paragraph": "Fill out the form below and we will get back to you as soon as possible. Let’s discuss how we can get the best price for your property!"
+    },
+    "Form-Fields": {
+      "Contact-Information": {
+        "title": "Contact Information",
+        "form-field-1": "Name: ",
+        "form-field-2": "Phone: ",
+        "form-field-3": "Email: "
+      },
+      "House-Information": {
+        "title": "Property Details",
+        "form-field-1": "Address: ",
+        "form-field-2": "Floor area: ",
+        "form-field-3": "Number of rooms: ",
+        "form-field-4": "Room description: ",
+        "form-field-5": "Additional information about the property: "        
+      },
+      "Form-Send-Button": {
+        "title": "Submit form"
+      }
     }
   }
 }
