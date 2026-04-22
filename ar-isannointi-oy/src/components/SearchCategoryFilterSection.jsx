@@ -16,6 +16,27 @@ function SearchCategoryFilterSection({
     categoryButtons,
     selectedCategory,
     onSelectCategory,
+    showRangeFilters = false,
+    priceRangeLabel = 'Price',
+    minPriceInputId = 'minPrice',
+    maxPriceInputId = 'maxPrice',
+    minPricePlaceholder = 'Min',
+    maxPricePlaceholder = 'Max',
+    minPriceValue = '',
+    maxPriceValue = '',
+    onMinPriceChange,
+    onMaxPriceChange,
+    priceUnitLabel = '€',
+    squareRangeLabel = 'Squares',
+    minSquareInputId = 'minSquare',
+    maxSquareInputId = 'maxSquare',
+    minSquarePlaceholder = 'Min',
+    maxSquarePlaceholder = 'Max',
+    minSquareValue = '',
+    maxSquareValue = '',
+    onMinSquareChange,
+    onMaxSquareChange,
+    squareUnitLabel = 'm2',
 }) {
     const handleSearchInputKeyDown = (event) => {
         if (event.key === 'Enter') {
@@ -27,6 +48,68 @@ function SearchCategoryFilterSection({
         <div className="container-fluid Filtering-Section">
             <div className="row justify-content-center">
                 <div className="col-11 col-md-9 col-lg-8 py-5">
+                    {showRangeFilters && (
+                        <div className="row justify-content-center justify-content-lg-start">
+                            <div className='col-12 col-lg-6 px-0 py-3 p-lg-4 p-xl-5'>
+                                <label htmlFor={minPriceInputId} className="form-label pb-2">
+                                    {priceRangeLabel}
+                                </label>
+                                <div className="Rent-RangeRow">
+                                    <div className="Rent-InputRow">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id={minPriceInputId}
+                                            placeholder={minPricePlaceholder}
+                                            value={minPriceValue}
+                                            onChange={onMinPriceChange}
+                                        />
+                                        <span className="Currency-Addon">{priceUnitLabel}</span>
+                                    </div>
+                                    <div className="Rent-InputRow">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id={maxPriceInputId}
+                                            placeholder={maxPricePlaceholder}
+                                            value={maxPriceValue}
+                                            onChange={onMaxPriceChange}
+                                        />
+                                        <span className="Currency-Addon">{priceUnitLabel}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-12 col-lg-6 px-0 py-3 p-lg-4 p-xl-5'>
+                                <label htmlFor={minSquareInputId} className="form-label pb-2">
+                                    {squareRangeLabel}
+                                </label>
+                                <div className="Rent-RangeRow">
+                                    <div className="Rent-InputRow">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id={minSquareInputId}
+                                            placeholder={minSquarePlaceholder}
+                                            value={minSquareValue}
+                                            onChange={onMinSquareChange}
+                                        />
+                                        <span className="Currency-Addon">{squareUnitLabel}</span>
+                                    </div>
+                                    <div className="Rent-InputRow">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id={maxSquareInputId}
+                                            placeholder={maxSquarePlaceholder}
+                                            value={maxSquareValue}
+                                            onChange={onMaxSquareChange}
+                                        />
+                                        <span className="Currency-Addon">{squareUnitLabel}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
 
                     <div className="row">
                         <div className="col-12 pb-5">

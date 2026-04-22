@@ -58,3 +58,24 @@
 .Color-Button:active {
     transform: scale(0.98);
 }
+
+.Rent-RangeRow {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.Rent-InputRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.Rent-InputRow .form-control {
+    flex: 1;
+}
+
+.Currency-Addon {
+    color: #333333;
+    line-height: 1;
+}

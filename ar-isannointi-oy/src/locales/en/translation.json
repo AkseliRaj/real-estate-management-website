@@ -395,11 +395,41 @@
         "form-field-2": "Floor area: ",
         "form-field-3": "Number of rooms: ",
         "form-field-4": "Room description: ",
-        "form-field-5": "Additional information about the property: "        
+        "form-field-5": "Additional information about the property: "
       },
       "Form-Send-Button": {
         "title": "Submit form"
       }
+    }
+  },
+  "Properties-Page": {
+    "Banner-Title": "Our Properties For Sale",
+    "Banner-Alt": "Properties banner image",
+    "Filtering-Section": {
+      "Property-Address": "Property address",
+      "Categories-Label": "Categories",
+      "Search-Button": "Search",
+      "Reset-Button": "Reset",
+      "Price-Amount": "Property price",
+      "Square-Amount": "Square meters m2",
+      "Categories": {
+        "All": "All",
+        "Apartment-Building": "Apartment building",
+        "Row-House": "Row house",
+        "Detached-House": "Detached house"
+      }
+    },
+    "Propertie-Count": "Properties ",
+    "Order-By": {
+      "Latest": "Latest",
+      "Cheapest": "Cheapest first",
+      "Expensive": "Expensive first",
+      "Least-Squares": "Smallest square meters",
+      "Most-Squares": "Biggest square meters"
+    },
+    "Pagination": {
+      "Next": "Next",
+      "Previous": "Previous"
     }
   }
 }

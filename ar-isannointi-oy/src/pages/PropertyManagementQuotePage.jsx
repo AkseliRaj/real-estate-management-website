@@ -18,6 +18,7 @@ const PropertyManagementQuotePage = () => {
                     t('PropertyManagementQuote.intro.paragraph1'),
                     t('PropertyManagementQuote.intro.paragraph2'),
                 ]}
+                rowJustify = {'center'}
             />
 
 

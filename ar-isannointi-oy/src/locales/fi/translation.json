@@ -401,5 +401,35 @@
         "title": "Lähetä lomake"
       }
     }
+  },
+  "Properties-Page": {
+    "Banner-Title": "Myyntikohteemme",
+    "Banner-Alt": "Myyntikohteet banneri",
+    "Filtering-Section": {
+      "Property-Address": "Kohteen osoite",
+      "Categories-Label": "Kategoriat",
+      "Search-Button": "Hae",
+      "Reset-Button": "Tyhjennä",
+      "Price-Amount": "Asunnon hinta",
+      "Square-Amount": "Asunnon koko m2",
+      "Categories": {
+        "All": "Kaikki",
+        "Apartment-Building": "Kerrostalo",
+        "Row-House": "Rivitalo",
+        "Detached-House": "Omakotitalo"
+      }
+    },
+    "Propertie-Count": "Kohteet ",
+    "Order-By": {
+      "Latest": "Viimeisimmät",
+      "Cheapest": "Edullisin ensin",
+      "Expensive": "Kallein ensin",
+      "Least-Squares": "Pienin pinta-ala",
+      "Most-Squares": "Suurin pinta-ala"
+    },
+    "Pagination": {
+      "Next": "Seuraava",
+      "Previous": "Edellinen"
+    }
   }
 }
