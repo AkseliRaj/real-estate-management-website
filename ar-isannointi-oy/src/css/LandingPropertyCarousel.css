@@ -1,0 +1,28 @@
+.Landing-PropertyCarousel {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Landing-PropertyCarousel > * {
+    flex: 0 0 88%;
+    max-width: 88%;
+    scroll-snap-align: start;
+}
+
+@media (min-width: 992px) {
+    .Landing-PropertyCarousel {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        scroll-snap-type: none;
+    }
+
+    .Landing-PropertyCarousel > * {
+        flex: initial;
+        max-width: initial;
+        scroll-snap-align: none;
+    }
+}

@@ -431,5 +431,14 @@
       "Next": "Seuraava",
       "Previous": "Edellinen"
     }
+  },
+  "Real-Estate-Landing": {
+   "Banner": {
+    "title": "Löydä uusi kotisi AR Isännöinniltä",
+    "CTA-button": "Katso kohteemme"
+   },
+   "Propertie-Carousel": {
+    "title": "Uusimmat kohteemme"
+   }
   }
 }

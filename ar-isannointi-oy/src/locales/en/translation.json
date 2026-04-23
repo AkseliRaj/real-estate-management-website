@@ -431,5 +431,14 @@
       "Next": "Next",
       "Previous": "Previous"
     }
+  },
+  "Real-Estate-Landing": {
+   "Banner": {
+    "title": "Find your new home from us",
+    "CTA-button": "Our properties"
+   },
+   "Propertie-Carousel": {
+    "title": "Uusimmat kohteemme"
+   }
   }
 }
