@@ -433,12 +433,38 @@
     }
   },
   "Real-Estate-Landing": {
-   "Banner": {
-    "title": "Find your new home from us",
-    "CTA-button": "Our properties"
-   },
-   "Propertie-Carousel": {
-    "title": "Uusimmat kohteemme"
-   }
+    "Banner": {
+      "title": "Find your new home from us",
+      "CTA-button": "Our properties"
+    },
+    "Propertie-Carousel": {
+      "title": "Uusimmat kohteemme"
+    },
+    "Card-Section": {
+      "title": "Selkeä välityspalkkio - kattava palkkio",
+      "card1": {
+        "title": "Kohteen markkinointi",
+        "paragraph": "Asuntosi tulee näkymään tuhansille katsojille laadukkaalla ja tehokkaalla markkinoinnilla myötä. AR Isännöinnin markkinointi tavoittaa oikeat ostajat ja nopeuttaa myyntiä."
+      },
+      "card2": {
+        "title": "Asunnon hinta-arvio ja myynnin valmistelu",
+        "paragraph": "Myynti alkaa realistisesta hinta-arviosta ja huolellisesta valmistelusta. Hankimme kaikki tarvittavat asiakirjat ja suunnittelemme myynnin niin, että kohde saadaan markkinoille tehokkaasti."
+      },
+      "card3": {
+        "title": "Tarjoukset ja kaupanteko",
+        "paragraph": "Huolehdimme koko kaupantekoprosessista turvallisesti ja ammattitaitoisesti aina tarjouksista lopulliseen kauppakirjaan asti."
+      },
+      "pricing-paragraph": "AR Isännöinti tarjoaa kiinteistönvälitystä selkeällä ja kilpailukykyisellä palkkiolla. Välityspalkkio on 2,5 % + alv (3,1 %) kohteen velattomasta hinnasta, minimipalkkio 2000,00 €. Palkkio sisältää kaikki keskeiset myyntiprosessin vaiheet aina arviosta kaupantekoon.",
+      "CTA-button": "Maksuton arvio kohteestasi"
+    },
+    "About-Us-Section": {
+      "title": "Real estate brokerage with strong local expertise",
+      "paragraph": "We offer reliable and professional real estate brokerage services in the North Satakunta region. We professionally broker detached houses, row houses, and holiday homes. Our strong local expertise, gained through property management work, is our advantage in ensuring successful home sales.",
+      "CTA-button": "View our properties for sale"
+    },
+    "News-Section": {
+      "title": "Latest news",
+      "link": "from Kiinteistölehti"
+    }
   }
 }

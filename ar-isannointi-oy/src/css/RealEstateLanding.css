@@ -1,0 +1,9 @@
+.Service-Card {
+    border: 1px solid #BEBEBE;
+    border-radius: 1rem;
+}
+
+.Card-Icon {
+    height: 4rem;
+    width: auto;
+}

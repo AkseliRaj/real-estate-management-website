@@ -2,6 +2,10 @@
     border-bottom: 1px solid #BEBEBE;
 }
 
+.Instruction-Introduction-Section--no-border {
+    border-bottom: none;
+}
+
 .Responsibility-Image {
     max-width: 100%;
     height: auto;

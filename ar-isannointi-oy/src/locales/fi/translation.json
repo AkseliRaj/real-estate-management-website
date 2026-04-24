@@ -395,7 +395,7 @@
         "form-field-2": "Pinta-ala: ",
         "form-field-3": "Huoneluku: ",
         "form-field-4": "Huoneistoselitelmä: ",
-        "form-field-5": "Lisätietoa kohteesta: "        
+        "form-field-5": "Lisätietoa kohteesta: "
       },
       "Form-Send-Button": {
         "title": "Lähetä lomake"
@@ -433,12 +433,38 @@
     }
   },
   "Real-Estate-Landing": {
-   "Banner": {
-    "title": "Löydä uusi kotisi AR Isännöinniltä",
-    "CTA-button": "Katso kohteemme"
-   },
-   "Propertie-Carousel": {
-    "title": "Uusimmat kohteemme"
-   }
+    "Banner": {
+      "title": "Löydä uusi kotisi AR Isännöinniltä",
+      "CTA-button": "Katso kohteemme"
+    },
+    "Propertie-Carousel": {
+      "title": "Uusimmat kohteemme"
+    },
+    "Card-Section": {
+      "title": "Selkeä välityspalkkio - kattava palkkio",
+      "card1": {
+        "title": "Kohteen markkinointi",
+        "paragraph": "Asuntosi tulee näkymään tuhansille katsojille laadukkaalla ja tehokkaalla markkinoinnilla myötä. AR Isännöinnin markkinointi tavoittaa oikeat ostajat ja nopeuttaa myyntiä."
+      },
+      "card2": {
+        "title": "Asunnon hinta-arvio ja myynnin valmistelu",
+        "paragraph": "Myynti alkaa realistisesta hinta-arviosta ja huolellisesta valmistelusta. Hankimme kaikki tarvittavat asiakirjat ja suunnittelemme myynnin niin, että kohde saadaan markkinoille tehokkaasti."
+      },
+      "card3": {
+        "title": "Tarjoukset ja kaupanteko",
+        "paragraph": "Huolehdimme koko kaupantekoprosessista turvallisesti ja ammattitaitoisesti aina tarjouksista lopulliseen kauppakirjaan asti."
+      },
+      "pricing-paragraph": "AR Isännöinti tarjoaa kiinteistönvälitystä selkeällä ja kilpailukykyisellä palkkiolla. Välityspalkkio on 2,5 % + alv (3,1 %) kohteen velattomasta hinnasta, minimipalkkio 2000,00 €. Palkkio sisältää kaikki keskeiset myyntiprosessin vaiheet aina arviosta kaupantekoon.",
+      "CTA-button": "Maksuton arvio kohteestasi"
+    },
+    "About-Us-Section": {
+      "title": "Kiinteistönvälitystä vahvalla paikallistuntemuksella",
+      "paragraph": "Tarjoamme luotettavaa ja ammattitaitoista kiinteistönvälityspalvelua Pohjois-Satakunnan alueella. Välitämme ammattitaidolla niin omakoti- ja rivitaloasuntoja kuin loma-asuntojakin. Isännöintityön kautta karttunut vahva paikallistuntemuksemme on etumme, jolla varmistamme onnistuneet asuntokaupat.",
+      "CTA-button": "Katso myyntikohteemme"
+    },
+    "News-Section": {
+      "title": "Ajankohtaisimmat uutiset ",
+      "link": "Kiinteistölehdestä"
+    }
   }
 }

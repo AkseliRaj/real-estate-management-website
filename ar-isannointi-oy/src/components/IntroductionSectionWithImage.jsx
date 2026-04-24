@@ -29,12 +29,15 @@ export default function IntroductionSectionWithImage({
     imageAlt,
     buttonText,
     onButtonClick,
+    showBottomBorder = true,
 }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const handleImageLoad = useCallback(() => setImageLoaded(true), []);
 
     return (
-        <div className="container-fluid Instruction-Introduction-Section">
+        <div
+            className={`container-fluid Instruction-Introduction-Section ${showBottomBorder ? '' : 'Instruction-Introduction-Section--no-border'}`.trim()}
+        >
             <div className="row gx-0 d-flex justify-content-center py-5">
                 <div className="col-11 col-xxl-9">
                     <div className="d-block d-md-none col-12 col-sm-11 pb-5">
