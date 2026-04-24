@@ -59,7 +59,7 @@ function RealEstateLandingPage() {
         onButtonClick={handleCtaClick}
       />
 
-      <div className='row justify-content-center'>
+      <div className='row gx-0 justify-content-center'>
         <div className='col-11 d-flex align-items-center justify-content-center justify-content-md-between'>
           <h3 className='d-none d-md-block mb-0'>
             {t('Real-Estate-Landing.Propertie-Carousel.title')}
@@ -84,7 +84,7 @@ function RealEstateLandingPage() {
         </div>
       </div>
 
-      <div className='row justify-content-center Service-Cards-Section'>
+      <div className='row gx-0 justify-content-center Service-Cards-Section'>
         <div className='col-11 text-center Title-Section'>
           <h3 className="Service-Cards-Heading d-none d-md-block">{t("Real-Estate-Landing.Card-Section.title")}</h3>
           <h4 className="Service-Cards-Heading d-block d-md-none">{t("Real-Estate-Landing.Card-Section.title")}</h4>

@@ -3,7 +3,7 @@ import '../css/LandingPropertyCarousel.css';
 
 function LandingPropertyCarousel({ properties }) {
   return (
-    <div className='row justify-content-start g-3 my-4 my-md-5 Landing-PropertyCarousel'>
+    <div className='row justify-content-start g-3 my-4 my-md-5 p-2 Landing-PropertyCarousel'>
       {properties.map((property, index) => (
         <PropertyCard
           key={index}
