@@ -16,6 +16,7 @@ import RealEstateQuotePage from './pages/RealEstateQuotePage.jsx';
 import RealEstatePropertiesPage from './pages/RealEstatePropertiesPage.jsx';
 import RealEstateLandingPage from './pages/RealEstateLandingPage.jsx';
 import RentalPropertiesPage from './pages/RentalPropertiesPage.jsx';
+import RentalLandingPage from './pages/RentalLandingPage.jsx';
 
 function App() {
   const { pathname } = useLocation();
@@ -35,7 +36,8 @@ function App() {
           <Route path="/kiinteistonvalitys" element={<RealEstateLandingPage />} />
           <Route path="/arvio-kohteestasi" element={<RealEstateQuotePage />} />
           <Route path="/kiinteistonvalitys/kohteet" element={<RealEstatePropertiesPage />} />
-          <Route path="/vuokra-kohteet" element={<RentalPropertiesPage />} />
+          <Route path="/vuokraus/kohteet" element={<RentalPropertiesPage />} />
+          <Route path="/vuokraus" element={<RentalLandingPage />} />
         </Routes>
       </main>
       <Footer />

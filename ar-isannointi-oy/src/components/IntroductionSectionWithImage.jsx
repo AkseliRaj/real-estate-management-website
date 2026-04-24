@@ -40,7 +40,7 @@ export default function IntroductionSectionWithImage({
         >
             <div className="row gx-0 d-flex justify-content-center py-5">
                 <div className="col-11 col-xxl-9">
-                    <div className="d-block d-md-none col-12 col-sm-11 pb-5">
+                    <div className="d-block d-md-none col-12 col-sm-11 pb-3 pb-md-5">
                         <IntroductionImageWithPlaceholder
                             imageSrc={imageSrc}
                             imageAlt={imageAlt}

@@ -469,5 +469,22 @@
   },
   "Rental-Properties-Page": {
     "Banner-Title": "Vuokrakohteemme"
+  },
+  "Rental-Landing-Page": {
+    "Banner": {
+      "title": "Vuokrakohteet kaikkiin tarpeisiin",
+      "CTA-button": "Katso kohteemme"
+    },
+    "Introduction-Section": {
+      "title": "Vuokraus tehty helpoksi",
+      "paragraph1": "Meillä vuokranantajana sinun ei tarvitse huolehtia paperitöistä tai näytöistä. Hoidamme asunnon kuvauksen, tarkistamme vuokralaisten taustat ja laadimme juridisesti pätevät vuokrasopimukset. ",
+      "paragraph2": "Paikallisena toimijana tunnemme alueen markkinat ja olemme tavoitettavissa aina, kun tarvitset apua. Me teemme vuokraamisesta sinulle huoletonta.",
+      "CTA-button": "Vuokraa asuntosi"
+    },
+    "Business-Rental-Advertisement": {
+      "title": "Toimivat tilat menestyvälle liiketoiminnalle",
+      "paragraph": "Tarjoamme monipuolisia liiketiloja erikokoisten yritysten tarpeisiin Pohjois-Satakunnan alueella. Meidän kautta löydät liiketoimintaasi tukevat tilat sujuvasti ja ammattitaidolla.",
+      "CTA-Button": "Katso liiketilamme"
+    }
   }
 }

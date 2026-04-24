@@ -469,5 +469,17 @@
   },
   "Rental-Properties-Page": {
     "Banner-Title": "Our rentals"
+  },
+  "Rental-Landing-Page": {
+    "Banner": {
+      "title": "Rentals for all purposes",
+      "CTA-button": "Check out selection"
+    },
+    "Introduction-Section": {
+      "title": "Renting made easy",
+      "paragraph1": "With us as your rental agent, you don’t need to worry about paperwork or viewings. We handle photographing the apartment, check tenants’ backgrounds, and prepare legally valid rental agreements.",
+      "paragraph2": "As a local operator, we know the area’s market and are always available whenever you need help. We make renting worry-free for you.",
+      "CTA-button": "Rent out your apartment"
+    }
   }
 }

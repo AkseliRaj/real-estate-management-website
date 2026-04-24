@@ -14,8 +14,8 @@ const SITE_LINKS = {
     requestEstimate: '/arvio-kohteestasi',
     publicDeeds: '/julkiset-kaupanvahvistukset',
     offerDeals: '/tarjouskaupat',
-    rental: '#',
-    rentalProperties: '/vuokra-kohteet',
+    rental: '/vuokraus',
+    rentalProperties: '/vuokraus/kohteet',
     rentalApplication: '#',
     rentYourHome: '#'
 };
