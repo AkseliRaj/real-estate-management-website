@@ -162,7 +162,7 @@ const MobileNavBar = () => {
                             </li>
                         ))}
                         <li className="nav-item">
-                            <RoutedNavLink className="dropdown-item" id="Header" href="#" onClick={closeMenu}>
+                            <RoutedNavLink className="dropdown-item" id="Header" href="/yhteystiedot" onClick={closeMenu}>
                                 {t('nav.contactDetails')}
                             </RoutedNavLink>
                         </li>

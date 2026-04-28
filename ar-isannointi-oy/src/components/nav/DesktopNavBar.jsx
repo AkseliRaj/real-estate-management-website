@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from '../../assets/webp/Logo.webp';
 import DropDownIcon from '../../assets/svg/DropdownArrowDown.svg';
@@ -10,6 +10,7 @@ import RoutedNavLink from './RoutedNavLink';
 
 const DesktopNavBar = () => {
     const location = useLocation()
+    const navigate = useNavigate()
     const navRef = useRef(null)
     const isFirstPathRef = useRef(true)
     const [megaMenusSuppressed, setMegaMenusSuppressed] = useState(false)
@@ -112,6 +113,10 @@ const DesktopNavBar = () => {
                             label={t('nav.contactDetails')}
                             variant="orange"
                             showArrow={false}
+                            onClick={() => {
+                                suppressMegaMenus()
+                                navigate('/yhteystiedot')
+                            }}
                         />
                     </div>
                 </div>

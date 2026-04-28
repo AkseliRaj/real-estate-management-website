@@ -481,5 +481,52 @@
       "paragraph2": "As a local operator, we know the area’s market and are always available whenever you need help. We make renting worry-free for you.",
       "CTA-button": "Rent out your apartment"
     }
+  },
+  "Contact-Information-Page": {
+    "Banner": {
+      "title": "Questions about our services?",
+      "paragraph": "We can help.",
+      "CTA-Button": "Send a message"
+    },
+    "Operation-Information": {
+      "Business-Hours-Title": {
+        "title": "Opening hours",
+        "paragraph1": "Our office is open on weekdays from 9:00 to 16:00, Monday to Thursday. On Fridays, we serve remotely from 9:00 to 14:30.",
+        "paragraph2": "Check our opening hours on public holidays ",
+        "link": "on our Facebook page"
+      },
+      "Location": {
+        "title": "Address",
+        "address": "Torikatu 11, P.O. Box 40, 38700 Kankaanpää"
+      }
+    },
+    "Staff-Information": {
+      "Prefix": {
+        "title": "Our staff",
+        "paragraph": "Property management and housing transactions are matters of trust, and with us they are always handled by real people. Meet our team, ready to help you with all aspects of housing."
+      },
+      "Profession-Titles": {
+        "Aki-Rajahalme": "Managing Director, Property Manager, IAT, KLV",
+        "Roosa-Kangasniemi": "Financial administration, accounting",
+        "Heidi-Välimäki": "Accounting, LVV",
+        "Salla-Ahonen": "Property Manager, rental and real estate brokerage",
+        "Akseli-Rajahalme": "Marketing, Web Developer"
+      }
+    },
+    "Contact-Form": {
+      "Prefix": {
+        "title": "Send us a message",
+        "paragraph1": "We are happy to help with all matters related to property management, rentals, and real estate brokerage. Send us a message using the form, and we’ll take care of it.",
+        "paragraph2": "You can also contact us by phone or by visiting our office in person.",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email: "
+      },
+      "Form-Labels": {
+        "Name": "Name",
+        "Email": "Email",
+        "Subject": "Subject",
+        "Message": "Message"
+      }
+    }
   }
 }
