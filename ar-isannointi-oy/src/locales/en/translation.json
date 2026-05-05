@@ -507,19 +507,19 @@
       },
       "Profession-Titles": {
         "Aki-Rajahalme": {
-          "Title": "CEO, property manager, IAT, KLV",
+          "Title": "CEO, property management, real estate brokerage",
           "Phone-Number": "044 - 503 7793",
           "Email": "aki@arisannointi.fi"
         },
         "Salla-Ahonen": {
-          "Title": "Property manager, rental and real estate",
-          "Phone-Number": "044 – 248 1077",
-          "Email": "roosa.kangasniemi@arisannointi.fi"
+          "Title": "Property management, rental brokerage, real estate brokerage",
+          "Phone-Number": "041 – 328 6857",
+          "Email": "salla.ahonen@arisannointi.fi"
         },
         "Heidi-Välimäki": {
-          "Title": "Financial administration, Accounting, LVV",
-          "Phone-Number": "044 – 248 1077",
-          "Email": "roosa.kangasniemi@arisannointi.fi"
+          "Title": "Financial administration, accounting",
+          "Phone-Number": "044 – 726 1445",
+          "Email": "heidi.valimaki@arisannointi.fi"
         },
         "Roosa-Kangasniemi": {
           "Title": "Financial administration, accounting",
@@ -528,16 +528,15 @@
         },
         "Akseli-Rajahalme": {
           "Title": "Marketing, web development",
-          "Phone-Number": "044 – 248 1077",
-          "Email": "roosa.kangasniemi@arisannointi.fi"
+          "Phone-Number": "044 – 993 7101",
+          "Email": "akseli.rajahalme@arisannointi.fi"
         }
       }
     },
     "Contact-Form": {
       "Prefix": {
         "title": "Send us a message",
-        "paragraph1": "We are happy to help with all matters related to property management, rentals, and real estate brokerage. Send us a message using the form, and we’ll take care of it.",
-        "paragraph2": "You can also contact us by phone or by visiting our office in person.",
+        "paragraph": "We are happy to help with all matters related to property management, rentals, and real estate brokerage. Send us a message using the form, and we’ll take care of it. You can also contact us by phone or by visiting our office in person.",
         "Phonenumber": "Phone number: ",
         "Email": "Email: "
       },

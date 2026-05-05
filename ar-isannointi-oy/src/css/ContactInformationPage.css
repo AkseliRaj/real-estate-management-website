@@ -1,10 +1,17 @@
-.Person-Image {
+.Person-Image, .Letter-Image {
     height: auto;
     width: 4rem;
 }
 
-.Contact-Information-Section {
+.Contact-Information-Section, .Staff-Information-Section {
     border-bottom: 1px solid #BEBEBE;
+}
+
+.Message-Span {
+    font-weight: bold;
+    color: #F57021;
+    text-decoration: underline 1.5px;
+    text-underline-offset: 5px;
 }
 
 .Profession-Title {
@@ -20,4 +27,8 @@
 .Staff-Card {
     border: 1px solid #BEBEBE;
     border-radius: 2rem;
+}
+
+.Contact-Form-Message {
+    min-height: 12rem;
 }

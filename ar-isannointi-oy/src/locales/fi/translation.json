@@ -512,37 +512,36 @@
       },
       "Profession-Titles": {
         "Aki-Rajahalme": {
-          "Title": "Toimitusjohtaja, isännöitsijä, IAT, KLV",
+          "Title": "Toimitusjohtaja, Isännöinti, Kiinteistönvälitys",
           "Phone-Number": "044 - 503 7793",
           "Email": "aki@arisannointi.fi"
         },
         "Salla-Ahonen": {
-          "Title": "Isännöitsijä, vuokra- ja kiinteistönsvälitys",
-          "Phone-Number": "044 – 248 1077",
-          "Email": "roosa.kangasniemi@arisannointi.fi"
+          "Title": "Isännöinti, Vuokranvälitys, Kiinteistönvälitys",
+          "Phone-Number": "041 – 328 6857",
+          "Email": "salla.ahonen@arisannointi.fi"
         },
         "Heidi-Välimäki": {
-          "Title": "Taloushallinto, Kirjanpito, LVV",
-          "Phone-Number": "044 – 248 1077",
-          "Email": "roosa.kangasniemi@arisannointi.fi"
+          "Title": "Taloushallinto, Kirjanpito",
+          "Phone-Number": "044 – 726 1445",
+          "Email": "heidi.valimaki@arisannointi.fi"
         },
         "Roosa-Kangasniemi": {
-          "Title": "Taloushallinto, kirjanpito",
+          "Title": "Taloushallinto, Kirjanpito",
           "Phone-Number": "044 – 248 1077",
           "Email": "roosa.kangasniemi@arisannointi.fi"
         },
         "Akseli-Rajahalme": {
           "Title": "Markkinointi, Web-kehitys",
-          "Phone-Number": "044 – 248 1077",
-          "Email": "roosa.kangasniemi@arisannointi.fi"
+          "Phone-Number": "044 – 993 7101",
+          "Email": "akseli.rajahalme@arisannointi.fi"
         }
       }
     },
     "Contact-Form": {
       "Prefix": {
         "title": "Lähetä meille viesti",
-        "paragraph1": "Autamme mielellämme kaikissa isännöintiin, vuokraukseen ja kiinteistönvälitykseen liittyvissä asioissa. Lähetä viesti oheisella lomakkeella, ja hoidetaan asia kuntoon.",
-        "paragraph2": "Voit olla meihin yhteydessä myös puhelimitse tai vierailemalla paikanpäällä toimistollamme.",
+        "paragraph": "Autamme mielellämme kaikissa isännöintiin, vuokraukseen ja kiinteistönvälitykseen liittyvissä asioissa. Lähetä viesti oheisella lomakkeella, ja hoidetaan asia kuntoon. Voit olla meihin yhteydessä myös puhelimitse tai vierailemalla paikanpäällä toimistollamme.",
         "Phonenumber": "Puhelinnumero: ",
         "Email": "Sähköposti: "
       },
