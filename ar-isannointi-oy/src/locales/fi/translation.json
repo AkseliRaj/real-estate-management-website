@@ -511,11 +511,31 @@
         "paragraph": "Isännöinti ja asuntokauppa ovat luottamusasioita, joita hoitavat meillä aina oikeat ihmiset. Tutustu tiimiimme, joka on valmis auttamaan sinua kaikissa asumisen käänteissä."
       },
       "Profession-Titles": {
-        "Aki-Rajahalme": "Toimitusjohtaja, isännöitsijä, IAT, KLV",
-        "Roosa-Kangasniemi": "Taloushallinto, kirjanpito",
-        "Heidi-Välimäki": "Kirjanpito, LVV",
-        "Salla-Ahonen": "Isännöitsijä, vuokra- ja kiinteistönvälitys",
-        "Akseli-Rajahalme": "Markkinointi, Web-Kehittäjä"
+        "Aki-Rajahalme": {
+          "Title": "Toimitusjohtaja, isännöitsijä, IAT, KLV",
+          "Phone-Number": "044 - 503 7793",
+          "Email": "aki@arisannointi.fi"
+        },
+        "Salla-Ahonen": {
+          "Title": "Isännöitsijä, vuokra- ja kiinteistönsvälitys",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Heidi-Välimäki": {
+          "Title": "Taloushallinto, Kirjanpito, LVV",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Roosa-Kangasniemi": {
+          "Title": "Taloushallinto, kirjanpito",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Akseli-Rajahalme": {
+          "Title": "Markkinointi, Web-kehitys",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        }
       }
     },
     "Contact-Form": {

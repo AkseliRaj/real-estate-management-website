@@ -506,11 +506,31 @@
         "paragraph": "Property management and housing transactions are matters of trust, and with us they are always handled by real people. Meet our team, ready to help you with all aspects of housing."
       },
       "Profession-Titles": {
-        "Aki-Rajahalme": "Managing Director, Property Manager, IAT, KLV",
-        "Roosa-Kangasniemi": "Financial administration, accounting",
-        "Heidi-Välimäki": "Accounting, LVV",
-        "Salla-Ahonen": "Property Manager, rental and real estate brokerage",
-        "Akseli-Rajahalme": "Marketing, Web Developer"
+        "Aki-Rajahalme": {
+          "Title": "CEO, property manager, IAT, KLV",
+          "Phone-Number": "044 - 503 7793",
+          "Email": "aki@arisannointi.fi"
+        },
+        "Salla-Ahonen": {
+          "Title": "Property manager, rental and real estate",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Heidi-Välimäki": {
+          "Title": "Financial administration, Accounting, LVV",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Roosa-Kangasniemi": {
+          "Title": "Financial administration, accounting",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Akseli-Rajahalme": {
+          "Title": "Marketing, web development",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        }
       }
     },
     "Contact-Form": {

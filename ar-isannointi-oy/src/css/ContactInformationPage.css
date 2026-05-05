@@ -11,9 +11,9 @@
     color: white;
     font-weight: bold;
     background-color: #F57021;
-    padding: 0.8rem;
-    max-width: 80%;
-    border-radius: 2rem;
+    display: inline-block;
+    padding: .3rem 0.8rem;
+    border-radius: 1rem;
     margin: 0px;
 }
 

@@ -1,11 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
+import StaffCard from '../components/StaffCard';
 import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
 import PersonIcon from '../assets/svg/PersonIcon.svg';
 import '../css/ContactInformationPage.css'
 
 const ContactInformationPage = () => {
     const { t } = useTranslation();
+    const staffInformation = t('Contact-Information-Page.Staff-Information.Profession-Titles', { returnObjects: true });
 
     return (
         <div className="container-fluid px-0">
@@ -19,7 +21,7 @@ const ContactInformationPage = () => {
                 buttonText={t('Contact-Information-Page.Banner.CTA-Button')}
             />
 
-            <div className='row d-flex justify-content-center Contact-Information-Section py-5 px-0'>
+            <div className='row g-0 d-flex justify-content-center Contact-Information-Section py-5 px-0'>
                 <div className='col-11'>
                     <div className='row d-flex justify-content-center justify-content-md-around align-items-center px-0'>
                         <div className='col-12 col-md-6 col-xl-5 p-2 p-md-5 Google-Maps-Block'>
@@ -39,14 +41,14 @@ const ContactInformationPage = () => {
                             ></iframe>
                         </div>
                         <div className='col-12 col-md-5 col-xl-6 pt-5 pt-md-0'>
-                            <div className='Business-Hours-Section pb-5'>
-                                <h3 className="pb-3 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.title')}</h3>
+                            <div className='Business-Hours-Section pb-4'>
+                                <h3 className="pb-2 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.title')}</h3>
                                 <h4 className="pb-1 d-block d-md-none">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.title')}</h4>
                                 <p>{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.paragraph1')}</p>
                                 <p>{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.paragraph2')} <a href='https://www.facebook.com/profile.php?id=100057221720630' target="_blank">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.link')}</a></p>
                             </div>
                             <div className='Address-Section'>
-                                <h3 className="pb-3 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Location.title')}</h3>
+                                <h3 className="pb-2 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Location.title')}</h3>
                                 <h4 className="pb-1 d-block d-md-none">{t('Contact-Information-Page.Operation-Information.Location.title')}</h4>
                                 <p>{t('Contact-Information-Page.Operation-Information.Location.address')}</p>
                             </div>
@@ -55,7 +57,7 @@ const ContactInformationPage = () => {
                 </div>
             </div>
 
-            <div className='row d-flex justify-content-center Staff-Information-Section py-5 px-0'>
+            <div className='row g-0 d-flex justify-content-center Staff-Information-Section py-5 px-0'>
                 <div className='col-11'>
                     <img
                         src={PersonIcon}
@@ -69,16 +71,16 @@ const ContactInformationPage = () => {
                             <p>{t('Contact-Information-Page.Staff-Information.Prefix.paragraph')}</p>
                         </div>
                     </div>
-                    <div className='row justify-content-center pt-5'>
-                        <div className='col-4 Staff-Card text-center p-5'>
-                            <h3 className="pb-3 d-none d-md-block">Aki Rajahalme</h3>
-                            <h4 className="pb-1 d-block d-md-none">Aki Rajahalme</h4>
-                            <div className='Profession-Title'>
-                                <p>{t('Contact-Information-Page.Staff-Information.Profession-Titles.Aki-Rajahalme')}</p>
-                            </div>
-                            <p className='my-3'>044 - 503 7793</p>
-                            <p>aki@arisannoinit.fi</p>
-                        </div>
+                    <div className='row d-flex justify-content-center pt-5 g-4'>
+                        {Object.entries(staffInformation).map(([staffKey, staffData]) => (
+                            <StaffCard
+                                key={staffKey}
+                                name={staffKey.replace(/-/g, ' ')}
+                                title={staffData.Title}
+                                phone={staffData['Phone-Number']}
+                                email={staffData.Email}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
