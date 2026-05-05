@@ -17,6 +17,7 @@ import RealEstatePropertiesPage from './pages/RealEstatePropertiesPage.jsx';
 import RealEstateLandingPage from './pages/RealEstateLandingPage.jsx';
 import RentalPropertiesPage from './pages/RentalPropertiesPage.jsx';
 import RentalLandingPage from './pages/RentalLandingPage.jsx';
+import RentalQuotePage from './pages/RentalQuotePage.jsx';
 import ContactInformationPage from './pages/ContactInformationPage.jsx';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/kiinteistonvalitys/kohteet" element={<RealEstatePropertiesPage />} />
           <Route path="/vuokraus/kohteet" element={<RentalPropertiesPage />} />
           <Route path="/vuokraus" element={<RentalLandingPage />} />
+          <Route path="/vuokraa-asuntosi" element={<RentalQuotePage />} />
           <Route path="/yhteystiedot" element={<ContactInformationPage />} />
         </Routes>
       </main>

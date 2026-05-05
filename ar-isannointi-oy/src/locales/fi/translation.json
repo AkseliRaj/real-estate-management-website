@@ -534,5 +534,29 @@
       },
       "Send-Button": "Lähetä viesti"
     }
+  },
+  "Rent-Your-Property-Page": {
+    "Banner": "Vuokraa asuntosi",
+    "Prefix": {
+      "title": "Laita asuntosi vuokralle helposti sekä turvallisesti",
+      "paragraph1": "Täytä alla oleva lomake ja jätä vuokrattava kohteesi tiedot meille – me hoidamme loput. Huolehdimme kohteen esittelystä, sopivan vuokralaisen etsinnästä, vuokrasopimuksen laatimisesta sekä tarvittavista tarkistuksista.",
+      "paragraph2": "Palvelumme sopii sekä yksityisille vuokranantajille että taloyhtiöille ja yhteisöille. Kun haluat asunnon vuokralle nopeasti ja luotettavasti, olet oikeassa paikassa."
+    },
+    "Form-Labels": {
+      "Property-Owner-Information": {
+        "title": "Vuokranantajan tiedot",
+        "Name": "Nimi: ",
+        "Phone-Number": "Puhelinnumero: ",
+        "Email": "Sähköposti: "
+      },
+      "Property-Information": {
+        "title": "Kohteen tiedot",
+        "Address": "Osoite: ",
+        "Square-Meters": "Pinta-ala: ",
+        "Layout-Description": "Huoneistoselitelmä: ",
+        "More-Information": "Lisätietoja kohteesta: "
+      },
+      "Send-Button": "Lähetä viesti"
+    }
   }
 }

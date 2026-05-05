@@ -17,7 +17,7 @@ const SITE_LINKS = {
     rental: '/vuokraus',
     rentalProperties: '/vuokraus/kohteet',
     rentalApplication: '#',
-    rentYourHome: '#'
+    rentYourHome: '/vuokraa-asuntosi'
 };
 
 export const NAV_SECTIONS_BASE = [

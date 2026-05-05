@@ -529,5 +529,29 @@
       },
       "Send-Button": "Send message"
     }
+  },
+  "Rent-Your-Property-Page": {
+    "Banner": "Rent Out Your Property",
+    "Prefix": {
+      "title": "Rent out your property easily and safely",
+      "paragraph1": "Fill in the form below and send us the details of the property you want to rent out – we’ll take care of the rest. We handle the property presentation, finding a suitable tenant, preparing the rental agreement, and carrying out the necessary checks.",
+      "paragraph2": "Our service is suitable for private landlords as well as housing companies and organizations. When you want to rent out your property quickly and reliably, you’re in the right place."
+    },
+    "Form-Labels": {
+      "Property-Owner-Information": {
+        "title": "Landlord information",
+        "Name": "Name: ",
+        "Phone-Number": "Phone number: ",
+        "Email": "Email: "
+      },
+      "Property-Information": {
+        "title": "Property information",
+        "Address": "Address: ",
+        "Square-Meters": "Square-meters: ",
+        "Layout-Description": "Layout description: ",
+        "More-Information": "Additional information about the property: "
+      },
+      "Send-Button": "Send message"
+    }
   }
 }
