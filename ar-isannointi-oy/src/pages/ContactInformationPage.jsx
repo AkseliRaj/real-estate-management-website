@@ -1,11 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
+import StaffCard from '../components/StaffCard';
+import ArrowButtonOrange from '../components/ArrowButtonOrange';
 import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
 import PersonIcon from '../assets/svg/PersonIcon.svg';
+import LetterIcon from '../assets/svg/LetterIcon.svg'
 import '../css/ContactInformationPage.css'
 
 const ContactInformationPage = () => {
     const { t } = useTranslation();
+    const staffInformation = t('Contact-Information-Page.Staff-Information.Profession-Titles', { returnObjects: true });
 
     return (
         <div className="container-fluid px-0">
@@ -19,7 +23,7 @@ const ContactInformationPage = () => {
                 buttonText={t('Contact-Information-Page.Banner.CTA-Button')}
             />
 
-            <div className='row d-flex justify-content-center Contact-Information-Section py-5 px-0'>
+            <div className='row g-0 d-flex justify-content-center Contact-Information-Section py-5 px-0'>
                 <div className='col-11'>
                     <div className='row d-flex justify-content-center justify-content-md-around align-items-center px-0'>
                         <div className='col-12 col-md-6 col-xl-5 p-2 p-md-5 Google-Maps-Block'>
@@ -39,14 +43,14 @@ const ContactInformationPage = () => {
                             ></iframe>
                         </div>
                         <div className='col-12 col-md-5 col-xl-6 pt-5 pt-md-0'>
-                            <div className='Business-Hours-Section pb-5'>
-                                <h3 className="pb-3 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.title')}</h3>
+                            <div className='Business-Hours-Section pb-4'>
+                                <h3 className="pb-2 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.title')}</h3>
                                 <h4 className="pb-1 d-block d-md-none">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.title')}</h4>
                                 <p>{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.paragraph1')}</p>
                                 <p>{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.paragraph2')} <a href='https://www.facebook.com/profile.php?id=100057221720630' target="_blank">{t('Contact-Information-Page.Operation-Information.Business-Hours-Title.link')}</a></p>
                             </div>
                             <div className='Address-Section'>
-                                <h3 className="pb-3 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Location.title')}</h3>
+                                <h3 className="pb-2 d-none d-md-block">{t('Contact-Information-Page.Operation-Information.Location.title')}</h3>
                                 <h4 className="pb-1 d-block d-md-none">{t('Contact-Information-Page.Operation-Information.Location.title')}</h4>
                                 <p>{t('Contact-Information-Page.Operation-Information.Location.address')}</p>
                             </div>
@@ -55,8 +59,8 @@ const ContactInformationPage = () => {
                 </div>
             </div>
 
-            <div className='row d-flex justify-content-center Staff-Information-Section py-5 px-0'>
-                <div className='col-11'>
+            <div className='row g-0 d-flex justify-content-center Staff-Information-Section py-5 px-0'>
+                <div className='col-11 py-5'>
                     <img
                         src={PersonIcon}
                         alt={t('propertyLanding.images.introductionAlt')}
@@ -69,16 +73,69 @@ const ContactInformationPage = () => {
                             <p>{t('Contact-Information-Page.Staff-Information.Prefix.paragraph')}</p>
                         </div>
                     </div>
-                    <div className='row justify-content-center pt-5'>
-                        <div className='col-4 Staff-Card text-center p-5'>
-                            <h3 className="pb-3 d-none d-md-block">Aki Rajahalme</h3>
-                            <h4 className="pb-1 d-block d-md-none">Aki Rajahalme</h4>
-                            <div className='Profession-Title'>
-                                <p>{t('Contact-Information-Page.Staff-Information.Profession-Titles.Aki-Rajahalme')}</p>
-                            </div>
-                            <p className='my-3'>044 - 503 7793</p>
-                            <p>aki@arisannoinit.fi</p>
+                    <div className='row d-flex justify-content-center pt-5 g-4'>
+                        {Object.entries(staffInformation).map(([staffKey, staffData]) => (
+                            <StaffCard
+                                key={staffKey}
+                                name={staffKey.replace(/-/g, ' ')}
+                                title={staffData.Title}
+                                phone={staffData['Phone-Number']}
+                                email={staffData.Email}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className='row g-0 d-flex justify-content-center Staff-Information-Section py-5 px-0'>
+                <div className='col-11 py-5'>
+                    <img
+                        src={LetterIcon}
+                        alt={t('propertyLanding.images.introductionAlt')}
+                        className="Letter-Image pb-5 d-block mx-auto"
+                    />
+                    <div className='row justify-content-center'>
+                        <div className='col-11 col-md-8 text-center Prefix-Section'>
+                            <h3 className="pb-3 d-none d-md-block">{t('Contact-Information-Page.Contact-Form.Prefix.title')}</h3>
+                            <h4 className="pb-1 d-block d-md-none">{t('Contact-Information-Page.Contact-Form.Prefix.title')}</h4>
+                            <p>{t('Contact-Information-Page.Contact-Form.Prefix.paragraph')}</p>
+                            <p className='m-2'>{t('Contact-Information-Page.Contact-Form.Prefix.Phonenumber')}<span className='Message-Span'>044 - 503 7793</span></p>
+                            <p>{t('Contact-Information-Page.Contact-Form.Prefix.Email')}<span className='Message-Span'>toimisto@arisannointi.fi</span></p>
                         </div>
+                    </div>
+                    <div className='row d-flex justify-content-center pt-5 g-4'>
+                        <form className='Contact-Form-Section col-11 col-md-8 col-lg-7'>
+                            <div className='mb-4 text-start'>
+                                <label htmlFor='contact-name' className='form-label'>
+                                    {t('Contact-Information-Page.Contact-Form.Form-Labels.Name')}
+                                </label>
+                                <input type='text' className='form-control' id='contact-name' />
+                            </div>
+                            <div className='mb-4 text-start'>
+                                <label htmlFor='contact-email' className='form-label'>
+                                    {t('Contact-Information-Page.Contact-Form.Form-Labels.Email')}
+                                </label>
+                                <input type='email' className='form-control' id='contact-email' />
+                            </div>
+                            <div className='mb-4 text-start'>
+                                <label htmlFor='contact-subject' className='form-label'>
+                                    {t('Contact-Information-Page.Contact-Form.Form-Labels.Subject')}
+                                </label>
+                                <input type='text' className='form-control' id='contact-subject' />
+                            </div>
+                            <div className='mb-5 text-start'>
+                                <label htmlFor='contact-message' className='form-label'>
+                                    {t('Contact-Information-Page.Contact-Form.Form-Labels.Message')}
+                                </label>
+                                <textarea className='form-control Contact-Form-Message' id='contact-message' rows='7'></textarea>
+                            </div>
+                            <div className='text-start'>
+                                <ArrowButtonOrange
+                                    type='submit'
+                                    label={t('Contact-Information-Page.Contact-Form.Send-Button')}
+                                />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

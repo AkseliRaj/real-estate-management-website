@@ -506,18 +506,37 @@
         "paragraph": "Property management and housing transactions are matters of trust, and with us they are always handled by real people. Meet our team, ready to help you with all aspects of housing."
       },
       "Profession-Titles": {
-        "Aki-Rajahalme": "Managing Director, Property Manager, IAT, KLV",
-        "Roosa-Kangasniemi": "Financial administration, accounting",
-        "Heidi-Välimäki": "Accounting, LVV",
-        "Salla-Ahonen": "Property Manager, rental and real estate brokerage",
-        "Akseli-Rajahalme": "Marketing, Web Developer"
+        "Aki-Rajahalme": {
+          "Title": "CEO, property management, real estate brokerage",
+          "Phone-Number": "044 - 503 7793",
+          "Email": "aki@arisannointi.fi"
+        },
+        "Salla-Ahonen": {
+          "Title": "Property management, rental brokerage, real estate brokerage",
+          "Phone-Number": "041 – 328 6857",
+          "Email": "salla.ahonen@arisannointi.fi"
+        },
+        "Heidi-Välimäki": {
+          "Title": "Financial administration, accounting",
+          "Phone-Number": "044 – 726 1445",
+          "Email": "heidi.valimaki@arisannointi.fi"
+        },
+        "Roosa-Kangasniemi": {
+          "Title": "Financial administration, accounting",
+          "Phone-Number": "044 – 248 1077",
+          "Email": "roosa.kangasniemi@arisannointi.fi"
+        },
+        "Akseli-Rajahalme": {
+          "Title": "Marketing, web development",
+          "Phone-Number": "044 – 993 7101",
+          "Email": "akseli.rajahalme@arisannointi.fi"
+        }
       }
     },
     "Contact-Form": {
       "Prefix": {
         "title": "Send us a message",
-        "paragraph1": "We are happy to help with all matters related to property management, rentals, and real estate brokerage. Send us a message using the form, and we’ll take care of it.",
-        "paragraph2": "You can also contact us by phone or by visiting our office in person.",
+        "paragraph": "We are happy to help with all matters related to property management, rentals, and real estate brokerage. Send us a message using the form, and we’ll take care of it. You can also contact us by phone or by visiting our office in person.",
         "Phonenumber": "Phone number: ",
         "Email": "Email: "
       },
