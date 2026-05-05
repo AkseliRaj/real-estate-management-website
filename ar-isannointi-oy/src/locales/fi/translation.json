@@ -498,7 +498,7 @@
         "title": "Aukioloajat",
         "paragraph1": "Toimistomme palvelee arkisin 9:00 - 16:00 maanantaista torstaihin. Perjantaina palvelemme etänä 9:00 - 14:30.",
         "paragraph2": "Tarkista pyhäpäivien aukioloajat ",
-        "link": "Facebook sivuiltamme"
+        "link": "Facebook sivuiltamme."
       },
       "Location": {
         "title": "Osoite",
@@ -531,7 +531,8 @@
         "Email": "Sähköposti",
         "Subject": "Aihe",
         "Message": "Viesti"
-      }
+      },
+      "Send-Button": "Lähetä viesti"
     }
   }
 }

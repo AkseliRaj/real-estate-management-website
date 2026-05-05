@@ -1,0 +1,23 @@
+.Person-Image {
+    height: auto;
+    width: 4rem;
+}
+
+.Contact-Information-Section {
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.Profession-Title {
+    color: white;
+    font-weight: bold;
+    background-color: #F57021;
+    padding: 0.8rem;
+    max-width: 80%;
+    border-radius: 2rem;
+    margin: 0px;
+}
+
+.Staff-Card {
+    border: 1px solid #BEBEBE;
+    border-radius: 2rem;
+}

@@ -492,8 +492,8 @@
       "Business-Hours-Title": {
         "title": "Opening hours",
         "paragraph1": "Our office is open on weekdays from 9:00 to 16:00, Monday to Thursday. On Fridays, we serve remotely from 9:00 to 14:30.",
-        "paragraph2": "Check our opening hours on public holidays ",
-        "link": "on our Facebook page"
+        "paragraph2": "Check our opening hours on public holidays on our ",
+        "link": "Facebook page."
       },
       "Location": {
         "title": "Address",
@@ -526,7 +526,8 @@
         "Email": "Email",
         "Subject": "Subject",
         "Message": "Message"
-      }
+      },
+      "Send-Button": "Send message"
     }
   }
 }
