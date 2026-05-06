@@ -1,0 +1,15 @@
+.Bold-Text {
+    font-weight: bold;
+}
+
+.Rental-Card-Image {
+    width: 15em;
+    height: auto;
+    border: 1px solid #bebebe;
+    border-radius: 1rem;
+}
+
+.Rental-Card {
+    border: 1px solid #bebebe;
+    border-radius: 1rem;
+}

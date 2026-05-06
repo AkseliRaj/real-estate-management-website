@@ -572,5 +572,85 @@
       },
       "Send-Button": "Send message"
     }
+  },
+  "Rental-Application-Page": {
+    "Banner": "Rental Application",
+    "Prefix": {
+      "title": "Interested in a rental apartment?",
+      "paragraph1": "Submit a rental application to us using this form! We will contact you after the form has been submitted, for example regarding possible apartment viewings.",
+      "paragraph2": "Fill in the application carefully with your own and other applicants' information, as well as your preferences for the apartment, such as location, size, and desired start date of the tenancy. The more accurately you fill in the application, the better we can help you find a new home.",
+      "paragraph3": "All information in the application will be handled confidentially, and personal data will be processed in accordance with data protection legislation and rental mediation regulations."
+    },
+    "Form-Labels": {
+      "Property-Options": {
+        "title": "Which rental property are you applying for?",
+        "Option": "Property address: ",
+        "Add-Button": "Add new property",
+        "Remove-Button": "Remove property",
+        "Search-Placeholder": "Search by address, square meters, or rent",
+        "Search-Button": "Search",
+        "Select-Option": "Select property",
+        "Deselect-Option": "Remove selection",
+        "No-Results": "No results for this search.",
+        "Selected-Properties-Title": "Selected properties",
+        "Card-Address-Label": "Address: ",
+        "Card-Square-Meters-Label": "Square meters: ",
+        "Card-Monthly-Rent-Label": "Monthly rent: "
+      },
+      "Applicant-Information": {
+        "title": "Applicant(s)",
+        "General-Information": {
+          "Firstname": "First name: ",
+          "Lastname": "Last name: ",
+          "Email": "Email: ",
+          "Phonenumber": "Phone number: ",
+          "Address": "Current address: ",
+          "PersonalID": "Personal ID / Business ID: "
+        },
+        "Education-Background": {
+          "Radiobutton-label": "Are you currently a student?",
+          "Yes-Button": "Yes",
+          "No-Button": "No",
+          "School-Name": "Name of educational institution: ",
+          "Degree-Name": "Degree name: ",
+          "Start-Year": "What year did you start your degree: ",
+          "End-Year": "Estimated graduation year: "
+        },
+        "Employment": {
+          "Radiobutton-Label": "Are you currently employed?",
+          "Yes-Button": "Yes",
+          "No-Button": "No",
+          "Employer-Name": "Employer name: ",
+          "Work-Title": "Job title: ",
+          "Work-Start-Date": "When did / will the employment start: ",
+          "Work-End-Date": "When will the employment end: ",
+          "Gross-Income": "Gross monthly income: "
+        },
+        "Pets-And-Smoking": {
+          "Smoking-Radiobutton": "Do you smoke?",
+          "Pets-Radiobutton": "Do you have pets?",
+          "Yes-Button": "Yes",
+          "No-Button": "No"
+        }
+      },
+      "Other-Applicants": {
+        "prefix": "Are you applying for a rental home for yourself, or are you planning to move into a new home with someone else? If yes, you can add other applicants' details by clicking the “Add new applicant” button below. Information about children does not need to be filled in; you can mention them in the “Other information” section at the end of the form.",
+        "Add-button": "Add applicant",
+        "Remove-button": "Remove applicant"
+      },
+      "Other-Information": {
+        "title": "Other information",
+        "prefix": "You can write here, for example, about children moving into the apartment or pets. You may also include any preferences or questions about the property."
+      },
+      "Application-Start-Date": {
+        "Radio-button-Label:": "I am applying for an apartment",
+        "Fixed-Term-Radiobutton": "Fixed-term",
+        "Open-Ended-Radiobutton": "Open-ended",
+        "Start-Date-Label": "Starting from: ",
+        "End-Date-Label": "Ending on: "
+      },
+      "TOS": "I give permission to check my credit information and to share the information with the landlord. Personal data is processed in accordance with the Personal Data Act (523/1999) and legislation concerning rental mediation (1075/2000).",
+      "Send-Button": "Submit application"
+    }
   }
 }

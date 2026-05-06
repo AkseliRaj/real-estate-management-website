@@ -577,5 +577,85 @@
       },
       "Send-Button": "Lähetä viesti"
     }
+  },
+  "Rental-Application-Page": {
+    "Banner": "Vuokrahakemus",
+    "Prefix": {
+      "title": "Kiinnostuitko vuokra-asunnosta?",
+      "paragraph1": "Jätä meille vuokrahakemus tällä lomakkeella! Olemme teihin yhteydessä lomakkeen lähettämisen jälkeen esimerkiksi mahdollisten asuntonäyttöjen suhteen.",
+      "paragraph2": "Täytä hakemukseen huolellisesti omat ja muiden hakijoiden tiedot sekä toiveet asunnosta, kuten sijainti, koko ja toivottu vuokrasuhteen alkamispäivä. Mitä tarkemmin täytät hakemuksen, sitä paremmin voimme auttaa sinua löytämään uuden kodin.",
+      "paragraph3": "Kaikki hakemuksen tiedot käsitellään luottamuksellisesti, ja henkilötietojen käsittelyssä noudatetaan tietosuojalainsäädäntöä sekä vuokravälitystä koskevia määräyksiä."
+    },
+    "Form-Labels": {
+      "Property-Options": {
+        "title": "Mitä vuokrakohdetta haet?",
+        "Option": "Kohteen osoite: ",
+        "Add-Button": "Lisää uusi kohde",
+        "Remove-Button": "Poista kohde",
+        "Search-Placeholder": "Hae osoitteella, neliöllä tai vuokralla",
+        "Search-Button": "Hae",
+        "Select-Option": "Valitse kohde",
+        "Deselect-Option": "Poista valinta",
+        "No-Results": "Ei hakutuloksia annetulla haulla.",
+        "Selected-Properties-Title": "Valitut kohteet",
+        "Card-Address-Label": "Osoite: ",
+        "Card-Square-Meters-Label": "Neliöt: ",
+        "Card-Monthly-Rent-Label": "Vuokrahinta: "
+      },
+      "Applicant-Information": {
+        "title": "Vuokranhakija(t)",
+        "General-Information": {
+          "Firstname": "Etunimi: ",
+          "Lastname": "Sukunimi: ",
+          "Email": "Sähköposti: ",
+          "Phonenumber": "Puhelinnumero: ",
+          "Address": "Nykyinen osoite: ",
+          "PersonalID": "Henkilö- / Ytunnus: "
+        },
+        "Education-Background": {
+          "Radiobutton-label": "Oletko tällä hetkellä opiskelija?",
+          "Yes-Button": "Kyllä",
+          "No-Button": "Ei",
+          "School-Name": "Oppilaitoksen nimi: ",
+          "Degree-Name": "Tutkinnon nimi: ",
+          "Start-Year": "Minä vuona aloitit tutkinnon: ",
+          "End-Year": "Minä vuonna on arvioitu valmistuminen: "
+        },
+        "Employment": {
+          "Radiobutton-Label": "Oletko tällä hetkellä työllistynyt?",
+          "Yes-Button": "Kyllä",
+          "No-Button": "Ei",
+          "Employer-Name": "Työpaikan nimi: ",
+          "Work-Title": "Ammattinimike: ",
+          "Work-Start-Date": "Milloin työsuhde on alkanut / alkaa: ",
+          "Work-End-Date": "Milloin työsuhde päättyy: ",
+          "Gross-Income": "Bruttotulot kuukaudessa: "
+        },
+        "Pets-And-Smoking": {
+          "Smoking-Radiobutton": "Tupakoitko?",
+          "Pets-Radiobutton": "Onko sinulla lemmikkejä?",
+          "Yes-Button": "Kyllä",
+          "No-Button": "Ei"
+        }
+      },
+      "Other-Applicants": {
+        "prefix": "Haetko vuokrakotia itsellesi vai aiotko muuttaa uuteen kotiin jonkun kanssa? Jos kyllä, niin muiden vuokranhakijoiden tiedot voit lisätä painamalla alla olevaa “Lisää uusi vuokrankija -nappia. Mahdollisten lapsien tietoja ei tarvitse täyttäää, voit kertoa heistä lomakkeen lopussa löytyvästä “Muuta tietoa” -lomake kohdasta.",
+        "Add-button": "Lisää vuokranhakija",
+        "Remove-button": "Poista vuokranhakija"
+      },
+      "Other-Information": {
+        "title": "Muut tiedot",
+        "prefix": "Voit kirjoittaa tänne esimerkiksi asuntoon muuttavista lapsistasi, tai lemmikeistä. Voit halutessasi myös esittää toiveita tai kysymyksiä kohteesta."
+      },
+      "Application-Start-Date": {
+        "Radio-button-Label:": "Haen asuntoa",
+        "Fixed-Term-Radiobutton": "Määräaikaiseksi",
+        "Open-Ended-Radiobutton": "Toistaiseksi",
+        "Start-Date-Label": "Alkaen: ",
+        "End-Date-Label": "Päättyen: "
+      },
+      "TOS": "Annan luvan luottotietojen tarkistamiseen ja tietojen luovuttamiseen vuokranantajalle. Henkilötietojen käsittelyssä noudatetaan henkilötietolakia (523/1999) ja vuokravälitystä koskevaa lainsäädäntöä (1075/2000)",
+      "Send-Button": "Lähetä hakemus"
+    }
   }
 }

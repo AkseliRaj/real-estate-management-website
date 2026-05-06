@@ -16,7 +16,7 @@ const SITE_LINKS = {
     offerDeals: '/tarjouskaupat',
     rental: '/vuokraus',
     rentalProperties: '/vuokraus/kohteet',
-    rentalApplication: '#',
+    rentalApplication: '/vuokrahakemus',
     rentYourHome: '/vuokraa-asuntosi'
 };
 
