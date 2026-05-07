@@ -1,17 +1,21 @@
 import { useTranslation } from 'react-i18next';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
-import FormIntroductionSection from '../components/FormIntroductionSection';
-import IconListCardsSection from '../components/IconListCardsSection';
-import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
-import buildFormContentItems from '../utils/buildFormContentItems';
-import FormIcon from '../assets/svg/FilePenIcon.svg';
-import '../css/BiddingPage.css'
+import { useNavigate } from 'react-router-dom';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
+import FormIntroductionSection from '../../components/FormIntroductionSection.jsx';
+import IconListCardsSection from '../../components/IconListCardsSection.jsx';
+import BiddingQuotePageImage from '../../assets/webp/BiddingQuotePageImage.webp';
+import buildFormContentItems from '../../utils/buildFormContentItems.js';
+import { navigateToRoute } from '../../utils/navigation.js';
+import FormIcon from '../../assets/svg/FilePenIcon.svg';
+import '../../css/BiddingPage.css';
 
 const BiddingQuotePage = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     const prefixSection = t('Bidding-Quote-Page.Prefix-Section', { returnObjects: true });
     const biddingExplainedSection = t('Bidding-Quote-Page.Bidding-Explained', { returnObjects: true });
     const biddingExplanationCardsSection = t('Bidding-Quote-Page.Bidding-Explanation-Cards', { returnObjects: true });
+    const handleContactCtaClick = () => navigateToRoute(navigate, '/yhteystiedot');
     const biddingExplanationCards = Object.entries(biddingExplanationCardsSection)
         .filter(([key, value]) => key.startsWith('card') && typeof value === 'object' && value !== null)
         .map(([key, value]) => ({
@@ -42,6 +46,7 @@ const BiddingQuotePage = () => {
                 imageSrc={BiddingQuotePageImage}
                 imageAlt={t('propertyLanding.images.introductionAlt')}
                 buttonText={t('Bidding-Quote-Page.Introduction-Section.CTA-button')}
+                onButtonClick={handleContactCtaClick}
             />
 
             <FormIntroductionSection

@@ -1,16 +1,18 @@
-import '../css/PropertyManagementLanding.css';
+import '../../css/PropertyManagementLanding.css';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import ArrowButton from '../components/ArrowButtonOrange.jsx';
-import HouseImage from '../assets/svg/HouseMagnifierImage.svg';
-import ResponsibilityImage from '../assets/webp/ResponsibilitySectionImage.webp';
-import AccordionMenuGrid from '../components/AccordionMenuGrid.jsx';
-import NewsSection from '../components/NewsSection.jsx';
+import ArrowButton from '../../components/ArrowButtonOrange.jsx';
+import HouseImage from '../../assets/svg/HouseMagnifierImage.svg';
+import ResponsibilityImage from '../../assets/webp/ResponsibilitySectionImage.webp';
+import AccordionMenuGrid from '../../components/AccordionMenuGrid.jsx';
+import NewsSection from '../../components/NewsSection.jsx';
 
-import HeroWrapper from '../components/HeroWrapper.jsx';
-import LogoCarousel from '../components/MarqueeCarousel.jsx';
-import FormCardGrid from '../components/FormCardGrid.jsx';
+import HeroWrapper from '../../components/HeroWrapper.jsx';
+import LogoCarousel from '../../components/MarqueeCarousel.jsx';
+import FormCardGrid from '../../components/FormCardGrid.jsx';
+import { navigateToRoute } from '../../utils/navigation.js';
 
 const RSS_FEED_URL = '/api/isannointiliitto-rss';
 const RSS_ITEMS_LIMIT = 3;
@@ -57,6 +59,7 @@ function parseRssItems(xmlText, limit = RSS_ITEMS_LIMIT) {
 function PropertyManagementLanding() {
 
   const { t } = useTranslation()
+  const navigate = useNavigate();
   const [rssNewsItems, setRssNewsItems] = useState([]);
 
   const formCardItems = [
@@ -97,9 +100,11 @@ function PropertyManagementLanding() {
 
   const newsItems = rssNewsItems.length > 0 ? rssNewsItems : fallbackNewsItems;
 
-  const handleQuoteRequest = () => {
-    console.log("Tarjouspyyntö lähetetty!");
-  };
+  const handleHeroCtaClick = () => navigateToRoute(navigate, '/lomakkeet');
+  const handleIntroductionCtaClick = () => navigateToRoute(navigate, '/tarjous-isannoinnista');
+  const handleResponsibilityCtaClick = () => navigateToRoute(navigate, '/vastuunjakotaulukko');
+  const handleFaqCtaClick = () => navigateToRoute(navigate, '/ohjeet-taloyhtion-asukkaille');
+  const handleNewsCtaClick = () => navigateToRoute(navigate, 'https://www.isannointiliitto.fi/ajankohtaista/');
 
   return (
     <div className='container-fluid px-0 main-layout'>
@@ -107,7 +112,7 @@ function PropertyManagementLanding() {
       <HeroWrapper
         headerText={t('propertyLanding.hero.header')}
         buttonText={t('propertyLanding.hero.button')}
-        onButtonClick={handleQuoteRequest}
+        onButtonClick={handleHeroCtaClick}
       />
 
       <div className='Introduction-Section row gx-0 d-flex justify-content-center'>
@@ -120,7 +125,7 @@ function PropertyManagementLanding() {
               <p className='pb-1 pb-sm-2 pb-lg-3'>{t('propertyLanding.introduction.paragraph2')}</p>
               <ArrowButton
                 label={t('propertyLanding.introduction.cta')}
-                onClick={handleQuoteRequest}
+                onClick={handleIntroductionCtaClick}
                 variant="orange"
               />
             </div>
@@ -178,7 +183,7 @@ function PropertyManagementLanding() {
               <p className='pb-1 pb-md-3'>{t('propertyLanding.CTA-Responsibility-Section.paragraph1')}</p>
               <ArrowButton
                 label={t('propertyLanding.CTA-Responsibility-Section.cta')}
-                onClick={handleQuoteRequest}
+                onClick={handleResponsibilityCtaClick}
                 variant="orange"
               />
             </div>
@@ -198,7 +203,7 @@ function PropertyManagementLanding() {
               <p className='pb-1 pb-md-3'>{t('propertyLanding.FAQ-Section.paragraph1')}</p>
               <ArrowButton
                 label={t('propertyLanding.FAQ-Section.cta')}
-                onClick={handleQuoteRequest}
+                onClick={handleFaqCtaClick}
                 variant="orange"
               />
             </div>
@@ -215,7 +220,7 @@ function PropertyManagementLanding() {
         defaultImage={ResponsibilityImage}
         defaultImageAlt={t('propertyLanding.images.introductionAlt')}
         ctaLabel={t('propertyLanding.IL-News-Section.CTA')}
-        onCtaClick={handleQuoteRequest}
+        onCtaClick={handleNewsCtaClick}
       />
 
     </div >

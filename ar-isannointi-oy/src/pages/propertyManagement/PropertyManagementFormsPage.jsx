@@ -1,13 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
-import FormsPageIntroductionImage from '../assets/webp/FormPageIntroductionImage.webp';
-import FormIntroductionSection from '../components/FormIntroductionSection';
-import SearchCategoryFilterSection from '../components/SearchCategoryFilterSection';
-import FormCardsSection from '../components/FormCardsSection';
-import formDataEn from '../data/FormDataEn';
-import formDataFi from '../data/FormDataFi';
-import buildFormContentItems from '../utils/buildFormContentItems';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage';
+import FormsPageIntroductionImage from '../../assets/webp/FormPageIntroductionImage.webp';
+import FormIntroductionSection from '../../components/FormIntroductionSection';
+import SearchCategoryFilterSection from '../../components/SearchCategoryFilterSection';
+import FormCardsSection from '../../components/FormCardsSection';
+import formDataEn from '../../data/FormDataEn';
+import formDataFi from '../../data/FormDataFi';
+import buildFormContentItems from '../../utils/buildFormContentItems';
 
 
 const PropertyManagementFormsPage = () => {

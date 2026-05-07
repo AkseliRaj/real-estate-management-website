@@ -1,14 +1,17 @@
 import { useTranslation } from 'react-i18next';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
-import FormIntroductionSection from '../components/FormIntroductionSection';
-import IconListCardsSection from '../components/IconListCardsSection';
-import BiddingQuotePageImage from '../assets/webp/PublicDeedImage.webp';
-import buildFormContentItems from '../utils/buildFormContentItems';
-import FormIcon from '../assets/svg/FilePenIcon.svg';
-import '../css/BiddingPage.css'
+import { useNavigate } from 'react-router-dom';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage';
+import FormIntroductionSection from '../../components/FormIntroductionSection';
+import IconListCardsSection from '../../components/IconListCardsSection';
+import BiddingQuotePageImage from '../../assets/webp/PublicDeedImage.webp';
+import buildFormContentItems from '../../utils/buildFormContentItems';
+import { navigateToRoute } from '../../utils/navigation.js';
+import FormIcon from '../../assets/svg/FilePenIcon.svg';
+import '../../css/BiddingPage.css'
 
 const PublicDeedConfirmationsPage = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     const prefixSection = t('Public-Deed-Page.Prefix', { returnObjects: true });
     const realEstateSpecificationsSection = t('Public-Deed-Page.Real-Estate-Specifications', { returnObjects: true });
     const AquireWhenCardsSection = t('Public-Deed-Page.When-to-acquire-cards', {
@@ -16,6 +19,7 @@ const PublicDeedConfirmationsPage = () => {
         defaultValue: t('Public-Deed-Page.When-to-aquire-cards', { returnObjects: true }),
     });
     const DeedOfTransferCTA = t('Public-Deed-Page.Deed-Of-Transfer-CTA', { returnObjects: true });
+    const handleContactCtaClick = () => navigateToRoute(navigate, '/yhteystiedot');
     const acquireWhenNote = AquireWhenCardsSection?.['Not-Needed-Card']?.['note-paragraph'] || '';
     const biddingExplanationCards = Object.entries(AquireWhenCardsSection || {})
         .filter(
@@ -67,6 +71,7 @@ const PublicDeedConfirmationsPage = () => {
                 imageSrc={BiddingQuotePageImage}
                 imageAlt={t('propertyLanding.images.introductionAlt')}
                 buttonText={t('Public-Deed-Page.Introduction-Section.CTA-button')}
+                onButtonClick={handleContactCtaClick}
             />
 
             <FormIntroductionSection

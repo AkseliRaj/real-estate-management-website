@@ -1,12 +1,12 @@
-import '../css/ResponsibilityTablePage.css'
+import '../../css/ResponsibilityTablePage.css'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import FormIntroductionSection from '../components/FormIntroductionSection';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
-import ResponsibilityTable from '../components/ResponsibilityTable';
-import SearchCategoryFilterSection from '../components/SearchCategoryFilterSection';
-import ResidentInstructionsImage from '../assets/webp/RenovationImage.webp'
+import FormIntroductionSection from '../../components/FormIntroductionSection';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage';
+import ResponsibilityTable from '../../components/ResponsibilityTable';
+import SearchCategoryFilterSection from '../../components/SearchCategoryFilterSection';
+import ResidentInstructionsImage from '../../assets/webp/RenovationImage.webp'
 
 
 

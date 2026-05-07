@@ -1,8 +1,8 @@
 import React from 'react';
-import '../css/PropertyManagementQuotePage.css';
-import FormPageBanner from '../components/FormPageBanner';
-import FormIntroductionSection from '../components/FormIntroductionSection';
-import ArrowButton from '../components/ArrowButtonOrange';
+import '../../css/PropertyManagementQuotePage.css';
+import FormPageBanner from '../../components/FormPageBanner';
+import FormIntroductionSection from '../../components/FormIntroductionSection';
+import ArrowButton from '../../components/ArrowButtonOrange';
 import { useTranslation } from 'react-i18next';
 
 const PropertyManagementQuotePage = () => {

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../css/RealEstateProperties.css';
-import ArrowButtonOrange from '../components/ArrowButtonOrange';
-import PropertyCard from '../components/PropertyCard';
-import HeroImageBanner from '../components/HeroImageBanner';
-import SearchCategoryFilterSection from '../components/SearchCategoryFilterSection';
-import BannerImage from '../assets/svg/BannerImage.svg';
+import '../../css/RealEstateProperties.css';
+import ArrowButtonOrange from '../../components/ArrowButtonOrange';
+import PropertyCard from '../../components/PropertyCard';
+import HeroImageBanner from '../../components/HeroImageBanner';
+import SearchCategoryFilterSection from '../../components/SearchCategoryFilterSection';
+import BannerImage from '../../assets/svg/BannerImage.svg';
 
 const RealEstatePropertiesPage = () => {
     const { t } = useTranslation();

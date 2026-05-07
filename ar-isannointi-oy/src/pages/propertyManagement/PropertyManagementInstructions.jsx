@@ -1,13 +1,13 @@
-import '../css/PropertyManagementInstructions.css'
+import '../../css/PropertyManagementInstructions.css'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import ResidentInstructionsImage from '../assets/webp/ResidentInstructionsImage.webp'
-import AccordionMenuGrid from '../components/AccordionMenuGrid';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
-import SearchCategoryFilterSection from '../components/SearchCategoryFilterSection';
-import propertyManagementInstructionItemsFi from '../data/propertyManagementInstructionItems.fi';
-import propertyManagementInstructionItemsEn from '../data/propertyManagementInstructionItems.en';
+import ResidentInstructionsImage from '../../assets/webp/ResidentInstructionsImage.webp'
+import AccordionMenuGrid from '../../components/AccordionMenuGrid';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage';
+import SearchCategoryFilterSection from '../../components/SearchCategoryFilterSection';
+import propertyManagementInstructionItemsFi from '../../data/propertyManagementInstructionItems.fi';
+import propertyManagementInstructionItemsEn from '../../data/propertyManagementInstructionItems.en';
 
 function PropertyManagementInstructions() {
     const { t, i18n } = useTranslation();

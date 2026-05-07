@@ -1,17 +1,17 @@
 import React, { useMemo, useState } from 'react';
-import '../css/RentalApplicationPage.css';
-import FormPageBanner from '../components/FormPageBanner';
-import FormIntroductionSection from '../components/FormIntroductionSection';
-import RentalSearchSection from '../components/RentalSearchSection';
-import RentalApplicantGeneralInfoSection from '../components/RentalApplicantGeneralInfoSection';
-import RentalEducationBackgroundSection from '../components/RentalEducationBackgroundSection';
-import RentalEmploymentSection from '../components/RentalEmploymentSection';
-import RentalPetsAndSmokingSection from '../components/RentalPetsAndSmokingSection';
-import RentalOtherApplicantsSection from '../components/RentalOtherApplicantsSection';
-import RentalOtherInformationSection from '../components/RentalOtherInformationSection';
-import RentalApplicationStartDateSection from '../components/RentalApplicationStartDateSection';
-import RentalTermsSection from '../components/RentalTermsSection';
-import RentalSampleImage from '../assets/webp/RealEstatePropertyImage.webp';
+import '../../css/RentalApplicationPage.css';
+import FormPageBanner from '../../components/FormPageBanner';
+import FormIntroductionSection from '../../components/FormIntroductionSection';
+import RentalSearchSection from '../../components/RentalSearchSection';
+import RentalApplicantGeneralInfoSection from '../../components/RentalApplicantGeneralInfoSection';
+import RentalEducationBackgroundSection from '../../components/RentalEducationBackgroundSection';
+import RentalEmploymentSection from '../../components/RentalEmploymentSection';
+import RentalPetsAndSmokingSection from '../../components/RentalPetsAndSmokingSection';
+import RentalOtherApplicantsSection from '../../components/RentalOtherApplicantsSection';
+import RentalOtherInformationSection from '../../components/RentalOtherInformationSection';
+import RentalApplicationStartDateSection from '../../components/RentalApplicationStartDateSection';
+import RentalTermsSection from '../../components/RentalTermsSection';
+import RentalSampleImage from '../../assets/webp/RealEstatePropertyImage.webp';
 import { useTranslation } from 'react-i18next';
 
 const PropertyManagementQuotePage = () => {

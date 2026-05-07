@@ -147,7 +147,7 @@
       "imageAlt": "Pen and paper icon"
     },
     "intro": {
-      "heading": "Contact about property management",
+      "heading": "Contact us",
       "paragraph1": "Tell us briefly about your housing company's needs using the form provided. We will carefully review your situation and get back to you as soon as possible with a quote and next steps.",
       "paragraph2": "If needed, we can also arrange a more detailed discussion where we go through the property management solution that best fits you. You don't have to include everything about the housing company, and the information you submit through the form can be supplemented later!"
     },
@@ -274,7 +274,7 @@
     "Introduction-Section": {
       "title": "Public trade confirmations",
       "paragraph1": "From AR Isännöinti Oy",
-      "CTA-button": "Contact us about public trade confirmations"
+      "CTA-button": "Contact us"
     },
     "Prefix": {
       "title": "What is the role of a public notary for real estate?",

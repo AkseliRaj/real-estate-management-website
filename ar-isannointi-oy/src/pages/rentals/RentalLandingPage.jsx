@@ -1,18 +1,19 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import HeroWrapper from '../components/HeroWrapper.jsx';
-import LandingPropertyCarousel from '../components/LandingPropertyCarousel.jsx';
-import ArrowButton from '../components/ArrowButtonOrange.jsx';
-import ServiceCard from '../components/ServiceCard.jsx';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage.jsx';
-import NewsSection from '../components/NewsSection.jsx';
-import ArrowIcon from '../assets/svg/rightArrowIconDark.svg';
-import FormIcon from '../assets/svg/FilePenIcon.svg';
-import HumanIcon from '../assets/svg/HumanIcon.svg';
-import MoneyIcon from '../assets/svg/MoneyIcon.svg';
-import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
-import '../css/RealEstateProperties.css';
-import '../css/RealEstateLanding.css'
+import HeroWrapper from '../../components/HeroWrapper.jsx';
+import LandingPropertyCarousel from '../../components/LandingPropertyCarousel.jsx';
+import ArrowButton from '../../components/ArrowButtonOrange.jsx';
+import ServiceCard from '../../components/ServiceCard.jsx';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
+import NewsSection from '../../components/NewsSection.jsx';
+import ArrowIcon from '../../assets/svg/rightArrowIconDark.svg';
+import FormIcon from '../../assets/svg/FilePenIcon.svg';
+import HumanIcon from '../../assets/svg/HumanIcon.svg';
+import MoneyIcon from '../../assets/svg/MoneyIcon.svg';
+import BiddingQuotePageImage from '../../assets/webp/BiddingQuotePageImage.webp';
+import { navigateToRoute } from '../../utils/navigation.js';
+import '../../css/RealEstateProperties.css';
+import '../../css/RealEstateLanding.css'
 
 function RealEstateLandingPage() {
   const { t } = useTranslation();
@@ -25,9 +26,8 @@ function RealEstateLandingPage() {
     price: '40 000 €',
   }));
 
-  const handleCtaClick = () => {
-    navigate('/vuokraus/kohteet');
-  };
+  const handlePropertiesCtaClick = () => navigateToRoute(navigate, '/vuokraus/kohteet');
+  const handleRentalQuoteCtaClick = () => navigateToRoute(navigate, '/vuokraa-asuntosi');
 
   const serviceCards = [
     {
@@ -56,7 +56,7 @@ function RealEstateLandingPage() {
       <HeroWrapper
         headerText={t('Rental-Landing-Page.Banner.title')}
         buttonText={t('Rental-Landing-Page.Banner.CTA-button')}
-        onButtonClick={handleCtaClick}
+        onButtonClick={handlePropertiesCtaClick}
       />
 
       <IntroductionSectionWithImage
@@ -68,7 +68,7 @@ function RealEstateLandingPage() {
         imageSrc={BiddingQuotePageImage}
         imageAlt={t('Real-Estate-Landing.About-Us-Section.title')}
         buttonText={t('Rental-Landing-Page.Introduction-Section.CTA-button')}
-        onButtonClick={handleCtaClick}
+        onButtonClick={handleRentalQuoteCtaClick}
         showBottomBorder={false}
       />
 
@@ -105,7 +105,7 @@ function RealEstateLandingPage() {
         imageSrc={BiddingQuotePageImage}
         imageAlt={t('Real-Estate-Landing.About-Us-Section.title')}
         buttonText={t('Rental-Landing-Page.Business-Rental-Advertisement.CTA-Button')}
-        onButtonClick={handleCtaClick}
+        onButtonClick={handlePropertiesCtaClick}
         showBottomBorder={false}
       />
 

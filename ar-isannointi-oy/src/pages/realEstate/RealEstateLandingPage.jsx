@@ -1,18 +1,19 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import HeroWrapper from '../components/HeroWrapper.jsx';
-import LandingPropertyCarousel from '../components/LandingPropertyCarousel.jsx';
-import ArrowButton from '../components/ArrowButtonOrange.jsx';
-import ServiceCard from '../components/ServiceCard.jsx';
-import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage.jsx';
-import NewsSection from '../components/NewsSection.jsx';
-import ArrowIcon from '../assets/svg/rightArrowIconDark.svg';
-import FormIcon from '../assets/svg/FilePenIcon.svg';
-import HumanIcon from '../assets/svg/HumanIcon.svg';
-import MoneyIcon from '../assets/svg/MoneyIcon.svg';
-import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
-import '../css/RealEstateProperties.css';
-import '../css/RealEstateLanding.css'
+import HeroWrapper from '../../components/HeroWrapper.jsx';
+import LandingPropertyCarousel from '../../components/LandingPropertyCarousel.jsx';
+import ArrowButton from '../../components/ArrowButtonOrange.jsx';
+import ServiceCard from '../../components/ServiceCard.jsx';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
+import NewsSection from '../../components/NewsSection.jsx';
+import ArrowIcon from '../../assets/svg/rightArrowIconDark.svg';
+import FormIcon from '../../assets/svg/FilePenIcon.svg';
+import HumanIcon from '../../assets/svg/HumanIcon.svg';
+import MoneyIcon from '../../assets/svg/MoneyIcon.svg';
+import BiddingQuotePageImage from '../../assets/webp/BiddingQuotePageImage.webp';
+import { navigateToRoute } from '../../utils/navigation.js';
+import '../../css/RealEstateProperties.css';
+import '../../css/RealEstateLanding.css'
 
 function RealEstateLandingPage() {
   const { t } = useTranslation();
@@ -25,9 +26,8 @@ function RealEstateLandingPage() {
     price: '40 000 €',
   }));
 
-  const handleCtaClick = () => {
-    navigate('/kiinteistonvalitys/kohteet');
-  };
+  const handlePropertiesCtaClick = () => navigateToRoute(navigate, '/kiinteistonvalitys/kohteet');
+  const handleQuoteCtaClick = () => navigateToRoute(navigate, '/arvio-kohteestasi');
 
   const serviceCards = [
     {
@@ -56,7 +56,7 @@ function RealEstateLandingPage() {
       <HeroWrapper
         headerText={t('Real-Estate-Landing.Banner.title')}
         buttonText={t('Real-Estate-Landing.Banner.CTA-button')}
-        onButtonClick={handleCtaClick}
+        onButtonClick={handlePropertiesCtaClick}
       />
 
       <div className='row gx-0 justify-content-center'>
@@ -106,7 +106,7 @@ function RealEstateLandingPage() {
           <p className='pb-3 pb-md-5'>{t("Real-Estate-Landing.Card-Section.pricing-paragraph")}</p>
           <ArrowButton
             label={t('Real-Estate-Landing.Card-Section.CTA-button')}
-            onClick={handleCtaClick}
+            onClick={handleQuoteCtaClick}
             variant="orange"
             showArrow={true}
           />
@@ -119,7 +119,7 @@ function RealEstateLandingPage() {
         imageSrc={BiddingQuotePageImage}
         imageAlt={t('Real-Estate-Landing.About-Us-Section.title')}
         buttonText={t('Real-Estate-Landing.About-Us-Section.CTA-button')}
-        onButtonClick={handleCtaClick}
+        onButtonClick={handlePropertiesCtaClick}
         showBottomBorder={false}
       />
 
@@ -129,7 +129,7 @@ function RealEstateLandingPage() {
         defaultImage={BiddingQuotePageImage}
         defaultImageAlt={t('Real-Estate-Landing.News-Section.link')}
         ctaLabel={t('propertyLanding.IL-News-Section.CTA')}
-        onCtaClick={handleCtaClick}
+        onCtaClick={handlePropertiesCtaClick}
       />
 
     </div>

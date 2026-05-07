@@ -5,20 +5,20 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 { /*PAGES*/ }
-import PropertyManagementLanding from './pages/PropertyManagementLanding';
-import PropertyManagementQuotePage from './pages/PropertyManagementQuotePage';
-import PropertyManagementInstructions from './pages/PropertyManagementInstructions';
-import ResponsibilityTablePage from './pages/ResponsibilityTablePage.jsx';
-import PropertyManagementFormsPage from './pages/PropertyManagementFormsPage.jsx';
-import BiddingQuotePage from './pages/BiddingQuotePage.jsx';
-import PublicDeedConfirmationsPage from './pages/PublicDeedConfirmationsPage.jsx';
-import RealEstateQuotePage from './pages/RealEstateQuotePage.jsx';
-import RealEstatePropertiesPage from './pages/RealEstatePropertiesPage.jsx';
-import RealEstateLandingPage from './pages/RealEstateLandingPage.jsx';
-import RentalPropertiesPage from './pages/RentalPropertiesPage.jsx';
-import RentalLandingPage from './pages/RentalLandingPage.jsx';
-import RentalApplicationPage from './pages/RentalApplicationPage.jsx';
-import RentalQuotePage from './pages/RentalQuotePage.jsx';
+import PropertyManagementLanding from './pages/propertyManagement/PropertyManagementLanding.jsx';
+import PropertyManagementQuotePage from './pages/propertyManagement/PropertyManagementQuotePage.jsx';
+import PropertyManagementInstructions from './pages/propertyManagement/PropertyManagementInstructions.jsx';
+import ResponsibilityTablePage from './pages/propertyManagement/ResponsibilityTablePage.jsx';
+import PropertyManagementFormsPage from './pages/propertyManagement/PropertyManagementFormsPage.jsx';
+import BiddingQuotePage from './pages/realEstate/BiddingQuotePage.jsx';
+import PublicDeedConfirmationsPage from './pages/realEstate/PublicDeedConfirmationsPage.jsx';
+import RealEstateQuotePage from './pages/realEstate/RealEstateQuotePage.jsx';
+import RealEstatePropertiesPage from './pages/realEstate/RealEstatePropertiesPage.jsx';
+import RealEstateLandingPage from './pages/realEstate/RealEstateLandingPage.jsx';
+import RentalPropertiesPage from './pages/rentals/RentalPropertiesPage.jsx';
+import RentalLandingPage from './pages/rentals/RentalLandingPage.jsx';
+import RentalApplicationPage from './pages/rentals/RentalApplicationPage.jsx';
+import RentalQuotePage from './pages/rentals/RentalQuotePage.jsx';
 import ContactInformationPage from './pages/ContactInformationPage.jsx';
 
 function App() {
