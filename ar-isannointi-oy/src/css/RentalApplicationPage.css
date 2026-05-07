@@ -9,6 +9,19 @@
     border-radius: 1rem;
 }
 
+.Rental-Card-Image-Skeleton {
+    height: 10em;
+}
+
+.Rental-Image {
+    position: relative;
+}
+
+.Rental-Card-Button-Skeleton {
+    border-radius: 1.2rem;
+    min-height: 2.1rem;
+}
+
 .Rental-Card {
     border: 1px solid #bebebe;
     border-radius: 1rem;

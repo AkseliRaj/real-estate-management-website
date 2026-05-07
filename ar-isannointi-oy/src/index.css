@@ -87,6 +87,37 @@ li {
   box-shadow: none;
 }
 
+input[type="radio"],
+input[type="checkbox"],
+.form-check-input {
+  accent-color: #F57021;
+}
+
+.form-check-input {
+  border: 1px solid #d4d4d4;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.form-check-input:hover {
+  border-color: #F57021;
+}
+
+.form-check-input:focus {
+  border-color: #F57021;
+  box-shadow: 0 0 0 0.2rem rgba(245, 112, 33, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: #F57021;
+  border-color: #F57021;
+}
+
+.form-check-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .Required-Asterisk {
   color: #F57021;
 }
@@ -107,8 +138,29 @@ li {
   }
 }
 
+.selected-rental-card-enter {
+  animation: selected-card-enter 0.24s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.employment-fields-enter {
+  animation: selected-card-enter 0.24s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes selected-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .page-transition {
+  .page-transition,
+  .selected-rental-card-enter,
+  .employment-fields-enter {
     animation: none;
   }
 }

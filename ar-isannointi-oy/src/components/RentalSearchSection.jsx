@@ -12,10 +12,20 @@ const RentalSearchSection = ({
 }) => {
     const { t } = useTranslation();
     const [searchInputValue, setSearchInputValue] = useState(searchTerm);
+    const [isSearching, setIsSearching] = useState(false);
 
     useEffect(() => {
         setSearchInputValue(searchTerm);
     }, [searchTerm]);
+
+    useEffect(() => {
+        setIsSearching(false);
+    }, [filteredRentalOptions, searchTerm]);
+
+    const handleSearch = () => {
+        setIsSearching(true);
+        onSearchTermChange(searchInputValue);
+    };
 
     return (
         <div className='container'>
@@ -47,28 +57,38 @@ const RentalSearchSection = ({
                             <button
                                 type="button"
                                 className="Color-Button align-self-start"
-                                onClick={() => onSearchTermChange(searchInputValue)}
+                                onClick={handleSearch}
                             >
                                 {t('Rental-Application-Page.Form-Labels.Property-Options.Search-Button')}
                             </button>
                         </div>
                     </div>
 
-                    {filteredRentalOptions.map((rentalOption) => (
-                        <RentalOptionCard
-                            key={rentalOption.id}
-                            rentalOption={rentalOption}
-                            actionContent={{
-                                label: selectedRentalOptionIds.includes(rentalOption.id)
-                                    ? t('Rental-Application-Page.Form-Labels.Property-Options.Deselect-Option')
-                                    : t('Rental-Application-Page.Form-Labels.Property-Options.Select-Option'),
-                                isSelected: selectedRentalOptionIds.includes(rentalOption.id)
-                            }}
-                            onAction={() => onToggleRentalOptionSelection(rentalOption.id)}
-                        />
-                    ))}
+                    {isSearching
+                        ? Array.from({ length: 3 }, (_, index) => (
+                            <RentalOptionCard
+                                key={`rental-skeleton-${index}`}
+                                rentalOption={{ image: '', address: '', squareMeters: '', monthlyRent: '' }}
+                                actionContent={{ label: '' }}
+                                onAction={() => {}}
+                                isLoading
+                            />
+                        ))
+                        : filteredRentalOptions.map((rentalOption) => (
+                            <RentalOptionCard
+                                key={rentalOption.id}
+                                rentalOption={rentalOption}
+                                actionContent={{
+                                    label: selectedRentalOptionIds.includes(rentalOption.id)
+                                        ? t('Rental-Application-Page.Form-Labels.Property-Options.Deselect-Option')
+                                        : t('Rental-Application-Page.Form-Labels.Property-Options.Select-Option'),
+                                    isSelected: selectedRentalOptionIds.includes(rentalOption.id)
+                                }}
+                                onAction={() => onToggleRentalOptionSelection(rentalOption.id)}
+                            />
+                        ))}
 
-                    {searchTerm.trim() && filteredRentalOptions.length === 0 && (
+                    {!isSearching && searchTerm.trim() && filteredRentalOptions.length === 0 && (
                         <div className='col-12 mb-3'>
                             <p className='m-0'>{t('Rental-Application-Page.Form-Labels.Property-Options.No-Results')}</p>
                         </div>
@@ -90,14 +110,15 @@ const RentalSearchSection = ({
                     <div className='col-11 col-lg-8 col-xxl-8'>
                         <div className='row g-4'>
                             {selectedRentalOptions.map((rentalOption) => (
-                                <RentalOptionCard
-                                    key={rentalOption.id}
-                                    rentalOption={rentalOption}
-                                    actionContent={{
-                                        label: t('Rental-Application-Page.Form-Labels.Property-Options.Deselect-Option')
-                                    }}
-                                    onAction={() => onToggleRentalOptionSelection(rentalOption.id)}
-                                />
+                                <div key={rentalOption.id} className='selected-rental-card-enter'>
+                                    <RentalOptionCard
+                                        rentalOption={rentalOption}
+                                        actionContent={{
+                                            label: t('Rental-Application-Page.Form-Labels.Property-Options.Deselect-Option')
+                                        }}
+                                        onAction={() => onToggleRentalOptionSelection(rentalOption.id)}
+                                    />
+                                </div>
                             ))}
                         </div>
                     </div>

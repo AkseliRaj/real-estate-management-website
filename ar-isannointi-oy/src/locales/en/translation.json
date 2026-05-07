@@ -594,7 +594,7 @@
         "No-Results": "No results for this search.",
         "Selected-Properties-Title": "Selected properties",
         "Card-Address-Label": "Address: ",
-        "Card-Square-Meters-Label": "Square meters: ",
+        "Card-Square-Meters-Label": "Square-meters: ",
         "Card-Monthly-Rent-Label": "Monthly rent: "
       },
       "Applicant-Information": {
@@ -617,7 +617,7 @@
           "End-Year": "Estimated graduation year: "
         },
         "Employment": {
-          "Radiobutton-Label": "Are you currently employed?",
+          "Radiobutton-Label": "Are you employed?",
           "Yes-Button": "Yes",
           "No-Button": "No",
           "Employer-Name": "Employer name: ",
