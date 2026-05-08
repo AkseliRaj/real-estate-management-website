@@ -1,0 +1,22 @@
+.Price-Stat {
+    background-color: #F57021;
+    color: white;
+    padding: .5rem 0.8rem;
+    border-radius: 1rem;
+}
+
+.Back-Arrow-Icon {
+    width: 2.5rem;
+    height: auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.Back-Link {
+    font-weight: bold;
+}
+
+.Back-Link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useRef } from 'react';
 import IntroductionSectionWithImage from '../components/IntroductionSectionWithImage';
 import StaffCard from '../components/StaffCard';
 import ArrowButtonOrange from '../components/ArrowButtonOrange';
@@ -11,6 +12,11 @@ const ContactInformationPage = () => {
     const { t } = useTranslation();
     const staffInformation = t('Contact-Information-Page.Staff-Information.Profession-Titles', { returnObjects: true });
 
+    const ref = useRef(null);
+    const handleClick = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="container-fluid px-0">
             <IntroductionSectionWithImage
@@ -21,6 +27,7 @@ const ContactInformationPage = () => {
                 imageSrc={BiddingQuotePageImage}
                 imageAlt={t('propertyLanding.images.introductionAlt')}
                 buttonText={t('Contact-Information-Page.Banner.CTA-Button')}
+                onButtonClick={handleClick}
             />
 
             <div className='row g-0 d-flex justify-content-center Contact-Information-Section py-5 px-0'>
@@ -87,7 +94,7 @@ const ContactInformationPage = () => {
                 </div>
             </div>
 
-            <div className='row g-0 d-flex justify-content-center Staff-Information-Section py-5 px-0'>
+            <div ref={ref} className='row g-0 d-flex justify-content-center Staff-Information-Section py-5 px-0'>
                 <div className='col-11 py-5'>
                     <img
                         src={LetterIcon}

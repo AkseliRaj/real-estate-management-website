@@ -652,5 +652,17 @@
       "TOS": "I give permission to check my credit information and to share the information with the landlord. Personal data is processed in accordance with the Personal Data Act (523/1999) and legislation concerning rental mediation (1075/2000).",
       "Send-Button": "Submit application"
     }
+  },
+  "RentalPropertyPage": {
+    "Return-Link": "Back",
+    "Statistics-Labels": {
+      "Apartment-Specification": "Apartment specification",
+      "Square-Meters": "Area",
+      "House-Type": "Building type",
+      "Floor-Number": "Floor",
+      "Year-Built": "Year built",
+      "Apartment-Availability": "Available from"
+    },
+    "CTA-Button": "Send application"
   }
 }

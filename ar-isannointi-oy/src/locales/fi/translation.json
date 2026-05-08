@@ -657,5 +657,17 @@
       "TOS": "Annan luvan luottotietojen tarkistamiseen ja tietojen luovuttamiseen vuokranantajalle. Henkilötietojen käsittelyssä noudatetaan henkilötietolakia (523/1999) ja vuokravälitystä koskevaa lainsäädäntöä (1075/2000)",
       "Send-Button": "Lähetä hakemus"
     }
+  },
+  "RentalPropertyPage": {
+    "Return-Link": "Takaisin",
+    "Statistics-Labels": {
+      "Apartment-Specification": "Huoneisto\u00ADselitelmä",
+      "Square-Meters": "Pinta-ala",
+      "House-Type": "Talotyyppi",
+      "Floor-Number": "Kerros",
+      "Year-Built": "Rakennusvuosi",
+      "Apartment-Availability": "Vapautuu"
+    },
+    "CTA-Button": "Vuokraa asunto"
   }
 }

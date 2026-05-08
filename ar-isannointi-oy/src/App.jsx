@@ -16,6 +16,7 @@ import RealEstateQuotePage from './pages/realEstate/RealEstateQuotePage.jsx';
 import RealEstatePropertiesPage from './pages/realEstate/RealEstatePropertiesPage.jsx';
 import RealEstateLandingPage from './pages/realEstate/RealEstateLandingPage.jsx';
 import RentalPropertiesPage from './pages/rentals/RentalPropertiesPage.jsx';
+import RentalPropertyPage from './pages/rentals/RentalPage.jsx';
 import RentalLandingPage from './pages/rentals/RentalLandingPage.jsx';
 import RentalApplicationPage from './pages/rentals/RentalApplicationPage.jsx';
 import RentalQuotePage from './pages/rentals/RentalQuotePage.jsx';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/arvio-kohteestasi" element={<RealEstateQuotePage />} />
           <Route path="/kiinteistonvalitys/kohteet" element={<RealEstatePropertiesPage />} />
           <Route path="/vuokraus/kohteet" element={<RentalPropertiesPage />} />
+          <Route path="/vuokraus/vuokrakohde" element={<RentalPropertyPage />} />
           <Route path="/vuokraus" element={<RentalLandingPage />} />
           <Route path="/vuokraa-asuntosi" element={<RentalQuotePage />} />
           <Route path="/vuokrahakemus" element={<RentalApplicationPage />} />
