@@ -12,6 +12,10 @@
     transform: scaleX(-1);
 }
 
+.Header-Section, .More-Information-Section {
+    border-bottom: 1px solid #BEBEBE;
+}
+
 .Back-Link {
     font-weight: bold;
 }

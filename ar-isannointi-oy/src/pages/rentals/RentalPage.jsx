@@ -1,56 +1,39 @@
 import '../../css/PropertyPage.css';
-import { useCallback, useEffect, useState } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import PropertyStatsRow from "../../components/PropertyStatsRow";
 import ArrowButton from '../../components/ArrowButtonOrange';
+import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
 import BackArrowIcon from '../../assets/svg/rightArrowIconDark.svg'
 import PublicDeedImage from '../../assets/webp/PublicDeedImage.webp';
 import RealEstateDropdownImage from '../../assets/webp/RealEstateDropdownImage.webp';
 import RealEstatePropertyImage from '../../assets/webp/RealEstatePropertyImage.webp';
+import HandShakeImage from '../../assets/webp/HandShakeImage.webp';
 import { navigateToRoute } from '../../utils/navigation.js';
+import RentalImageCarousel from '../../components/RentalImageCarousel.jsx';
+import GoogleMapsEmbed from '../../components/GoogleMapsEmbed.jsx';
+import RentalPropertiesCarouselSection from '../../components/RentalPropertiesCarouselSection.jsx';
 
 const Page = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: 'start' });
-    const [selectedIndex, setSelectedIndex] = useState(0);
-    const [slideCount, setSlideCount] = useState(0);
 
     const carouselImages = [
         PublicDeedImage,
         RealEstateDropdownImage,
         RealEstatePropertyImage,
     ];
+    const temporaryProperties = Array.from({ length: 3 }, () => ({
+        address: 'Keskuskatu 56 A 4',
+        city: 'Kankaanpää',
+        specifications: '2H+K+KPH',
+        squares: '30 m2',
+        price: '40 000 €',
+    }));
 
     const handleBackLinkClick = () => navigateToRoute(navigate, '/vuokraus/kohteet');
-    const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-    const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+    const handleRentalApplicationCtaClick = () => navigateToRoute(navigate, '/vuokrahakemus');
 
-    const onSelect = useCallback(() => {
-        if (!emblaApi) {
-            return;
-        }
-
-        setSelectedIndex(emblaApi.selectedScrollSnap());
-        setSlideCount(emblaApi.scrollSnapList().length);
-    }, [emblaApi]);
-
-    useEffect(() => {
-        if (!emblaApi) {
-            return;
-        }
-
-        onSelect();
-        emblaApi.on('select', onSelect);
-        emblaApi.on('reInit', onSelect);
-
-        return () => {
-            emblaApi.off('select', onSelect);
-            emblaApi.off('reInit', onSelect);
-        };
-    }, [emblaApi, onSelect]);
 
     return (
         <div className="container-fluid px-0">
@@ -76,60 +59,11 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className="row g-0 d-flex justify-content-center py-5">
+            <div className="row g-0 d-flex justify-content-center py-3 py-lg-5 Header-Section">
                 <div className="col-11 py-5">
                     <div className="row d-flex justify-content-around">
                         <div className="col-12 col-lg-5 pb-5 Image-Carousel-Section">
-                            <div className="Rental-Embla">
-                                <div className="Rental-Embla__viewport" ref={emblaRef}>
-                                    <div className="Rental-Embla__container">
-                                        {carouselImages.map((image, index) => (
-                                            <div className="Rental-Embla__slide" key={image}>
-                                                <div className="Rental-Embla__slide-inner">
-                                                    <img
-                                                        src={image}
-                                                        alt={`Property image ${index + 1}`}
-                                                        className="Rental-Embla__slide-image"
-                                                    />
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                                <div className="Rental-Embla__controls">
-                                    <button
-                                        type="button"
-                                        className="Rental-Embla__arrow"
-                                        onClick={scrollPrev}
-                                        aria-label="Previous image"
-                                        disabled={selectedIndex === 0}
-                                    >
-                                        <img
-                                            src={BackArrowIcon}
-                                            alt=""
-                                            aria-hidden="true"
-                                            className="Rental-Embla__arrow-icon Rental-Embla__arrow-icon--prev"
-                                        />
-                                    </button>
-                                    <span className="Rental-Embla__counter">
-                                        {slideCount > 0 ? `${selectedIndex + 1} / ${slideCount}` : `1 / ${carouselImages.length}`}
-                                    </span>
-                                    <button
-                                        type="button"
-                                        className="Rental-Embla__arrow"
-                                        onClick={scrollNext}
-                                        aria-label="Next image"
-                                        disabled={selectedIndex === Math.max(slideCount - 1, 0)}
-                                    >
-                                        <img
-                                            src={BackArrowIcon}
-                                            alt=""
-                                            aria-hidden="true"
-                                            className="Rental-Embla__arrow-icon"
-                                        />
-                                    </button>
-                                </div>
-                            </div>
+                            <RentalImageCarousel images={carouselImages} />
                         </div>
                         <div className="col-12 col-lg-6 col-xxl-5 text-center text-lg-start Header-Content-Section">
                             <div className="col-12 pb-2 pb-sm-3">
@@ -142,13 +76,60 @@ const Page = () => {
                             </div>
                             <PropertyStatsRow />
                             <div className='col-12'>
-                                <ArrowButton label={t('RentalPropertyPage.CTA-Button')} variant="orange" showArrow={true} />
+                                <ArrowButton label={t('RentalPropertyPage.CTA-Button')} variant="orange" showArrow={true} onClick={handleRentalApplicationCtaClick}/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div className="row g-0 d-flex justify-content-center py-3 py-lg-5 More-Information-Section">
+                <div className="col-11 pt-5">
+                    <div className="row d-flex justify-content-between">
+                        <div className='col-12 col-lg-6 col-xxl-5 pb-4 pb-sm-5 pb-lg-0'>
+                            <h3 className="pb-3 d-none d-md-inline-block Property-Address">{t('RentalPropertyPage.Section-Titles.Property-Description')}</h3>
+                            <h4 className="pb-1 d-block d-md-none Property-Address">{t('RentalPropertyPage.Section-Titles.Property-Description')}</h4>
+                            <p>Tämä kaunis ja hyvin pidetty asunto tarjoaa käytännöllisen pohjaratkaisun sekä runsaasti luonnonvaloa suurista ikkunoista. Keittiö on moderni ja varusteltu kaikilla tarvittavilla kodinkoneilla, ja olohuoneesta on käynti omalle parvekkeelle, josta avautuu vehreä näkymä pihapiiriin. Makuuhuoneessa on reilusti säilytystilaa kaapistoissa, ja kylpyhuoneessa on paikka pesukoneelle.
+                                Asunto sijaitsee rauhallisella ja arvostetulla alueella, josta on hyvät kulkuyhteydet keskustaan sekä läheisiin palveluihin. Lähikauppa, ulkoilumaastot ja bussipysäkki löytyvät kävelyetäisyydeltä.
+                            </p>
+                        </div>
+                        <div className='col-12 col-lg-5'>
+                            <div>
+                                <h3 className="pb-3 d-none d-md-inline-block Property-Address">{t('RentalPropertyPage.Section-Titles.Location-On-Map')}</h3>
+                                <h4 className="pb-1 d-block d-md-none Property-Address">{t('RentalPropertyPage.Section-Titles.Location-On-Map')}</h4>
+                            </div>
+                            <GoogleMapsEmbed />
+                        </div>
+                        <div className="col-12 pt-5 text-center text-lg-start">
+                            <div>
+                                <h3 className="m-0 d-none d-md-inline-block Property-Address">{t('RentalPropertyPage.Section-Titles.Additional-Information')}</h3>
+                                <h4 className="m-0 d-block d-md-none Property-Address">{t('RentalPropertyPage.Section-Titles.Additional-Information')}</h4>
+                            </div>
+                            <div className="row d-flex justify-content-around">
+                                <PropertyStatsRow />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <IntroductionSectionWithImage
+                title={t('RentalPropertyPage.Application-CTA-Section.title')}
+                paragraphs={[
+                    t('RentalPropertyPage.Application-CTA-Section.paragraph'),
+                ]}
+                imageSrc={HandShakeImage}
+                imageAlt={t('Real-Estate-Landing.About-Us-Section.title')}
+                buttonText={t('RentalPropertyPage.Application-CTA-Section.CTA-Button')}
+                onButtonClick={handleRentalApplicationCtaClick}
+                showBottomBorder={true}
+            />
+
+            <div className='py-5'>
+                <RentalPropertiesCarouselSection properties={temporaryProperties} />
+            </div>
         </div>
     );
 };

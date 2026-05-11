@@ -3,6 +3,10 @@
     "switchToEnglish": "In English",
     "switchToFinnish": "Suomeksi"
   },
+  "common": {
+    "allProperties": "Kaikki kohteet",
+    "arrowIconAlt": "Nuoli-ikoni"
+  },
   "nav": {
     "contactDetails": "Yhteystiedot",
     "propertyManagement": {
@@ -668,6 +672,16 @@
       "Year-Built": "Rakennusvuosi",
       "Apartment-Availability": "Vapautuu"
     },
-    "CTA-Button": "Vuokraa asunto"
+    "CTA-Button": "Vuokraa asunto",
+    "Section-Titles": {
+      "Property-Description": "Kohteen kuvaus",
+      "Location-On-Map": "Sijainti kartalla",
+      "Additional-Information": "Muita tietoja"
+    },
+    "Application-CTA-Section": {
+      "title": "Haluatko nähdä kohteen?",
+      "paragraph": "Järjestetään näytöt! Täytä ensiksi vuokrahakemus minkä jälkeen olemme teihin yhteydessä.",
+      "CTA-Button": "Täytä vuokrahakemus"
+    }
   }
 }

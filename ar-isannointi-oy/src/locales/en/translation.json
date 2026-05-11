@@ -3,6 +3,10 @@
     "switchToEnglish": "In English",
     "switchToFinnish": "In Finnish"
   },
+  "common": {
+    "allProperties": "All properties",
+    "arrowIconAlt": "Arrow icon"
+  },
   "nav": {
     "contactDetails": "Contact",
     "propertyManagement": {
@@ -663,6 +667,16 @@
       "Year-Built": "Year built",
       "Apartment-Availability": "Available from"
     },
-    "CTA-Button": "Send application"
+    "CTA-Button": "Send application",
+    "Section-Titles": {
+      "Property-Description": "Property description",
+      "Location-On-Map": "Location on map",
+      "Additional-Information": "Additional information"
+    },
+    "Application-CTA-Section": {
+      "title": "Want to see the property?",
+      "paragraph": "Let's arrange showings! First, fill out the rental application and we'll get back to you.",
+      "CTA-Button": "Fill out the rental application"
+    }
   }
 }
