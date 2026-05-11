@@ -1,12 +1,11 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import HeroWrapper from '../../components/HeroWrapper.jsx';
-import LandingPropertyCarousel from '../../components/LandingPropertyCarousel.jsx';
+import RentalPropertiesCarouselSection from '../../components/RentalPropertiesCarouselSection.jsx';
 import ArrowButton from '../../components/ArrowButtonOrange.jsx';
 import ServiceCard from '../../components/ServiceCard.jsx';
 import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
 import NewsSection from '../../components/NewsSection.jsx';
-import ArrowIcon from '../../assets/svg/rightArrowIconDark.svg';
 import FormIcon from '../../assets/svg/FilePenIcon.svg';
 import HumanIcon from '../../assets/svg/HumanIcon.svg';
 import MoneyIcon from '../../assets/svg/MoneyIcon.svg';
@@ -59,30 +58,11 @@ function RealEstateLandingPage() {
         onButtonClick={handlePropertiesCtaClick}
       />
 
-      <div className='row gx-0 justify-content-center'>
-        <div className='col-11 d-flex align-items-center justify-content-center justify-content-md-between'>
-          <h3 className='d-none d-md-block mb-0'>
-            {t('Real-Estate-Landing.Propertie-Carousel.title')}
-          </h3>
-          <h4 className='d-block d-md-none text-center mb-0'>
-            {t('Real-Estate-Landing.Propertie-Carousel.title')}
-          </h4>
-          <div className='d-none d-md-flex align-items-center gap-2'>
-            <Link className='link' to='/kiinteistonvalitys/kohteet'>Kaikki kohteet
-              <img src={ArrowIcon} alt="Arrow-Icon" className="link-arrow-icon ps-3" />
-            </Link>
-          </div>
-
-        </div>
-        <div className='col-11 d-flex align-items-center'>
-          <LandingPropertyCarousel properties={temporaryProperties} />
-        </div>
-        <div className='col-11 d-flex d-md-none justify-content-center align-items-center'>
-          <Link className='link' to='/kiinteistonvalitys/kohteet'>Kaikki kohteet
-            <img src={ArrowIcon} alt="Arrow-Icon" className="link-arrow-icon ps-3" />
-          </Link>
-        </div>
-      </div>
+      <RentalPropertiesCarouselSection
+        properties={temporaryProperties}
+        variant='realEstate'
+        titleKey='Real-Estate-Landing.Propertie-Carousel.title'
+      />
 
       <div className='row gx-0 justify-content-center Service-Cards-Section'>
         <div className='col-11 text-center Title-Section'>

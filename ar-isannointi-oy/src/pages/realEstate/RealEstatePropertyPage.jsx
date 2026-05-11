@@ -1,20 +1,20 @@
 import '../../css/PropertyPage.css';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import PropertyStatsRow from "../../components/PropertyStatsRow";
-import ArrowButton from '../../components/ArrowButtonOrange';
+import PropertyStatsRow from "../../components/PropertyStatsRow.jsx";
+import ArrowButton from '../../components/ArrowButtonOrange.jsx';
 import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
 import BackArrowIcon from '../../assets/svg/rightArrowIconDark.svg'
 import PublicDeedImage from '../../assets/webp/PublicDeedImage.webp';
 import RealEstateDropdownImage from '../../assets/webp/RealEstateDropdownImage.webp';
 import RealEstatePropertyImage from '../../assets/webp/RealEstatePropertyImage.webp';
-import HandShakeImage from '../../assets/webp/HandShakeImage.webp';
+import HouseForestImage from '../../assets/webp/HouseForestImage.webp';
 import { navigateToRoute } from '../../utils/navigation.js';
 import RentalImageCarousel from '../../components/RentalImageCarousel.jsx';
 import GoogleMapsEmbed from '../../components/GoogleMapsEmbed.jsx';
 import RentalPropertiesCarouselSection from '../../components/RentalPropertiesCarouselSection.jsx';
 
-const RentalPage = () => {
+const RealEstatePropertyPage = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
@@ -31,8 +31,8 @@ const RentalPage = () => {
         price: '40 000 €',
     }));
 
-    const handleBackLinkClick = () => navigateToRoute(navigate, '/vuokraus/kohteet');
-    const handleRentalApplicationCtaClick = () => navigateToRoute(navigate, '/vuokrahakemus');
+    const handleBackLinkClick = () => navigateToRoute(navigate, '/kiinteistonvalitys/kohteet');
+    const handleContactPageCtaClick = () => navigateToRoute(navigate, '/yhteystiedot');
 
 
     return (
@@ -71,13 +71,10 @@ const RentalPage = () => {
                                 <h4 className="mb-1 d-block d-md-none Property-Address">Keskuskatu 62 A 5</h4>
                             </div>
                             <div className="col-auto">
-                                <h5 className="m-0 d-none d-md-inline-block Price-Stat">440,00 € / kk</h5>
-                                <h6 className="m-0 d-inline-block d-md-none Price-Stat">440,00 € / kk</h6>
+                                <h5 className="m-0 d-none d-md-inline-block Price-Stat">40 000 €</h5>
+                                <h6 className="m-0 d-inline-block d-md-none Price-Stat">40 000 €</h6>
                             </div>
                             <PropertyStatsRow />
-                            <div className='col-12'>
-                                <ArrowButton label={t('RentalPropertyPage.CTA-Button')} variant="orange" showArrow={true} onClick={handleRentalApplicationCtaClick}/>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,22 +113,22 @@ const RentalPage = () => {
 
 
             <IntroductionSectionWithImage
-                title={t('RentalPropertyPage.Application-CTA-Section.title')}
+                title={t('RealEstatePropertyPage.CTA-Section.title')}
                 paragraphs={[
-                    t('RentalPropertyPage.Application-CTA-Section.paragraph'),
+                    t('RealEstatePropertyPage.CTA-Section.paragraph'),
                 ]}
-                imageSrc={HandShakeImage}
+                imageSrc={HouseForestImage}
                 imageAlt={t('Real-Estate-Landing.About-Us-Section.title')}
-                buttonText={t('RentalPropertyPage.Application-CTA-Section.CTA-Button')}
-                onButtonClick={handleRentalApplicationCtaClick}
+                buttonText={t('RealEstatePropertyPage.CTA-Section.CTA-Button')}
+                onButtonClick={handleContactPageCtaClick}
                 showBottomBorder={true}
             />
 
             <div className='py-5'>
-                <RentalPropertiesCarouselSection properties={temporaryProperties} variant='rental' />
+                <RentalPropertiesCarouselSection properties={temporaryProperties} variant='realEstate' />
             </div>
         </div>
     );
 };
 
-export default RentalPage;
+export default RealEstatePropertyPage;

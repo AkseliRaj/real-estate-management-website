@@ -683,5 +683,13 @@
       "paragraph": "Järjestetään näytöt! Täytä ensiksi vuokrahakemus minkä jälkeen olemme teihin yhteydessä.",
       "CTA-Button": "Täytä vuokrahakemus"
     }
+  },
+  "RealEstatePropertyPage": {
+    "CTA-Section": {
+      "title": "Ilmenikö kysymyksiä kohteesta?",
+      "paragraph": "Ota meihin yhteyttä! Voit lähettää meille viestin suoraan sähköpostitse tai yhteydenotto lomakkeen.",
+      "CTA-Button": "Yhteydenotto lomake"
+    }
+
   }
 }

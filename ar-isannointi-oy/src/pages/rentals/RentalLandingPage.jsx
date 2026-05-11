@@ -71,7 +71,7 @@ function RealEstateLandingPage() {
         showBottomBorder={false}
       />
 
-      <RentalPropertiesCarouselSection properties={temporaryProperties} />
+      <RentalPropertiesCarouselSection properties={temporaryProperties} variant='rental' />
 
       <IntroductionSectionWithImage
         title={t('Rental-Landing-Page.Business-Rental-Advertisement.title')}

@@ -14,6 +14,7 @@ import BiddingQuotePage from './pages/realEstate/BiddingQuotePage.jsx';
 import PublicDeedConfirmationsPage from './pages/realEstate/PublicDeedConfirmationsPage.jsx';
 import RealEstateQuotePage from './pages/realEstate/RealEstateQuotePage.jsx';
 import RealEstatePropertiesPage from './pages/realEstate/RealEstatePropertiesPage.jsx';
+import RealEstatePropertyPage from './pages/realEstate/RealEstatePropertyPage.jsx';
 import RealEstateLandingPage from './pages/realEstate/RealEstateLandingPage.jsx';
 import RentalPropertiesPage from './pages/rentals/RentalPropertiesPage.jsx';
 import RentalPropertyPage from './pages/rentals/RentalPage.jsx';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/kiinteistonvalitys" element={<RealEstateLandingPage />} />
           <Route path="/arvio-kohteestasi" element={<RealEstateQuotePage />} />
           <Route path="/kiinteistonvalitys/kohteet" element={<RealEstatePropertiesPage />} />
+          <Route path="/kiinteistonvalitys/kohde" element={<RealEstatePropertyPage />} />
           <Route path="/vuokraus/kohteet" element={<RentalPropertiesPage />} />
           <Route path="/vuokraus/vuokrakohde" element={<RentalPropertyPage />} />
           <Route path="/vuokraus" element={<RentalLandingPage />} />

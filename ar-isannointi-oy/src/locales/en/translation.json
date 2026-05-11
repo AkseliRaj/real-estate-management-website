@@ -678,5 +678,12 @@
       "paragraph": "Let's arrange showings! First, fill out the rental application and we'll get back to you.",
       "CTA-Button": "Fill out the rental application"
     }
+  },
+  "RealEstatePropertyPage": {
+   "CTA-Section": {
+      "title": "Do you have any questions about the property?",
+      "paragraph": "Contact us! You can send us a message directly via email or the contact form.",
+      "CTA-Button": "Contact form"
+    }
   }
 }

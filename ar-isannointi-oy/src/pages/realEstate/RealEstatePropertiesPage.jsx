@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import '../../css/RealEstateProperties.css';
 import ArrowButtonOrange from '../../components/ArrowButtonOrange';
 import PropertyCard from '../../components/PropertyCard';
 import HeroImageBanner from '../../components/HeroImageBanner';
 import SearchCategoryFilterSection from '../../components/SearchCategoryFilterSection';
 import BannerImage from '../../assets/svg/BannerImage.svg';
+import { navigateToRoute } from '../../utils/navigation.js';
 
 const RealEstatePropertiesPage = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     const [searchInput, setSearchInput] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -100,6 +103,7 @@ const RealEstatePropertiesPage = () => {
                         specifications={property.specifications}
                         squares={property.squares}
                         price={property.price}
+                        onClick={() => navigateToRoute(navigate, '/kiinteistonvalitys/kohde')}
                     />
                 ))}
             </div>
