@@ -9,7 +9,7 @@ import NewsSection from '../../components/NewsSection.jsx';
 import FormIcon from '../../assets/svg/FilePenIcon.svg';
 import HumanIcon from '../../assets/svg/HumanIcon.svg';
 import MoneyIcon from '../../assets/svg/MoneyIcon.svg';
-import BiddingQuotePageImage from '../../assets/webp/BiddingQuotePageImage.webp';
+import BiddingQuotePageImage from '../../assets/webp/HousingComplexImage.webp';
 import { navigateToRoute } from '../../utils/navigation.js';
 import '../../css/RealEstateProperties.css';
 import '../../css/RealEstateLanding.css'

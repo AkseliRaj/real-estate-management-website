@@ -10,6 +10,7 @@ import FormIcon from '../../assets/svg/FilePenIcon.svg';
 import HumanIcon from '../../assets/svg/HumanIcon.svg';
 import MoneyIcon from '../../assets/svg/MoneyIcon.svg';
 import BiddingQuotePageImage from '../../assets/webp/BiddingQuotePageImage.webp';
+import WhiteBoardImage from '../../assets/webp/WhiteBoardImage.webp';
 import { navigateToRoute } from '../../utils/navigation.js';
 import '../../css/RealEstateProperties.css';
 import '../../css/RealEstateLanding.css'
@@ -78,7 +79,7 @@ function RealEstateLandingPage() {
         paragraphs={[
           t('Rental-Landing-Page.Business-Rental-Advertisement.paragraph'),
         ]}
-        imageSrc={BiddingQuotePageImage}
+        imageSrc={WhiteBoardImage}
         imageAlt={t('Real-Estate-Landing.About-Us-Section.title')}
         buttonText={t('Rental-Landing-Page.Business-Rental-Advertisement.CTA-Button')}
         onButtonClick={handlePropertiesCtaClick}

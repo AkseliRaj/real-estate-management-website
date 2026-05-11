@@ -16,11 +16,10 @@
 
 .Profession-Title {
     color: white;
-    font-weight: bold;
     background-color: #F57021;
     display: inline-block;
-    padding: .3rem 0.8rem;
-    border-radius: 1rem;
+    padding: .2rem 0.7rem;
+    border-radius: .8rem;
     margin: 0px;
 }
 

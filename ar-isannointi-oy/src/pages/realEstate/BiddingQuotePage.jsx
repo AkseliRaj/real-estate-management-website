@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import IntroductionSectionWithImage from '../../components/IntroductionSectionWithImage.jsx';
 import FormIntroductionSection from '../../components/FormIntroductionSection.jsx';
 import IconListCardsSection from '../../components/IconListCardsSection.jsx';
-import BiddingQuotePageImage from '../../assets/webp/BiddingQuotePageImage.webp';
+import BiddingQuotePageImage from '../../assets/webp/NegotiationIamge.webp';
 import buildFormContentItems from '../../utils/buildFormContentItems.js';
 import { navigateToRoute } from '../../utils/navigation.js';
 import FormIcon from '../../assets/svg/FilePenIcon.svg';

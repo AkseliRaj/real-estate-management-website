@@ -4,7 +4,7 @@ import IntroductionSectionWithImage from '../components/IntroductionSectionWithI
 import StaffCard from '../components/StaffCard';
 import ArrowButtonOrange from '../components/ArrowButtonOrange';
 import GoogleMapsEmbed from '../components/GoogleMapsEmbed.jsx';
-import BiddingQuotePageImage from '../assets/webp/BiddingQuotePageImage.webp';
+import ComputerUserImage from '../assets/webp/ComputerUserImage.webp';
 import PersonIcon from '../assets/svg/PersonIcon.svg';
 import LetterIcon from '../assets/svg/LetterIcon.svg'
 import '../css/ContactInformationPage.css'
@@ -25,7 +25,7 @@ const ContactInformationPage = () => {
                 paragraphs={[
                     t('Contact-Information-Page.Banner.paragraph'),
                 ]}
-                imageSrc={BiddingQuotePageImage}
+                imageSrc={ComputerUserImage}
                 imageAlt={t('propertyLanding.images.introductionAlt')}
                 buttonText={t('Contact-Information-Page.Banner.CTA-Button')}
                 onButtonClick={handleClick}
