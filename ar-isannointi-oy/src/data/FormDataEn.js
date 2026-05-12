@@ -16,6 +16,7 @@ const formDataEn = [
         category: 'notifications',
         title: 'Moving Notice',
         description: 'Submit the legally required notification of moving into the housing company and ensure your information is up to date.',
+        path: '/lomakkeet/muuttoilmoitus',
     },
     {
         id: 'residents-register-extract',

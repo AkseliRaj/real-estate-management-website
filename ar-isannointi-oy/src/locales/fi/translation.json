@@ -690,6 +690,68 @@
       "paragraph": "Ota meihin yhteyttä! Voit lähettää meille viestin suoraan sähköpostitse tai yhteydenotto lomakkeen.",
       "CTA-Button": "Yhteydenotto lomake"
     }
-
+  },
+  "Moving-Notice-Page": {
+    "Banner-Title": "Muuttoilmoitus isännöitsijälle",
+    "Prefix-Section": {
+      "title": "Lähetä ilmoitus, me hoidamme loput",
+      "paragraph1": "Täytä muuttoilmoitus lomake, kun muutat taloyhtiöön, taloyhtiön sisällä tai pois asunnosta. Ilmoituksen perusteella isännöinti pystyy päivittämään asukas- ja talonkirjatiedot sekä esimerkiksi oven ja asukastaulun nimitiedot.",
+      "paragraph2": "Muita täyttää muuttajan tiedot, mukana muuttavien henkilöiden tiedot sekä vanha ja uusi osoite mahdollisimman tarkasti. Tähdellä (*) merkityt kentät ovat pakollisia."
+    },
+    "Form-Labels": {
+      "Basic-Information": {
+        "title": "Muuton perustiedot:",
+        "Moving-Date": "Muuttopäivä:",
+        "Moving-Notice-Type": "Muuttoilmoituksen tyyppi:",
+        "Moving-Date-Radio-Labels": {
+          "Moving-In-Radio": "Muutan asuntoon",
+          "Moving-Out-Radio": "Muutan pois asunnosta",
+          "Moving-Inside-Radio": "Muutan taloyhtiön sisällä"
+        },
+        "Living-Type-Label": "Asuminen tulee olemaan:",
+        "Living-Type-Radio": {
+          "Temporary-Label": "Tilapäistä",
+          "Permanent-Label": "Vakituista"
+        }
+      },
+      "Mover-Information": {
+        "title": "Muuttajan tiedot",
+        "Firsnames": "Etunimet (erottele pilkulla):",
+        "Lastname": "Sukunimi: ",
+        "Phonenumber": "Puhelinnumero: ",
+        "Email": "Sähköposti: ",
+        "Birthday": "Syntymäaika: ",
+        "Nationality": "Kansalaisuus"
+      },
+      "Old-Address": {
+        "title": "Vanha osoite / Mistä muutetaan",
+        "Address": "Osoite",
+        "Postcode": "Postinumero",
+        "City": "Kaupunki",
+        "State": "Valtio"
+      },
+      "New-Address": {
+        "title": "Uusi osoite / Minne muutetaan",
+        "Address": "Osoite",
+        "Postcode": "Postinumero",
+        "City": "Kaupunki",
+        "State": "Valtio"
+      },
+      "Other-Movers": {
+        "title": "Mukana muuttavat henkilöt",
+        "Additional-Movers-Header": "Muiden muuttajien tiedot",
+        "Children-Movers-Header": "Mukana muuttavien lasten tiedot",
+        "Spouse-Radio-Label": "Muuttaako uuteen osoitteeseen useampi henkilö?",
+        "Kids-Radio-Label": "Muutatko lasten kanssa?",
+        "Radio-Buttons": {
+          "Yes": "Kyllä",
+          "No": "Ei"
+        },
+        "Add-Applicant-Button": "Lisää henkilö",
+        "Remove-button": "Poista henkilö"
+      },
+      "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumuksen henkilötietojeni käsittelyyn taloyhtiön asukas- ja talonkirjatietojen päivitystä sekä siihen liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
+      "Send-Button": "Lähetä ilmoitus"
+    }
   }
 }

@@ -680,10 +680,73 @@
     }
   },
   "RealEstatePropertyPage": {
-   "CTA-Section": {
+    "CTA-Section": {
       "title": "Do you have any questions about the property?",
       "paragraph": "Contact us! You can send us a message directly via email or the contact form.",
       "CTA-Button": "Contact form"
+    }
+  },
+  "Moving-Notice-Page": {
+    "Banner-Title": "Moving notice to the property manager",
+    "Prefix-Section": {
+      "title": "Send the notice, we will take care of the rest",
+      "paragraph1": "Fill out the moving notice form when you move into the housing company, within the housing company, or out of the apartment. Based on the notice, property management can update resident and building register information, for example door and resident board name details.",
+      "paragraph2": "The form asks for the mover's details, details of people moving with you, and the old and new address as accurately as possible. Fields marked with an asterisk (*) are required."
+    },
+    "Form-Labels": {
+      "Basic-Information": {
+        "title": "Basic moving information",
+        "Moving-Date": "Moving date:",
+        "Moving-Notice-Type": "Type of moving notice:",
+        "Moving-Date-Radio-Labels": {
+          "Moving-In-Radio": "I am moving into the apartment",
+          "Moving-Out-Radio": "I am moving out of the apartment",
+          "Moving-Inside-Radio": "I am moving within the housing company"
+        },
+        "Living-Type-Label": "Living will be:",
+        "Living-Type-Radio": {
+          "Temporary-Label": "Temporary",
+          "Permanent-Label": "Permanent"
+        }
+      },
+      "Mover-Information": {
+        "title": "Mover Information",
+        "Firsnames": "First names (separate with commas): ",
+        "Lastname": "Last name: ",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email",
+        "Birthday": "Date of birth: ",
+        "Nationality": "Nationality: "
+      },
+      "Old-Address": {
+        "title": "Old Address / Moving From",
+        "Address": "Address",
+        "Postcode": "Postal Code",
+        "City": "City",
+        "State": "State"
+      },
+      "New-Address": {
+        "title": "New Address / Where are you moving?",
+        "Address": "Address",
+        "Postcode": "Postcode",
+        "City": "City",
+        "State": "State"
+      },
+      "Other-Movers": {
+        "title": "Other people moving with you",
+        "Additional-Movers-Header": "Details of the other people moving with you",
+        "Children-Movers-Header": "Details of children moving with you",
+        "Spouse-Radio-Label": "Are you moving with more than one person?",
+        "Kids-Radio-Label": "Are you moving with your children?",
+        "Radio-Buttons": {
+          "Yes": "Yes",
+          "No": "No"
+        },
+        "Add-Applicant-Button": "New applicant",
+        "Remove-button": "Remove person"
+      },
+      "TOS": "I confirm that the information I have provided is correct and I consent to the processing of my personal data for updating the housing company’s resident and building registers and related property management purposes, in accordance with applicable data protection legislation.",
+      "Send-Button": "Submit notice"
     }
   }
 }

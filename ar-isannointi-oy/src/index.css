@@ -78,7 +78,7 @@ li {
 
 .form-control {
   border-radius: .8rem;
-  border: 1px solid #bebebe;
+  border: 1px solid #a8a8a8;
   color: #333333;
 }
 
@@ -94,7 +94,7 @@ input[type="checkbox"],
 }
 
 .form-check-input {
-  border: 1px solid #d4d4d4;
+  border: 1px solid #a8a8a8;
   cursor: pointer;
   transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }

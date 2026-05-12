@@ -16,6 +16,7 @@ const formDataFi = [
         category: 'notifications',
         title: 'Muuttoilmoitus',
         description: 'Tee lakisääteinen ilmoitus muutosta taloyhtiöön ja varmista tietojesi ajantasaisuus.',
+        path: '/lomakkeet/muuttoilmoitus',
     },
     {
         id: 'residents-register-extract',
