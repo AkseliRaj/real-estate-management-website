@@ -753,5 +753,54 @@
       "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumuksen henkilötietojeni käsittelyyn taloyhtiön asukas- ja talonkirjatietojen päivitystä sekä siihen liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
       "Send-Button": "Lähetä ilmoitus"
     }
+  },
+  "Consumption-Readings-Form-Page": {
+    "Banner-Title": "Kulutusilmoitus",
+    "Prefix-Section": {
+      "title": "Ilmoita vesi- ja sähkölukemat",
+      "paragraph1": "Tällä lomakkeella voit ilmoittaa huoneistosi kylmävesi-, lämminvesi- ja sähkölukemat isännöinnille. Täytä yhteystietosi sekä taloyhtiön ja huoneiston tiedot huolellisesti, jotta lukemat voidaan kohdistaa oikein.",
+      "paragraph2": "Ilmoita lukemapäivämäärä ja syötä vain ne lukemat, jotka koskevat huoneistoasi. Voit lisätä tarkentavia tietoja lisätietokenttään. Tähdellä (*) merkityt kentät ovat pakollisia."
+    },
+    "Form-Labels": {
+      "Reading-Types": {
+        "title": "Ilmoitustyyppi",
+        "Checkbox-Label": "Valitse lukematyypit mitkä haluat ilmoittaa:",
+        "Electricity-Checkbox": "Sähkönkulutus",
+        "Water-Meterings-Checkbox": "Vedenkulutus"
+      },
+      "User-Information": {
+        "title": "Ilmoittajan tiedot",
+        "Firsnames": "Etunimi: ",
+        "Lastname": "Sukunimi: ",
+        "Phonenumber": "Puhelinnumero: ",
+        "Email": "Sähköposti: "
+      },
+      "User-Address": {
+        "title": "Asunto-osakkeesi tiedot",
+        "Address": "Osoite",
+        "Postcode": "Postinumero",
+        "City": "Kaupunki",
+        "Housing-Company-Name": "Taloyhtiön nimi"
+      },
+      "Electricity-Readings": {
+        "title": "Sähkönkulutuksen lukemat",
+        "Reading-Date": "Lukemapäivämäärä:  ",
+        "Electricity-Reading": "Sähkönkulutus (kWh): ",
+        "Daytime-Electricity-Reading": "Päiväsähkö (kWh): ",
+        "NightTime-Electricity-Reading": "Yösähkö (kWh): "
+      },
+      "Water-Metering-Readings": {
+        "title": "Vedenkulutuksen lukemat",
+        "Reading-Date": "Lukemapäivämäärä: ",
+        "Cold-Water-Reading": "Kylmävesi lukemat (m3): ",
+        "Warm-Water-Reading": "Lämminvesi lukemat (m3): "
+      },
+      "More-Information-TextArea": {
+        "title": "Lisätiedot lukemista",
+        "label": "Kirjoita tähän mahdolliset lisätiedot, jotka auttavat lukemien käsittelyssä. Voit mainita esimerkiksi mittarin sijainnin, poikkeavat lukemat, muuttopäivän, laskutukseen liittyvät tarkennukset tai sen, jos ilmoitat vain osan lukemista."
+      }
+    },
+    "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumukseni tietojen käsittelyyn kulutuslukemien kohdistamista, laskutusta ja niihin liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
+    "Send-Button": "Lähetä ilmoitus"
   }
 }

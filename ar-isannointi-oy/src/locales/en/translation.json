@@ -748,5 +748,54 @@
       "TOS": "I confirm that the information I have provided is correct and I consent to the processing of my personal data for updating the housing company’s resident and building registers and related property management purposes, in accordance with applicable data protection legislation.",
       "Send-Button": "Submit notice"
     }
+  },
+  "Consumption-Readings-Form-Page": {
+    "Banner-Title": "Consumption Report",
+    "Prefix-Section": {
+      "title": "Submit water and electricity readings",
+      "paragraph1": "With this form, you can submit the cold water, hot water and electricity readings for your apartment to the property management company. Please fill in your contact details as well as the housing company and apartment information carefully so that the readings can be assigned correctly.",
+      "paragraph2": "Enter the reading date and only provide the readings that apply to your apartment. You can add additional details in the additional information field. Fields marked with an asterisk (*) are required."
+    },
+    "Form-Labels": {
+      "Reading-Types": {
+        "title": "Report type",
+        "Checkbox-Label": "Select the reading types you want to report:",
+        "Electricity-Checkbox": "Electricity consumption",
+        "Water-Meterings-Checkbox": "Water consumption"
+      },
+      "User-Information": {
+        "title": "Reporter information",
+        "Firsnames": "First name: ",
+        "Lastname": "Last name: ",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email: "
+      },
+      "User-Address": {
+        "title": "Apartment share information",
+        "Address": "Address",
+        "Postcode": "Postal code",
+        "City": "City",
+        "Housing-Company-Name": "Housing company name"
+      },
+      "Electricity-Readings": {
+        "title": "Electricity consumption readings",
+        "Reading-Date": "Reading date",
+        "Electricity-Reading": "Electricity consumption (kWh)",
+        "Daytime-Electricity-Reading": "Daytime electricity (kWh)",
+        "NightTime-Electricity-Reading": "Night-time electricity (kWh)"
+      },
+      "Water-Metering-Readings": {
+        "title": "Water consumption readings",
+        "Reading-Date": "Reading date",
+        "Cold-Water-Reading": "Cold water reading",
+        "Warm-Water-Reading": "Hot water reading"
+      },
+      "More-Information-TextArea": {
+        "title": "Additional information about the readings",
+        "label": "Write here any additional information that may help with processing the readings. For example, you can mention the location of the meter, unusual readings, move-in or move-out date, billing-related details, or whether you are only reporting some of the readings."
+      }
+    },
+    "TOS": "I certify that the information I have provided is correct and consent to the processing of the information for the purpose of allocating consumption readings, invoicing, and related property management in accordance with applicable data protection legislation.",
+    "Send-Button": "Submit report"
   }
 }

@@ -4,19 +4,21 @@ import Footer from './components/Footer';
 
 {/* Property management pages */}
 import PropertyManagementLanding from './pages/propertyManagement/PropertyManagementLanding.jsx';
-import PropertyManagementQuotePage from './pages/propertyManagement/PropertyManagementQuotePage.jsx';
-import MovinNoticeFormPage from './pages/propertyManagement/MovingNoticeFormPage.jsx';
 import PropertyManagementInstructions from './pages/propertyManagement/PropertyManagementInstructions.jsx';
 import ResponsibilityTablePage from './pages/propertyManagement/ResponsibilityTablePage.jsx';
 import PropertyManagementFormsPage from './pages/propertyManagement/PropertyManagementFormsPage.jsx';
-import BiddingQuotePage from './pages/realEstate/BiddingQuotePage.jsx';
-import PublicDeedConfirmationsPage from './pages/realEstate/PublicDeedConfirmationsPage.jsx';
+import PropertyManagementQuotePage from './pages/propertyManagement/PropertyManagementQuotePage.jsx';
+import MovinNoticeFormPage from './pages/propertyManagement/MovingNoticeFormPage.jsx';
+import ConsumptionReadingsFormPage from './pages/propertyManagement/ConsumptionReadingsFormPage.jsx';
 
 {/* Real Estate pages */}
 import RealEstateQuotePage from './pages/realEstate/RealEstateQuotePage.jsx';
 import RealEstatePropertiesPage from './pages/realEstate/RealEstatePropertiesPage.jsx';
 import RealEstatePropertyPage from './pages/realEstate/RealEstatePropertyPage.jsx';
 import RealEstateLandingPage from './pages/realEstate/RealEstateLandingPage.jsx';
+import BiddingQuotePage from './pages/realEstate/BiddingQuotePage.jsx';
+import PublicDeedConfirmationsPage from './pages/realEstate/PublicDeedConfirmationsPage.jsx';
+
 
 {/* Rentals pages */}
 import RentalPropertiesPage from './pages/rentals/RentalPropertiesPage.jsx';
@@ -43,6 +45,7 @@ function App() {
           <Route path="/vastuunjakotaulukko" element={<ResponsibilityTablePage />} />
           <Route path="/lomakkeet" element={<PropertyManagementFormsPage />} />
           <Route path="/lomakkeet/muuttoilmoitus" element={<MovinNoticeFormPage />} />
+          <Route path="/lomakkeet/kulutuslukemailmoitus" element={<ConsumptionReadingsFormPage />} />
           {/* Real Estate pages */}
           <Route path="/tarjouskaupat" element={<BiddingQuotePage />} />
           <Route path="/julkiset-kaupanvahvistukset" element={<PublicDeedConfirmationsPage />} />

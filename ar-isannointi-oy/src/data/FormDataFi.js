@@ -27,8 +27,9 @@ const formDataFi = [
     {
         id: 'meter-readings',
         category: 'reports',
-        title: 'Mittarilukemat',
-        description: 'Ilmoita huoneistokohtaiset vesi- tai energiamittarilukemat laskutusta varten.'
+        title: 'Kulutusilmoitus',
+        description: 'Ilmoita huoneistokohtaiset vesi- tai energiamittarilukemat laskutusta varten.',
+        path: '/lomakkeet/kulutuslukemailmoitus'
     },
     {
         id: 'fault-report',
