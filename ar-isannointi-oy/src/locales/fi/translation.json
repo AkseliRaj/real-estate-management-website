@@ -802,5 +802,11 @@
     },
     "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumukseni tietojen käsittelyyn kulutuslukemien kohdistamista, laskutusta ja niihin liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
     "Send-Button": "Lähetä ilmoitus"
+  },
+  "House-Register-Extract-Form-Page": {
+    "Banner-Title": "Talonkirjaote",
+    "Prefix-Section": {
+      "title": "Talonkirjaotteen tilaus",
+      "paragraph1": "Tällä lomakkeella voit tilata talonkirjaotteen AR Isännöinnin hallinnoimaan taloyhtiöön. Täytä pyydetyt tiedot huolellisesti, jotta tilaus voidaan käsitellä mahdollisimman sujuvasti. Talonkirjaote voidaan toimittaa joko noudettavaksi tai postitse ilmoittamaasi osoitteeseen. Huomioithan, että tähdellä (*) merkityt kentät ovat pakollisia."    }
   }
 }

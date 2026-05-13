@@ -23,12 +23,14 @@ const formDataEn = [
         category: 'extracts',
         title: 'Residents Register Extract',
         description: 'Order an official extract of apartment residents, for example for authorities.',
+        path: '/lomakkeet/talonkirjaote'
     },
     {
         id: 'meter-readings',
         category: 'reports',
         title: 'Meter Readings',
-        description: 'Report apartment-specific water or energy meter readings for billing purposes.'
+        description: 'Report apartment-specific water or energy meter readings for billing purposes.',
+        path: '/lomakkeet/kulutuslukemailmoitus'
     },
     {
         id: 'fault-report',

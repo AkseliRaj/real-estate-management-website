@@ -23,6 +23,7 @@ const formDataFi = [
         category: 'extracts',
         title: 'Talonkirjaote',
         description: 'Tilaa virallinen talonkirjaote asunnon asukkaista esimerkiksi viranomaisia varten.',
+        path: '/lomakkeet/talonkirjaote'
     },
     {
         id: 'meter-readings',

@@ -10,6 +10,7 @@ import PropertyManagementFormsPage from './pages/propertyManagement/PropertyMana
 import PropertyManagementQuotePage from './pages/propertyManagement/PropertyManagementQuotePage.jsx';
 import MovinNoticeFormPage from './pages/propertyManagement/MovingNoticeFormPage.jsx';
 import ConsumptionReadingsFormPage from './pages/propertyManagement/ConsumptionReadingsFormPage.jsx';
+import HouseRegisterExtractFormPage from './pages/propertyManagement/HouseRegisterExtractFormPage.jsx';
 
 {/* Real Estate pages */}
 import RealEstateQuotePage from './pages/realEstate/RealEstateQuotePage.jsx';
@@ -46,6 +47,7 @@ function App() {
           <Route path="/lomakkeet" element={<PropertyManagementFormsPage />} />
           <Route path="/lomakkeet/muuttoilmoitus" element={<MovinNoticeFormPage />} />
           <Route path="/lomakkeet/kulutuslukemailmoitus" element={<ConsumptionReadingsFormPage />} />
+          <Route path="/lomakkeet/talonkirjaote" element={<HouseRegisterExtractFormPage />} />
           {/* Real Estate pages */}
           <Route path="/tarjouskaupat" element={<BiddingQuotePage />} />
           <Route path="/julkiset-kaupanvahvistukset" element={<PublicDeedConfirmationsPage />} />
