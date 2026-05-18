@@ -50,7 +50,8 @@ const formDataFi = [
         id: 'renovation-modification-notice',
         category: 'permits',
         title: 'Muutos- ja korjaustyöilmoitus',
-        description: 'Hae lupa huoneistossa tehtäviin muutostöihin hyvissä ajoin ennen remontin aloitusta.'
+        description: 'Hae lupa huoneistossa tehtäviin muutostöihin hyvissä ajoin ennen remontin aloitusta.',
+        path: '/lomakkeet/muutos-ja-korjaustyolomake'
     }
 ];
 

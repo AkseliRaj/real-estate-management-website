@@ -874,5 +874,70 @@
       "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumukseni henkilötietojeni käsittelyyn talonkirjaotteen toimittamista ja siihen liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
       "Send-Button": "Lähetä vikailmoitus"
     }
+  },
+  "Renovation-Notice-Form-Page": {
+    "Banner-Title": "Muutos- ja korjaustyöilmoitus",
+    "Prefix-Section": {
+      "title": "Ilmoitus huoneiston muutos- ja korjaustöistä",
+      "paragraph1": "Tällä lomakkeella osakas voi ilmoittaa taloyhtiölle suunnittelemistaan huoneiston muutos- ja korjaustöistä ennen työn aloittamista. Täytä lomakkeelle yhteystietosi, työn kohteena oleva huoneisto, kuvaus suunnitelluista töistä, työn suorittajat sekä arvioitu aikataulu.",
+      "paragraph2": "Liitä ilmoitukseen tarvittavat suunnitelmat, piirustukset ja muut lisätiedot. Muutostyölle tulee nimetä rakennusalan ammattilainen valvojaksi, joka toimittaa taloyhtiölle raportin töiden valmistuttua. Huomioithan, että valvonta ei poista osakkaan eikä työn suorittajan vastuuta työn asianmukaisesta toteutuksesta.",
+      "paragraph3": "Jos korjaus- tai muutostyö tehdään vuonna 1994 tai sitä aiemmin rakennetuissa osakashallinnassa olevissa tiloissa, tulee ennen työn aloittamista tehdä lain edellyttämä asbestikartoitus. Pakolliset kentät on merkitty tähdellä (*)."
+    },
+    "Form-Labels": {
+      "User-Information": {
+        "title": "Ilmoituksen lähettäjän tiedot",
+        "Firsnames": "Etunimi: ",
+        "Lastname": "Sukunimi: ",
+        "Phonenumber": "Puhelinnumero: ",
+        "Email": "Sähköposti: "
+      },
+      "Apartment-Information": {
+        "title": "Huoneiston tiedot: ",
+        "Address": "Osoite: ",
+        "Postcode": "Postinumero: ",
+        "City": "Kaupunki: ",
+        "Housing-Company-Name": "Taloyhtiön nimi: "
+      },
+      "Renovation-Type-Checkboxes": {
+        "title": "Korjaus- ja muutostyön tyyppi",
+        "Checkbox-Label": "Minkälainen korjaus- tai muutostyö on kyseessä?",
+        "Construction-Work": "Rakennustekniset työt",
+        "Electrical-Work": "Sähkötyöt",
+        "LVI-Work": "LVI-työt",
+        "Other": "Muu muutos- ja korjaustyö"
+      },
+      "Renovation-Information": {
+        "Construction-Work-title": "Rakennusteknisten töiden suorittajan tiedot",
+        "Electrical-Work-title": "Sähkötöiden suorittajan tiedot",
+        "LVI-Work-title": "LVI-töiden suorittajan tiedot",
+        "Company-Name": "Yrityksen nimi: ",
+        "Business-ID": "Y-tunnus",
+        "Firsnames": "Etunimi: ",
+        "Lastname": "Sukunimi: ",
+        "Phonenumber": "Puhelinnumero: ",
+        "Email": "Sähköposti: ",
+        "Work-Description": "Kuvaa korjaus- ja muutostyöt lyhyesti: "
+      },
+      "Renovation-Supervisor": {
+        "title": "Korjaus- ja muutostöiden valvoja",
+        "prefix-paragraph": "Korjaus- ja muutostöiltä edellytetään valvojan valitsemista, joka töiden valmistuttua toimittaa taloyhtiölle raportin muutostöistä kuvineen PDF muodossa.",
+        "Construction-Work-Supervisor-Radio-Label": "Toimiiko rakennusteknisten töiden valvojana sama yhteyshenkilö, joka toimii töiden suorittajana?",
+        "Electrical-Work-Supervisor-Radio-Label": "Toimiiko sähkötöiden valvojana sama yhteyshenkilö, joka toimii töiden suorittajana?",
+        "LVI-Work-Supervisor-Radio-Label": "Toimiiko LVI-töiden valvojana sama yhteyshenkilö, joka toimii töiden suorittajana?",
+        "Yes-Radio-Button": "Kyllä",
+        "No-Radio-Button": "Ei",
+        "Construction-Work-title": "Rakennusteknisten töiden valvojan tiedot",
+        "Electrical-Work-title": "Sähkötöiden valvojan tiedot",
+        "LVI-Work-title": "LVI-töiden valvojan tiedot"
+      },
+      "Other-Information": {
+        "title": "Muut tiedot",
+        "Start-Date": "Muutos- ja korjaustöiden aloittaminen: ",
+        "End-Date": "Muutos- ja korjaustöiden arvioitu päättyminen: ",
+        "Attachment-Files": "Liitetiedostot kuten suunnitelmat ja pohjapiirrustukset (Sallitut tiedostomuodot: .pdf, .jpg, .png",
+        "Other-Information-Text-Area": "Muuta tietoa muutostöistä: "
+      }
+    },
+    "Send-Button": "Lähetä ilmoitus"
   }
 }

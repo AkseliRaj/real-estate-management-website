@@ -869,5 +869,70 @@
       "TOS": "I confirm that the information I have provided is correct and give my consent to the processing of my personal data for the purpose of delivering the maintenance request and related property management services in accordance with applicable data protection legislation.",
       "Send-Button": "Submit maintenance request"
     }
+  },
+  "Renovation-Notice-Form-Page": {
+    "Banner-Title": "Alteration and Renovation Work Notice",
+    "Prefix-Section": {
+      "title": "Notice of Alteration and Renovation Work in an Apartment",
+      "paragraph1": "With this form, a shareholder can notify the housing company of planned alteration and renovation work in an apartment before the work begins. Please provide your contact details, the apartment where the work will be carried out, a description of the planned work, the contractors carrying out the work, and the estimated schedule.",
+      "paragraph2": "Please attach the required plans, drawings, and any other additional information to the notice. A construction industry professional must be appointed as the supervisor for the alteration work. The supervisor will submit a report, including photographs, to the housing company after the work has been completed. Please note that supervision does not remove the responsibility of the shareholder or the contractor for the proper execution of the work.",
+      "paragraph3": "If the renovation or alteration work is carried out in shareholder-controlled premises built in 1994 or earlier, the asbestos survey required by law must be completed before the work begins. Required fields are marked with an asterisk (*)."
+    },
+    "Form-Labels": {
+      "User-Information": {
+        "title": "Notifier’s Information",
+        "Firsnames": "First name: ",
+        "Lastname": "Last name: ",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email: "
+      },
+      "Apartment-Information": {
+        "title": "Apartment Information: ",
+        "Address": "Address: ",
+        "Postcode": "Postal code: ",
+        "City": "City: ",
+        "Housing-Company-Name": "Housing company name: "
+      },
+      "Renovation-Type-Checkboxes": {
+        "title": "Type of Renovation or Alteration Work",
+        "Checkbox-Label": "What type of renovation or alteration work is involved?",
+        "Construction-Work": "Construction work",
+        "Electrical-Work": "Electrical work",
+        "LVI-Work": "HVAC and plumbing work",
+        "Other": "Other alteration or renovation work"
+      },
+      "Renovation-Information": {
+        "Construction-Work-title": "Information on the Contractor Carrying Out the Construction Work",
+        "Electrical-Work-title": "Information on the Contractor Carrying Out the Electrical Work",
+        "LVI-Work-title": "Information on the Contractor Carrying Out the HVAC and Plumbing Work",
+        "Company-Name": "Company name: ",
+        "Business-ID": "Business ID",
+        "Firsnames": "First name: ",
+        "Lastname": "Last name: ",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email: ",
+        "Work-Description": "Briefly describe the renovation and alteration work: "
+      },
+      "Renovation-Supervisor": {
+        "title": "Supervisor of the Renovation and Alteration Work",
+        "prefix-paragraph": "Renovation and alteration work requires the appointment of a supervisor, who will submit a report on the alteration work, including photographs in PDF format, to the housing company after the work has been completed.",
+        "Construction-Work-Supervisor-Radio-Label": "Will the same contact person who carries out the construction work also act as the supervisor of the construction work?",
+        "Electrical-Work-Supervisor-Radio-Label": "Will the same contact person who carries out the electrical work also act as the supervisor of the electrical work?",
+        "LVI-Work-Supervisor-Radio-Label": "Will the same contact person who carries out the HVAC and plumbing work also act as the supervisor of the HVAC and plumbing work?",
+        "Yes-Radio-Button": "Yes",
+        "No-Radio-Button": "No",
+        "Construction-Work-title": "Information on the Supervisor of the Construction Work",
+        "Electrical-Work-title": "Information on the Supervisor of the Electrical Work",
+        "LVI-Work-title": "Information on the Supervisor of the HVAC and Plumbing Work"
+      },
+      "Other-Information": {
+        "title": "Other Information",
+        "Start-Date": "Start date of the alteration and renovation work: ",
+        "End-Date": "Estimated completion date of the alteration and renovation work: ",
+        "Attachment-Files": "Attachments such as plans and floor plans (Allowed file formats: .pdf, .jpg, .png)",
+        "Other-Information-Text-Area": "Additional information about the alteration work: "
+      }
+    },
+    "Send-Button": "Submit notice"
   }
 }

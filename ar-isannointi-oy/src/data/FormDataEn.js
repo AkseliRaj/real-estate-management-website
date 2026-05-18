@@ -50,7 +50,8 @@ const formDataEn = [
         id: 'renovation-modification-notice',
         category: 'permits',
         title: 'Renovation and Modification Notice',
-        description: 'Apply for permission for modifications in your apartment well before starting renovation work.'
+        description: 'Apply for permission for modifications in your apartment well before starting renovation work.',
+        path: '/lomakkeet/muutos-ja-korjaustyolomake'
     }
 ];
 
