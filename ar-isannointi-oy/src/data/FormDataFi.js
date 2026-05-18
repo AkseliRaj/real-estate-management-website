@@ -10,6 +10,7 @@ const formDataFi = [
         category: 'requests',
         title: 'Tarjouspyyntö isännöinnistä',
         description: 'Pyydä asiantunteva tarjous taloyhtiönne isännöinnistä tai muista palveluistamme.',
+        path: '/tarjous-isannoinnista'
     },
     {
         id: 'moving-notice',

@@ -1,31 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FormPageBanner from '../../components/FormPageBanner';
 import FormIntroductionSection from '../../components/FormIntroductionSection';
-import ConsumptionReadingTypesSection from '../../components/consumtionReadingsForm/ConsumptionReadingTypesSection';
-import ConsumptionUserInformationSection from '../../components/consumtionReadingsForm/ConsumptionUserInformationSection';
-import ConsumptionUserAddressSection from '../../components/consumtionReadingsForm/ConsumptionUserAddressSection';
-import ConsumptionElectricityReadingsSection from '../../components/consumtionReadingsForm/ConsumptionElectricityReadingsSection';
-import ConsumptionWaterMeteringReadingsSection from '../../components/consumtionReadingsForm/ConsumptionWaterMeteringReadingsSection';
-import ConsumptionMoreInformationSection from '../../components/consumtionReadingsForm/ConsumptionMoreInformationSection';
-import ConsumptionTermsSection from '../../components/consumtionReadingsForm/ConsumptionTermsSection';
+import HouseRegisterExtractUserInformationSection from '../../components/houseRegisterExtractForm/HouseRegisterExtractUserInformationSection';
+import HouseRegisterExtractApartmentDescriptionSection from '../../components/houseRegisterExtractForm/HouseRegisterExtractApartmentDescriptionSection';
+import HouseRegisterExtractDocumentDeliverySection from '../../components/houseRegisterExtractForm/HouseRegisterExtractDocumentDeliverySection';
+import HouseRegisterExtractTermsSection from '../../components/houseRegisterExtractForm/HouseRegisterExtractTermsSection';
 import { useTranslation } from 'react-i18next';
-
 
 const HouseRegisterExtractFormPage = () => {
     const { t } = useTranslation();
-    const [selectedReadingTypes, setSelectedReadingTypes] = useState([]);
-
-    const onReadingTypeChange = (readingType, isSelected) => {
-        setSelectedReadingTypes((previousTypes) => {
-            if (isSelected) {
-                return previousTypes.includes(readingType)
-                    ? previousTypes
-                    : [...previousTypes, readingType];
-            }
-
-            return previousTypes.filter((type) => type !== readingType);
-        });
-    };
 
     return (
         <div className="container-fluid px-0">
@@ -39,26 +22,13 @@ const HouseRegisterExtractFormPage = () => {
                 rowJustify={'center'}
             />
 
-            <ConsumptionReadingTypesSection
-                selectedReadingTypes={selectedReadingTypes}
-                onReadingTypeChange={onReadingTypeChange}
-            />
+            <HouseRegisterExtractUserInformationSection />
 
-            <ConsumptionUserInformationSection />
+            <HouseRegisterExtractApartmentDescriptionSection />
 
-            <ConsumptionUserAddressSection />
+            <HouseRegisterExtractDocumentDeliverySection />
 
-            {selectedReadingTypes.includes('electricity') && (
-                <ConsumptionElectricityReadingsSection />
-            )}
-
-            {selectedReadingTypes.includes('water') && (
-                <ConsumptionWaterMeteringReadingsSection />
-            )}
-
-            <ConsumptionMoreInformationSection />
-
-            <ConsumptionTermsSection />
+            <HouseRegisterExtractTermsSection />
 
         </div>
     );

@@ -10,6 +10,7 @@ const formDataEn = [
         category: 'requests',
         title: 'Request for Property Management Offer',
         description: 'Request a professional offer for property management or other services for your housing company.',
+        path: '/tarjous-isannoinnista'
     },
     {
         id: 'moving-notice',

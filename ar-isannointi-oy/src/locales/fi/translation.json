@@ -807,6 +807,31 @@
     "Banner-Title": "Talonkirjaote",
     "Prefix-Section": {
       "title": "Talonkirjaotteen tilaus",
-      "paragraph1": "Tällä lomakkeella voit tilata talonkirjaotteen AR Isännöinnin hallinnoimaan taloyhtiöön. Täytä pyydetyt tiedot huolellisesti, jotta tilaus voidaan käsitellä mahdollisimman sujuvasti. Talonkirjaote voidaan toimittaa joko noudettavaksi tai postitse ilmoittamaasi osoitteeseen. Huomioithan, että tähdellä (*) merkityt kentät ovat pakollisia."    }
+      "paragraph1": "Tällä lomakkeella voit tilata talonkirjaotteen AR Isännöinnin hallinnoimaan taloyhtiöön. Täytä pyydetyt tiedot huolellisesti, jotta tilaus voidaan käsitellä mahdollisimman sujuvasti. Talonkirjaote voidaan lähettää sähköisesti ilmoittamaasi sähköposti osoitteeseen tai noutaa fyysisenä dokumenttina toimistoltamme aukioloaikojen puitteissa. Huomioithan, että tähdellä (*) merkityt kentät ovat pakollisia."
+    },
+    "Form-Labels": {
+      "User-Information": {
+        "title": "Tilaajan tiedot",
+        "Firsnames": "Etunimi: ",
+        "Lastname": "Sukunimi: ",
+        "Phonenumber": "Puhelinnumero: ",
+        "Email": "Sähköposti: "
+      },
+      "Apartment-Information": {
+        "title": "Talonkirjaotteen huoneiston tiedot",
+        "Address": "Osoite",
+        "Postcode": "Postinumero",
+        "City": "Kaupunki",
+        "Housing-Company-Name": "Taloyhtiön nimi"
+      },
+      "Delivery-Method": {
+        "title": "Dokumentin toimitustapa",
+        "Radio-Button-Label": "Miten haluat meidän toimittavan dokumentin?",
+        "By-Email": "Sähköisenä (Lähetetään sähköpostiin)",
+        "For-Pickup": "Noudan dokumentin toimistolta"
+      }
+    },
+    "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumukseni henkilötietojeni käsittelyyn talonkirjaotteen toimittamista ja siihen liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
+    "Send-Button": "Lähetä tilaus"
   }
 }

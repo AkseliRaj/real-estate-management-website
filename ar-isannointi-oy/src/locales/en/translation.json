@@ -797,5 +797,36 @@
     },
     "TOS": "I certify that the information I have provided is correct and consent to the processing of the information for the purpose of allocating consumption readings, invoicing, and related property management in accordance with applicable data protection legislation.",
     "Send-Button": "Submit report"
+  },
+  "House-Register-Extract-Form-Page": {
+    "Banner-Title": "House Register Extract",
+    "Prefix-Section": {
+      "title": "Order House Register Extract",
+      "paragraph1": "With this form you can order a house register extract for a housing association managed by AR Isännöinni. Please fill in the requested information carefully so that the order can be processed as smoothly as possible. The house register extract can be sent electronically to the email address you provided or picked up as a physical document from our office during opening hours. Please note that fields marked with an asterisk (*) are mandatory."
+    },
+    "Form-Labels": {
+      "User-Information": {
+        "title": "Subscriber Information",
+        "Firsnames": "First name: ",
+        "Lastname": "Last name: ",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email: "
+      },
+      "Apartment-Information": {
+        "title": "Apartment information from the house registry extract",
+        "Address": "Address",
+        "Postcode": "Postal code",
+        "City": "City",
+        "Housing-Company-Name": "Housing-Company-Name"
+      },
+      "Delivery-Method": {
+        "title": "Document delivery method",
+        "Radio-Button-Label": "How would you like us to deliver the document?",
+        "By-Email": "Electronic (Sent to email)",
+        "For-Pickup": "I will pick up the document from the office"
+      }
+    },
+    "TOS": "I certify that the information I have provided is correct and I agree to my consent to the processing of my personal data for the purpose of providing a house registry extract and related hosting in accordance with applicable data protection legislation.",
+    "Send-Button": "Send order"
   }
 }
