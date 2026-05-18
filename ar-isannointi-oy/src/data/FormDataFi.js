@@ -37,7 +37,8 @@ const formDataFi = [
         id: 'fault-report',
         category: 'reports',
         title: 'Vikailmoitus',
-        description: 'Ilmoita havaitsemastasi viasta tai huoltotarpeesta suoraan huoltoyhtiölle ja isännöitsijälle.'
+        description: 'Ilmoita havaitsemastasi viasta tai huoltotarpeesta suoraan huoltoyhtiölle ja isännöitsijälle.',
+        path: '/lomakkeet/vikailmoitus'
     },
     {
         id: 'waterproofing-work-form',

@@ -806,7 +806,7 @@
     },
     "Form-Labels": {
       "User-Information": {
-        "title": "Subscriber Information",
+        "title": "Orderer Information",
         "Firsnames": "First name: ",
         "Lastname": "Last name: ",
         "Phonenumber": "Phone number: ",
@@ -828,5 +828,46 @@
     },
     "TOS": "I certify that the information I have provided is correct and I agree to my consent to the processing of my personal data for the purpose of providing a house registry extract and related hosting in accordance with applicable data protection legislation.",
     "Send-Button": "Send order"
+  },
+  "Maintenance-Request-Form-Page": {
+    "Banner-Title": "Maintenance Request",
+    "Prefix-Section": {
+      "title": "Request for maintenance companies",
+      "paragraph1": "Submit a maintenance request using the form below when you notice a fault in the housing company’s premises or in an apartment that requires repair. Please provide the name or address of the housing company, the apartment details, your contact information, and as detailed a description of the issue as possible. You may also attach photos to the request to help clarify the matter.",
+      "paragraph2": "Please also indicate whether a master key may be used when carrying out the repair work and whether you would like to be contacted before the repair work begins. Required fields are marked with an asterisk (*)."
+    },
+    "Form-Labels": {
+      "User-Information": {
+        "title": "Reporter’s Information",
+        "Firsnames": "First name: ",
+        "Lastname": "Last name: ",
+        "Phonenumber": "Phone number: ",
+        "Email": "Email: "
+      },
+      "Apartment-Information": {
+        "title": "Apartment Information: ",
+        "Address": "Address: ",
+        "Postcode": "Postal code: ",
+        "City": "City: ",
+        "Housing-Company-Name": "Housing company name: "
+      },
+      "Maintenance-Description": {
+        "title": "Description of the Fault",
+        "Maintenance-Description-Label": "Describe the fault you have noticed:",
+        "Attachments-Label": "Attachments related to the fault (Allowed file formats: .PNG, .JPG): ",
+        "Remove-Attachment-Button": "Remove",
+        "Remove-Attachment-Aria-Label": "Remove image {{fileName}}"
+      },
+      "Other-Information": {
+        "title": "Other Information",
+        "Master-Key": "May a master key be used when carrying out the repair work? ",
+        "House-Pets": "Are there pets in the apartment? ",
+        "Yes-Label": "Yes",
+        "No-Label": "No",
+        "Text-Area-Label": "You can write any other relevant information here, such as the location of security locks or the best time to access the apartment:"
+      },
+      "TOS": "I confirm that the information I have provided is correct and give my consent to the processing of my personal data for the purpose of delivering the maintenance request and related property management services in accordance with applicable data protection legislation.",
+      "Send-Button": "Submit maintenance request"
+    }
   }
 }

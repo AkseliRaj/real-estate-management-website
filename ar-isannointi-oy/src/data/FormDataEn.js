@@ -36,8 +36,9 @@ const formDataEn = [
     {
         id: 'fault-report',
         category: 'reports',
-        title: 'Fault Report',
-        description: 'Report any detected faults or maintenance needs directly to the maintenance company and property manager.'
+        title: 'Maintenance Report',
+        description: 'Report any detected faults or maintenance needs directly to the maintenance company and property manager.',
+        path: '/lomakkeet/vikailmoitus'
     },
     {
         id: 'waterproofing-work-form',

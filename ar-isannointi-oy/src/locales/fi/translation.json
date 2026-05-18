@@ -833,5 +833,46 @@
     },
     "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumukseni henkilötietojeni käsittelyyn talonkirjaotteen toimittamista ja siihen liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
     "Send-Button": "Lähetä tilaus"
+  },
+  "Maintenance-Request-Form-Page": {
+    "Banner-Title": "Vikailmoitus",
+    "Prefix-Section": {
+      "title": "Vikailmoitus huoltoyhtiöille",
+      "paragraph1": "Tee vikailmoitus oheisella lomakkeella, kun havaitset taloyhtiössä tai huoneistossa korjausta vaativan vian. Täytä ilmoitukseen taloyhtiön nimi tai osoite, huoneisto, omat yhteystietosi sekä mahdollisimman tarkka kuvaus havaitusta viasta. Voit liittää imoitukseen mukaan myös valokuvia, jotka helpottavat asian selvittämistä.",
+      "paragraph2": "Ilmoita lomakkeella myös, saako korjaustoimenpiteitä tehtäessä käyttää yleisavainta ja haluatko, että sinuun otetaan yhteyttä ennen korjaustöiden aloittamista. Pakolliset kentät on merkitty tähdellä (*)."
+    },
+    "Form-Labels": {
+      "User-Information": {
+        "title": "Ilmoittajan tiedot",
+        "Firsnames": "Etunimi: ",
+        "Lastname": "Sukunimi: ",
+        "Phonenumber": "Puhelinnumero: ",
+        "Email": "Sähköposti: "
+      },
+      "Apartment-Information": {
+        "title": "Huoneiston tiedot: ",
+        "Address": "Osoite: ",
+        "Postcode": "Postinumero: ",
+        "City": "Kaupunki: ",
+        "Housing-Company-Name": "Taloyhtiön nimi: "
+      },
+      "Maintenance-Description": {
+        "title": "Havaitun vian kuvaus",
+        "Maintenance-Description-Label": "Kuvaile havaitsemasi vika:",
+        "Attachments-Label": "Liitetiedostot viasta (Sallitut tiedostomuodot: .PNG, .JPG): ",
+        "Remove-Attachment-Button": "Poista",
+        "Remove-Attachment-Aria-Label": "Poista kuva {{fileName}}"
+      },
+      "Other-Information": {
+        "title": "Muuta huomioitavaa",
+        "Master-Key": "Saako korjaustoimenpiteitä suorittaessa käyttää yleisavainta? ",
+        "House-Pets": "Onko huoneistossa lemmikkejä? ",
+        "Yes-Label": "Kyllä",
+        "No-Label": "Ei",
+        "Text-Area-Label": "Voit kirjoittaa tähän muuta huomioitavaa, kuten esimerkiksi turvalukkojen sijainnin tai milloin asuntoon pääsee parhaiten:"
+      },
+      "TOS": "Vakuutan antamani tiedot oikeiksi ja annan suostumukseni henkilötietojeni käsittelyyn talonkirjaotteen toimittamista ja siihen liittyvää isännöintiä varten sovellettavan tietosuojalainsäädännön mukaisesti.",
+      "Send-Button": "Lähetä vikailmoitus"
+    }
   }
 }
